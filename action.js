@@ -6,14 +6,18 @@ function popWin(){
 
 
     const report = document.createElement('div')
-    const header = document.createElement('h2')
-    const headerText = document.createTextNode('基本报告')
+    const header = document.createElement('h1')
+    const headerText = document.createTextNode('---------基本报告--------')
     header.append(headerText)
 
-    const title = document.createElement('p')
+    const title = document.createElement('h3')
     const title_content = document.getElementById('input_title')
-    const title_text = document.createTextNode('标题：'+title_content.value)
+    const title_text = document.createTextNode('---研究名称---'+title_content.value)
     title.append(title_text)
+
+    const subtitle = document.createElement('h3')
+    const subtext = document.createTextNode('---研究背景---')
+    subtitle.append(subtext)
 
     const label0 = document.createElement('p')
     const box0 = document.getElementById('check1')
@@ -35,9 +39,9 @@ function popWin(){
     const text3 = document.createTextNode('因果推断: 这里需要从sub1.html 中读取id 为 check4 的input 并显示')
     label3.append(text3)
 
-    const label4 = document.createElement('p')
+    const label4 = document.createElement('h3')
     const box4 = document.getElementById('check5')
-    const text4 = document.createTextNode('研究目标: 这里需要从sub1.html 中读取id 为 check5 的input 并显示')
+    const text4 = document.createTextNode('---研究目标--- 这里需要从sub1.html 中读取id 为 check5 的input 并显示')
     label4.append(text4)
 
     const l0 = document.createElement('hr')
@@ -54,6 +58,7 @@ function popWin(){
     report.appendChild(header)
     report.appendChild(title)
     report.appendChild(l0)
+    report.appendChild(subtitle)
     report.appendChild(label0)
     report.appendChild(l1)
     report.appendChild(label1)
@@ -279,4 +284,14 @@ function Add(d_container, i_container, o_container) {
     to3.append(o_text3)
     o_container.appendChild(o_add3)
     o_container.appendChild(to3)
+}
+
+function pop(){
+    const body = document.getElementById('addMore')
+    const container = document.createElement('div')
+    const box = document.createElement('p')
+    const txt = document.createTextNode('aaaa')
+    box.append(txt)
+    container.appendChild(box)
+    body.appendChild(container)
 }

@@ -29,17 +29,28 @@
                 z-index:9999;
                 overflow: auto;
             }
+            .pps_label{
+                background-color: #5DADE2;
+                margin-left: 20%;
+            }
+            .options{
+                position:absolute;
+                left: 40%;
+                margin-left: -50px;
+            }
         </style>
     </head>
     <body>
         <header>科研选题</header>
         <br>
-        <label><strong> ---标题---：</strong></label>
+        <label id='addMore'><strong> ---标题---：</strong></label>
         <input id='input_title' type="text">
+        <label class='pps_label'><stong> **研究目标**  </stong></label>
+        <input id='input_pps' type="text">
         <hr/>
         <div class='input_box'>
             <div>
-                <label><strong>人群特征（P）</strong></label>
+                <label on="pop()"><strong>人群特征（P）</strong></label>
                 <input id='input_p' type="text">
             </div>
             <br>
@@ -69,11 +80,13 @@
             </div>
         </div>
         <br/>
-        <button>提交</button>
-        <button><a style="text-decoration: none;" href="sub2.html">上一步</a></button> 
-        <button><a style="text-decoration: none;" href="index.html">返回主页</a></button> 
-        <a href = "javascript:void(0)" onclick = "popWin();">生成报告</a>
-    
+        <hr>
+        <div class="options">
+            <button>提交</button>
+            <button><a style="text-decoration: none;" href="sub2.html">上一步</a></button> 
+            <button><a style="text-decoration: none;" href="index.html">返回主页</a></button>
+            <a href = "javascript:void(0)" onclick = "popWin();">生成报告</a>
+        </div>
         <div id="light" class="pop_win">
             <a href = "javascript:void(0)" onclick = "closeWin();" style="float: right;">[x]</a>
         </div>
