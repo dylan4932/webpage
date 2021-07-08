@@ -1,0 +1,23 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "this is just a test",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylan4932/webpage.git"
+  },
+  "keywords": [
+    "1997"
+  ],
+  "author": "Yuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylan4932/webpage/issues"
+  },
+  "homepage": "https://github.com/dylan4932/webpage#readme"
+}
