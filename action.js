@@ -83,12 +83,25 @@ function search(){
     const br = document.createElement('br')
     const btn = document.createElement('button')
     const btn_text = document.createTextNode('意见报告')    //此处应从数据库中获取相关意见报告并通过按钮打开
+
+    const save = document.createElement('button')
+    const save_txt = document.createTextNode('保存意见')
+
+    const del = document.createElement('button')
+    const del_txt = document.createTextNode('删除')
+
     const hr = document.createElement('hr')
+    const tab = document.createTextNode(" | ")
     btn.append(btn_text)
+    save.append(save_txt)
+    del.append(del_txt)
 
     body.appendChild(box1)
     body.appendChild(br)
     body.appendChild(btn)
+    body.appendChild(tab)
+    body.appendChild(save)
+    body.appendChild(del)
     body.appendChild(hr)
 }
 
