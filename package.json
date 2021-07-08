@@ -4,7 +4,7 @@
   "description": "this is just a test",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/dylan4932/webpage/issues"
   },
-  "homepage": "https://github.com/dylan4932/webpage#readme"
+  "homepage": "https://github.com/dylan4932/webpage#readme ",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {}
 }
