@@ -1,3 +1,17 @@
+function login(){
+    console.log('loging in')
+    const acc = 'user1'
+    const passwd = 'user1'
+
+    const acc_input = document.getElementById('user_acc')
+    const passwd_input = document.getElementById('user_passwd')
+
+    if(acc_input.value === acc && passwd_input.value === passwd){
+        window.location.replace('./index.html')
+    } else{
+        alert('账户密码错误')
+    }
+}
 
 function popWin(){
     document.getElementById('light').style.display='block';

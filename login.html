@@ -33,18 +33,19 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h3>账号: </h2><input>
-        <h3>密码：</h2><input>
+        <h3>账号: </h2><input id='user_acc'>
+        <h3>密码：</h2><input id='user_passwd' type="password">
         <br>
         <hr>
         <div class="options">
-            <button>登陆</button>
+            <button onclick="login()">登陆</button>
             |
             <button><a style="text-decoration: none;" href="index.html">取消</a></button>
             <br>
         </div>
         <div class="question">
-            <button>第一次登陆/注册</button> ｜ <button>忘记密码</button>
+            <button><a style="text-decoration: none;" href="register.html">第一次登陆/注册</a></button> ｜ <button>忘记密码</button>
         </div>
+        <script src='action.js'></script>  
     </body>
 </html>
