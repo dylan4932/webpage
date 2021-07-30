@@ -43,7 +43,7 @@ function addFail(){
     }
 }
 function addRare(){
-    const opt1 = document.getElementById('info1_success')
+    const opt1 = document.getElementById('info2_success')
     const rare_case = document.getElementById('rare_case')
 
     if(opt1.checked){
