@@ -3,6 +3,20 @@
     <head>
         <meta charset="utf-8">
         <style>
+            body{
+            background-color: rgb(245, 242, 238);
+            }
+            #myProgress {
+                width: 86%;
+                background-color: rgb(250, 250, 250);
+                margin-left: 2%;
+                margin-bottom: 2%;
+            }
+            #myBar {
+                width: 30%;
+                height: 15px;
+                background-color: rgb(34, 133, 179);
+            }
             .black_overlay{
                 display: none;
                 position: absolute;
@@ -37,6 +51,10 @@
     </head>
     <body>
         <header><h1>科研选题</h1></header>
+        <hr>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
         <div class='input_box'>
             <div id='people_char'>
                 <div>
@@ -158,7 +176,8 @@
         <div id='search_container'></div>
         <button onclick="search()">综合查找</button>
         <button>保存</button>
-        <button><a style="text-decoration: none;" href="index.html">返回</a></button>
+        <button><a style="text-decoration: none;" href="sub2.html">有想法</a></button>
+        <button><a style="text-decoration: none;" href="xyz.html">返回</a></button>
         <script>
             (function(g,u,i,d,e,s){g[e]=g[e]||[];var f=u.getElementsByTagName(i)[0];var k=u.createElement(i);k.async=true;k.src='https://static.userguiding.com/media/user-guiding-'+s+'-embedded.js';f.parentNode.insertBefore(k,f);if(g[d])return;var ug=g[d]={q:[]};ug.c=function(n){return function(){ug.q.push([n,arguments])};};var m=['previewGuide','finishPreview','track','identify','triggerNps','hideChecklist','launchChecklist'];for(var j=0;j<m.length;j+=1){ug[m[j]]=ug.c(m[j]);}})(window,document,'script','userGuiding','userGuidingLayer','381784822ID'); 
         </script>  

@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <style>
-        .idea{
+        
+        .banner{
+            background-color: #04545a;
+        }
+        .banner_text{
+            color:white;
+        }
+        .banner_content{
+            padding: 10px;
+        }
+        nav{
+            background-color: teal;
+        }
+
+        nav ul{
+	        margin-left: 700px;
+	        list-style: none;
+        }
+
+        nav a{
+	        text-decoration: none;
+	        color:white;
+        }
+
+        nav a:hover{
+	        color: #facf5a;
+        }
+        nav a::before{
+	        content: "";
+	        height: 3px;
+	        display: block;
+	        width: 0%;
+	        background-color: #facf5a;
+	        margin-bottom: 1px;
+	        transition: all ease-in-out 300ms;
+        }
+        nav li{
+	        font-size: 20px;
+	        display: inline-block;
+	        position: relative;
+	        margin-right: 20px;
+        }
+
+        nav a:hover::before{
+        	width: 100%;
+        }
+        /* .idea{
             width: 300px;
             border: 2px solid #5DADE2;
             padding: 30px;
             margin: 20px;
-        }
+        } */
         .user_info{
             width: auto;
             background-color:transparent;
@@ -31,7 +77,30 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <script></script>
+        <div class='banner'>
+            <div class='banner_content'>
+                <!-- <img class='banner_pic' src='http://www.chinahpa.org/templets/custom/img/logo.png'> -->
+                <div class='banner_text'>
+                    <strong>临床科研辅助系统</strong>
+                </div>    
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href='index.html'>首页</a>
+                </li>
+                <li>
+                    <a href="case_des.html">案例分析</a>
+                </li>
+                <li>
+                    <a href="sub1.html">指南/共识搜素</a>
+                </li>
+                <li>
+                    <a href="sub2.html">PICOS</a>
+                </li>
+            </ul>       
+        </nav>
         <div class='user_info'><a style="text-decoration: none;" href="login.html">登录/注册</a></div>
         <!-- <h2>我的idea:</h2><div class='idea'>在注册时填写，或在第一步填写或第二部填写，如有会体现。如无则空白。</div>
         <h2>科研选题:</h2><div class='idea'>如科研选题已确定，则体现，如未确定并填写则不体现该条框。</div> -->
