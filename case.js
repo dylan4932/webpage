@@ -80,9 +80,9 @@ function remind(){
     const remind = document.getElementById(evt.target.id.slice(0,5)+'_remind1')
     if(evt.target.id.slice(6,10) === 'txt1'){
         const info = document.getElementById(evt.target.id.slice(0,5)+'_container')
-        info.style.borderBottom = '3px solid red'
+        info.style.borderBottom = '2px solid red'
         info.style.borderRadius = '10px'
-        info.style.backgroundColor = 'pink'
+        info.style.backgroundColor = '#FAE5E9'
     }
     const remind_container = document.getElementById('remind_container')
     if(remind.childElementCount === 1){

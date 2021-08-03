@@ -3,20 +3,31 @@
     <style>
         
         .banner{
-            background-color: #04545a;
+            background-color: #034449;
         }
         .banner_text{
             color:white;
         }
         .banner_content{
-            padding: 10px;
+            padding-left: 5%;
+            float: left;
+        }
+        .user_info{
+            width: auto;
+            background-color:transparent;
+            text-align: center;
+            padding: 15px;
+            font-size: large;
+            color:white;
+            margin-left: 88%;
         }
         nav{
             background-color: teal;
         }
 
         nav ul{
-	        margin-left: 700px;
+            margin-top: 0px;
+	        margin-left: 65%;
 	        list-style: none;
         }
 
@@ -28,6 +39,7 @@
         nav a:hover{
 	        color: #facf5a;
         }
+
         nav a::before{
 	        content: "";
 	        height: 3px;
@@ -53,15 +65,11 @@
             padding: 30px;
             margin: 20px;
         } */
-        .user_info{
-            width: auto;
-            background-color:transparent;
-            text-align: center;
-            padding: 15px;
-            font-size: large;
-            color:white;
-            position:fixed;
-            margin-left: 88%;
+        .grid-container{
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-gap: 20px;
         }
         .options{
             position:absolute;
@@ -72,6 +80,17 @@
             width:100%;
             height: 500px;
         }
+
+        .left{
+            border-right: 1px solid grey;
+            padding-left: 10%;
+        }
+
+        .right{
+            width: 80%;
+            padding: 25px;
+            padding-top: 10%;
+        }
     </style>
     <head>
         <meta charset="utf-8">
@@ -81,9 +100,12 @@
             <div class='banner_content'>
                 <!-- <img class='banner_pic' src='http://www.chinahpa.org/templets/custom/img/logo.png'> -->
                 <div class='banner_text'>
-                    <strong>临床科研辅助系统</strong>
-                </div>    
+                    <h1>临床科研辅助系统</h1>
+                </div>   
             </div>
+            <div class='user_info'>
+                <a style="text-decoration: none; color: white;" href="login.html">登录/注册</a>
+            </div> 
         </div>
         <nav>
             <ul>
@@ -101,10 +123,21 @@
                 </li>
             </ul>       
         </nav>
-        <div class='user_info'><a style="text-decoration: none;" href="login.html">登录/注册</a></div>
+        
         <!-- <h2>我的idea:</h2><div class='idea'>在注册时填写，或在第一步填写或第二部填写，如有会体现。如无则空白。</div>
         <h2>科研选题:</h2><div class='idea'>如科研选题已确定，则体现，如未确定并填写则不体现该条框。</div> -->
-        <canvas id="granim-canvas"></canvas>
+        <!-- <canvas id="granim-canvas"></canvas> -->
+        <div class="grid-container">
+            <div class="grid-child left" >
+                    
+                <iframe class="video_iframe" width="600" height="375" style="z-index: 1;" allowfullscreen="" frameborder="0"
+                    src="http://v.qq.com/iframe/player.html?vid=p0684bsjw5o&amp;width=500&amp;height=375&amp;auto=0">
+                </iframe> 
+            </div>
+            <div class="grid-child right">
+                <p>北京健康促进会（Beijing Health Promotion Association，BJHPA）成立于1998年5月8日。是在政府主管部门及相关部门的支持下，由北京医疗健康系统工作者及有关单位自愿结成，并经北京民政局批准登记成立的区域性、公益性、专业性和非营利性社会组织。旨在运用北京市医疗、卫生、教育等行政的或组织的手段，广泛协调社会各相关部门以及社区、家庭和个人，使其履行各自对健康的责任，共同维护和促进北京市民健康。</p>
+            </div> 
+        </div> 
         <br>
         <hr>
         <div class="options">
@@ -113,7 +146,7 @@
             <button><a style="text-decoration: none;" href="http://www.chinahpa.org/">关于我们</a></button>
         </div>
         <script src="./granim.js-2.0.0/dist/granim.min.js"></script>
-        <script>
+        <!-- <script>
             var granimInstance = new Granim({
                element: '#granim-canvas',
                name: 'granim',
@@ -129,6 +162,6 @@
             });
 
             granimInstance.play()
-            </script>
+            </script> -->
     </body>
 </html>
