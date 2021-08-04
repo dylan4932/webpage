@@ -65,14 +65,6 @@ function addRare(){
     }
 }
 
-function zoom(ele) {
-    var left = 0
-    var width = 500
-    left -= 1
-    width += 2
-    ele.style.marginLeft = left+'px'
-    ele.style.width = width+'px'
-}
 
 function remind(){
     var evt = window.event || evt;
