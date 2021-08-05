@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <style>
-        body{
-            background-color: rgb(245, 242, 238);
+        .tool_bar{
+            margin-left: 85%;
+            position:fixed;
+            margin-top: -2%;
+            height: 110%;
+            width: 210px;
+            background-color: white;
+            box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3), 0 20px 50px 0 rgba(95, 69, 69, 0.19);
+        }
+        .user_img{
+            margin-top: 15px;
+            margin-left: 80px;
+        }
+
+        .user_info{
+            margin-left: 70px;
         }
         .user_input{
                 width: 500px;
                 height: 200px;
         }
+        
+        .module_list{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .case_list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .item{
+            margin-left: 48px;
+        }
+
+        .fa-angle-double-down{
+            margin-left: 100px;
+        }
+
+        .case_list{
+            margin-left: 30px;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .case{
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .case:hover{
+            background-color: whitesmoke;
+            transition: 500ms;
+        }
+
+        .case::after{
+            background-color: lightslategrey;
+        }
+
         .infoCon{
             padding:10px;
         }
@@ -19,18 +75,22 @@
             grid-gap: 50px;
         }
         .remind{
+            font-size: 14px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             border-radius: 10px;
-            width: 500px;
+            width: 400px;
             background-color: white;
             margin-bottom: 30px;
-            padding: 10px;
+            padding: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
             transition: transform .3s;
         }
 
         .remind:hover {
-            -ms-transform: scale(1.1);
-            -webkit-transform: scale(1.1); 
-            transform: scale(1.1);
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2); 
+            transform: scale(1.2);
         }
 
         #myProgress {
@@ -67,8 +127,66 @@
         <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="tool_bar">
+            <div>
+                <img class="user_img" src="icon/avatar.png"> 
+                <p class="user_info">用户名称</p>
+            </div>
+            <hr>
+            <div class="module_list">
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/tasks.png'>
+                    <a class="item_link">module 1</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;"" src='./icon/configure.png'>
+                    <a class="item_link">module 2</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/computer.png'>
+                    <a class="item_link">module 3</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/design.png'>
+                    <a class="item_link">module 4</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/hand.png'>
+                    <a class="item_link">module 5</a>
+                </div>
+            </div>
+            <label style="margin-left: 68px;">我的方案：</label>
+            <div class="case_list">
+                <div class="case">
+                    <img style="padding: 8.5px;" src="icon/add.png">
+                </div>
+                <div class="case">
+                    <img style="margin-left: 8.5px;" src="icon/case.png">
+                    1
+                </div>
+                <div class="case">
+                    <p style="color: rgb(26,39,60);">2</p>
+                </div>
+                <div class="case">
+                    <p style="color: rgb(26,39,60);">3</p>
+                </div>
+                <div class="case">
+                    <p style="color: rgb(26,39,60);">4</p>
+                </div>
+
+            </div>
+            <hr>
+            <div>
+                <button style="margin-left: 88px;">退出</button>
+            </div>
+
+        </div>
         <h1> 首选治疗案例分析</h1>
-        <hr>
+
         <div id="myProgress">
             <div id="myBar"></div>
         </div>

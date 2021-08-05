@@ -78,6 +78,11 @@ function remind(){
     }
     const remind_container = document.getElementById('remind_container')
     if(remind.childElementCount === 1){
+
+        const detail_container = document.createElement('p')
+        const detail_txt = document.createTextNode('这里显示具体的问题解释，和示例，大概在两到三行左右。如需要获取更多的解释或者提示，请点击更多解释来阅读文字或是视频。')
+        detail_container.append(detail_txt)
+
         const more_container = document.createElement('details')
         const more_btn = document.createElement('summary')
         const btn_text = document.createTextNode('更多解释')
@@ -86,6 +91,7 @@ function remind(){
         more_btn.append(btn_text)
         txt_container.append(more_txt)
 
+        remind.appendChild(detail_container)
         more_container.appendChild(more_btn)
         more_container.appendChild(txt_container)
         more_container.style='--duration: 1s'
@@ -99,6 +105,9 @@ function remind(){
         const info_con = document.getElementById(remind_child.id.slice(0,5)+'_container')
         if(remind_child.childElementCount !== 1 && remind_child != remind){
                 remind_child.removeChild(remind_child.lastElementChild)
+                if(remind_child.childElementCount !== 1){
+                  remind_child.removeChild(remind_child.lastElementChild)  
+                }
                 info_con.style.border = ''
                 info_con.style.backgroundColor = ''
             }
