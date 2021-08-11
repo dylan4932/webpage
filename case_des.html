@@ -6,7 +6,6 @@
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script>
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <div class="tool_bar">
@@ -166,7 +165,7 @@
                     <div id='info3_container' class='infoCon'>
                         <p>请输入 Y 变量（结局变量）的名称: <i id='info3' class="far fa-question-circle" onclick="remind()"></i> </p>
                         
-                        <span class="textarea" id='info3_input' role="textbox" onclick="remind()"> </span>
+                        <textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
                     </div>
                     <div id='info4_container' class='infoCon'>
                         <p> Y 变量的值类型: <i id='info4' class="far fa-question-circle" onclick="remind()"></i> </p>
@@ -227,25 +226,6 @@
             
         </div>
         <br>
-        <!-- <script>
-            $flag = -1;
-      
-            $("div.phase_container").click(
-                function () {
-                    alert('!!!!')
-                    $("div.popup").attr("style", "display:block");
-                },
-                function () {
-                    if ($flag == -1) {
-                        $("div.popup").attr("style", "display:none");
-                    }
-                }
-            );
-      
-            $("div.phase_container").hover(function () {
-                $flag = 1;
-            });
-        </script> -->
         <script src='case.js'></script>
     </body>
 </html>
