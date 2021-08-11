@@ -1,3 +1,13 @@
+$("input:checkbox").on('click', function() {
+    var $box = $(this);
+    if ($box.is(":checked")) {
+      var group = "input:checkbox[name='" + $box.attr("name") + "']";
+      $(group).prop("checked", false);
+      $box.prop("checked", true);
+    } else {
+      $box.prop("checked", false);
+    }
+  })
 
 function addSuccess() {
     const success = document.getElementById('info1_success')
@@ -8,7 +18,7 @@ function addSuccess() {
         const sTitle = document.createElement('p')
         const sText = document.createTextNode('治疗成功案例：')
         sTitle.append(sText)
-        const sInput = document.createElement('input')
+        const sInput = document.createElement('textarea')
         sInput.id = 'info1_input'
         sInput.setAttribute('onclick', 'remind()')
         sInput.className='user_input'
@@ -30,7 +40,7 @@ function addFail(){
         const fTitle = document.createElement('p')
         const fText = document.createTextNode('治疗失败案例：')
         fTitle.append(fText)
-        const fInput = document.createElement('input')
+        const fInput = document.createElement('textarea')
         fInput.id = 'info1_input'
         fInput.setAttribute('onclick', 'remind()')
         fInput.className='user_input'
@@ -52,7 +62,7 @@ function addRare(){
         const rText = document.createTextNode('罕见病例描述：')
         rTitle.append(rText)
 
-        const rInput = document.createElement('input')
+        const rInput = document.createElement('textarea')
         rInput.id = 'info2_input'
         rInput.setAttribute('onclick', 'remind()')
         rInput.className='user_input'
@@ -70,13 +80,22 @@ function remind(){
     var evt = window.event || evt;
 
     const remind = document.getElementById(evt.target.id.slice(0,5)+'_remind1')
-    if(evt.target.id.slice(6,10) === 'txt1'){
+	remind.className = "remind clicked"
+    // if(evt.target.id.slice(6,10) === 'txt1'){
         const info = document.getElementById(evt.target.id.slice(0,5)+'_container')
         info.style.borderBottom = '2px solid red'
-        info.style.borderRadius = '10px'
-        info.style.backgroundColor = '#FAE5E9'
-    }
+        const info_rect = info.getBoundingClientRect()
+    // }
+	console.log()
+    
+    const sheet = document.getElementById("sheet")
+    sheet.scrollTo(0, info_rect.top)
+
     const remind_container = document.getElementById('remind_container')
+    
+    remind_container.style.marginTop = info_rect.bottom+"px"
+    // console.log(remind_container.style.top)
+
     if(remind.childElementCount === 1){
 
         const detail_container = document.createElement('p')
@@ -91,12 +110,24 @@ function remind(){
         more_btn.append(btn_text)
         txt_container.append(more_txt)
 
+        const video_container = document.createElement("div")
+        const video = document.createElement("video")
+        video.setAttribute("height", "240")
+        video.setAttribute("width", "400")
+        video.setAttribute("controls", "")
+        // video.setAttribute("autoplay", "")
+        const source = document.createElement("source")
+        source.setAttribute("src", "./sample.mp4")
+        source.setAttribute("type", "video/mp4")
+        video.appendChild(source)
+        video_container.appendChild(video)
+
+        remind.appendChild(video_container)
         remind.appendChild(detail_container)
         more_container.appendChild(more_btn)
         more_container.appendChild(txt_container)
         more_container.style='--duration: 1s'
         remind.appendChild(more_container)
-
     }
 
     // remind_container.insertBefore(remind, remind_container.children[0])
@@ -105,8 +136,10 @@ function remind(){
         const info_con = document.getElementById(remind_child.id.slice(0,5)+'_container')
         if(remind_child.childElementCount !== 1 && remind_child != remind){
                 remind_child.removeChild(remind_child.lastElementChild)
+				remind_child.className = "remind"
                 if(remind_child.childElementCount !== 1){
-                  remind_child.removeChild(remind_child.lastElementChild)  
+                  remind_child.removeChild(remind_child.lastElementChild) 
+                  remind_child.removeChild(remind_child.lastElementChild) 
                 }
                 info_con.style.border = ''
                 info_con.style.backgroundColor = ''
@@ -167,5 +200,89 @@ function animateDetailsElement(element, duration = 600) {
 //   details.forEach((el,index) => animateDetailsElement(el, 1000 + index * 1000 ))
 // window.onscroll = function (e) { 
 //     const remindCon = document.getElementById('remind_container')
-//     remindCon.style.marginTop = window.pageYOffset+'px'; 
+//     remindCon.style.marginTop = window.+'px'; 
+// }
+
+function guide(){
+	var evt = window.event || evt;
+
+    const module = document.getElementById(evt.target.id.slice(0,7))
+    console.log(module)
+
+    const tip = document.getElementById(evt.target.id.slice(0,7)+"_tip")
+    tip.style.opacity = "0"
+    if(module.childElementCount === 2){
+        const phase_container = document.createElement("div")
+        phase_container.className = "phases"
+
+        const phase1 = document.createElement('div')
+        phase1.className="phase_container"
+        const phase1_txt = document.createTextNode('├─ Phase1')
+        phase1.append(phase1_txt)
+        const tip1 = document.createElement('span')
+        tip1.className="phasetip"
+        const tip1_txt = document.createTextNode('---这是关于phase1的提示---')
+        tip1.append(tip1_txt)
+        phase1.appendChild(tip1)
+
+        const phase2 = document.createElement('div')
+        phase2.className="phase_container"
+        const phase2_txt = document.createTextNode('└─ Phase2')
+        phase2.append(phase2_txt)
+        const tip2 = document.createElement('span')
+        tip2.className="phasetip"
+        const tip2_txt = document.createTextNode('---这是关于phase2的提示---')
+        tip2.append(tip2_txt)
+        phase2.appendChild(tip2)
+
+        const phase3 = document.createElement('div')
+        phase3.className="phase_container"
+        const phase3_txt = document.createTextNode('└─ Phase3')
+        phase3.append(phase3_txt)
+        const tip3 = document.createElement('span')
+        tip3.className="phasetip"
+        const tip3_txt = document.createTextNode('---这是关于phase3的提示---')
+        tip3.append(tip3_txt)
+        phase3.appendChild(tip3)
+
+        const phase4 = document.createElement('div')
+        phase4.className="phase_container"
+        const phase4_txt = document.createTextNode('└─ Phase4')
+        phase4.append(phase4_txt)
+        const tip4 = document.createElement('span')
+        tip4.className="phasetip"
+        const tip4_txt = document.createTextNode('---这是关于phase4的提示---')
+        tip4.append(tip4_txt)
+        phase4.appendChild(tip4)
+        // phase4.setAttribute("onmouseover",  "popup()")
+
+        phase_container.appendChild(phase1)
+        phase_container.appendChild(phase2)
+        phase_container.appendChild(phase3)
+        phase_container.appendChild(phase4)
+        module.appendChild(phase_container)
+    }
+    else if(module.childElementCount === 3){
+        module.removeChild(module.lastElementChild)
+        tip.style.opacity = ""
+    }
+
+    const modules_container = document.getElementById("modules_container")
+    for(var i = 0; i<modules_container.childElementCount;i++){
+        const element = modules_container.children[i] 
+        if(element.childElementCount !== 2 && element != module){
+                element.removeChild(element.lastElementChild)	
+            }
+    }
+}
+
+
+// function popup(){
+//     setTimeout(function(){pop()},100)
+// }
+
+// function pop(){
+//     const pop = document.getElementById("popup")
+//     console.log(pop)
+//     pop.style.display = "block"
 // }
