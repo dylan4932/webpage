@@ -9,71 +9,71 @@ $("input:checkbox").on('click', function() {
     }
   })
 
-function addSuccess() {
-    const success = document.getElementById('info1_success')
+// function addSuccess() {
+//     const success = document.getElementById('info1_success')
 
-    const des_container = document.getElementById('case_des')
-    if(success.checked){
-        const success_container = document.createElement('div')
-        const sTitle = document.createElement('p')
-        const sText = document.createTextNode('治疗成功案例：')
-        sTitle.append(sText)
-        const sInput = document.createElement('textarea')
-        sInput.id = 'info1_input'
-        sInput.setAttribute('onclick', 'remind()')
-        sInput.className='user_input'
+//     const des_container = document.getElementById('case_des')
+//     if(success.checked){
+//         const success_container = document.createElement('div')
+//         const sTitle = document.createElement('p')
+//         const sText = document.createTextNode('治疗成功案例：')
+//         sTitle.append(sText)
+//         const sInput = document.createElement('textarea')
+//         sInput.id = 'info1_input'
+//         sInput.setAttribute('onclick', 'remind()')
+//         sInput.className='user_input'
 
-        success_container.appendChild(sTitle)
-        success_container.appendChild(sInput)
-        des_container.appendChild(success_container)
-    }if(!success.checked){
-        des_container.removeChild(des_container.lastElementChild)
-    }
-}
+//         success_container.appendChild(sTitle)
+//         success_container.appendChild(sInput)
+//         des_container.appendChild(success_container)
+//     }if(!success.checked){
+//         des_container.removeChild(des_container.lastElementChild)
+//     }
+// }
 
-function addFail(){
-    const failure = document.getElementById('info1_fail')
+// function addFail(){
+//     const failure = document.getElementById('info1_fail')
 
-    const des_container = document.getElementById('case_des')
-    if(failure.checked){
-        const failure_container = document.createElement('div')
-        const fTitle = document.createElement('p')
-        const fText = document.createTextNode('治疗失败案例：')
-        fTitle.append(fText)
-        const fInput = document.createElement('textarea')
-        fInput.id = 'info1_input'
-        fInput.setAttribute('onclick', 'remind()')
-        fInput.className='user_input'
+//     const des_container = document.getElementById('case_des')
+//     if(failure.checked){
+//         const failure_container = document.createElement('div')
+//         const fTitle = document.createElement('p')
+//         const fText = document.createTextNode('治疗失败案例：')
+//         fTitle.append(fText)
+//         const fInput = document.createElement('textarea')
+//         fInput.id = 'info1_input'
+//         fInput.setAttribute('onclick', 'remind()')
+//         fInput.className='user_input'
 
-        failure_container.appendChild(fTitle)
-        failure_container.appendChild(fInput) 
-        des_container.appendChild(failure_container)
-    }if(!failure.checked){
-        des_container.removeChild(des_container.lastElementChild)
-    }
-}
-function addRare(){
-    const opt1 = document.getElementById('info2_success')
-    const rare_case = document.getElementById('rare_case')
+//         failure_container.appendChild(fTitle)
+//         failure_container.appendChild(fInput) 
+//         des_container.appendChild(failure_container)
+//     }if(!failure.checked){
+//         des_container.removeChild(des_container.lastElementChild)
+//     }
+// }
+// function addRare(){
+//     const opt1 = document.getElementById('info2_success')
+//     const rare_case = document.getElementById('rare_case')
 
-    if(opt1.checked){
-        const rare_container = document.createElement('div')
-        const rTitle = document.createElement('p')
-        const rText = document.createTextNode('罕见病例描述：')
-        rTitle.append(rText)
+//     if(opt1.checked){
+//         const rare_container = document.createElement('div')
+//         const rTitle = document.createElement('p')
+//         const rText = document.createTextNode('罕见病例描述：')
+//         rTitle.append(rText)
 
-        const rInput = document.createElement('textarea')
-        rInput.id = 'info2_input'
-        rInput.setAttribute('onclick', 'remind()')
-        rInput.className='user_input'
+//         const rInput = document.createElement('textarea')
+//         rInput.id = 'info2_input'
+//         rInput.setAttribute('onclick', 'remind()')
+//         rInput.className='user_input'
 
-        rare_container.appendChild(rTitle)
-        rare_container.appendChild(rInput)
-        rare_case.appendChild(rare_container)
-    }if(!opt1.checked){
-        rare_case.removeChild(rare_case.lastElementChild)
-    }
-}
+//         rare_container.appendChild(rTitle)
+//         rare_container.appendChild(rInput)
+//         rare_case.appendChild(rare_container)
+//     }if(!opt1.checked){
+//         rare_case.removeChild(rare_case.lastElementChild)
+//     }
+// }
 
 
 function remind(){

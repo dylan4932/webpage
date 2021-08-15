@@ -5,7 +5,9 @@
     <head>
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-        <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script> -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <title>Module1_phase1</title>
     </head>
     <body>
         <div class="tool_bar">
@@ -65,46 +67,63 @@
             <div>
                 <button style="margin-left: 88px;">退出</button>
             </div> -->
-
         </div>
         
         <!-- <div id="myProgress">
             <div id="myBar"></div>
         </div> -->
         <div class="guide">
-            <div class="guide_title">
-                <i class="far fa-folder-open"></i>
-                <label>CASE #00001</label>
+            <div class="title_content">
+                <div class="title">
+                    <i class='bx bx-folder-open' ></i>
+                    <span class="title_name">CASE #00001</span>
+                </div>               
             </div>
             
             <ul id="modules_container">
                 <li id="module1">
                     <div class="guide_btn" id="module1_guide" onclick="guide()"> 
-                        <i class="far fa-file"></i> module 1
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 1</span>
+                        </a>
                     </div>
                     <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
                 </li>
                 <li id="module2">
                     <div class="guide_btn" id="module2_guide" onclick="guide()"> 
-                        <i class="far fa-file"></i> module 2
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 2</span>
+                        </a>
+                         
                     </div>
                     <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
                 </li>
                 <li id="module3">
                     <div class="guide_btn" id="module3_guide" onclick="guide()"> 
-                        <i class="far fa-file"></i> module 3
+                        <a href="#" onclick="guide()">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 3</span>
+                        </a>
                     </div>
                     <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
                 </li>
                 <li id="module4">
                     <div class="guide_btn" id="module4_guide"> 
-                        <i class="far fa-file"></i> module 4
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 4</span>
+                        </a>
                     </div>
                     <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
                 </li>
                 <li id="module5">
                     <div class="guide_btn" id="module5_guide"> 
-                        <i class="far fa-file"></i> module 5 
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 5</span>
+                        </a> 
                     </div>
                     <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
                 </li>
@@ -112,19 +131,35 @@
             </ul>
             <ul style="list-style: none;">
                 <li>
-                    <div class="function_btn">输出：临床现状问题分析</div>
-                </li>
-                <li>
-                    <div class="function_btn">保存</div>
-                </li>
-                <li>
-                    <div class="function_btn" href="index.html">
-                        <i class="fas fa-angle-left"></i>
-                        <a style="text-decoration: none;" href="index.html">返回</a>
+                    <div class="function_btn">
+                        <a href="#">
+                            <span class="function_name">输出：临床现状问题分析</span>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class="function_btn"><a style="text-decoration: none;" href="xyz.html">下一步</a></div>
+                    <div class="function_btn">
+                        <a href="#">
+                            <i class='bx bx-save' ></i>
+                            <span class="function_name">保存</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="function_btn" href="index.html">
+                        <a href="index.html">
+                            <i class='bx bxs-left-arrow-circle' ></i>
+                            <span class="function_name">返回</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="function_btn">
+                        <a href="xyz.html">
+                            <i class='bx bxs-right-arrow-circle' ></i>
+                            <span class="function_name">下一步</span>                           
+                        </a>
+                    </div>
                 </li>
             </ul>
             
@@ -135,7 +170,7 @@
                     <strong> 首选治疗案例分析</strong>
                     <div id='info1_container' class='infoCon'>
                         <p id='info1_title' onclick="remind()">请输入 X 变量（暴露/干预措施）的名称：
-                            <i id='info1' class="far fa-question-circle" onclick="remind()"></i>
+                            <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         <!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
                         <input id='info1_fail' type="checkbox" onclick="addFail()">失败
@@ -144,7 +179,7 @@
                     </div>
                     <div id='info2_container' class='infoCon'> 
                         <p id='info2_title' onclick="remind()"> X 变量的值类型：
-                            <i id='info2' class="far fa-question-circle" onclick="remind()"></i>
+                            <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         <div>
                             <label>
@@ -163,13 +198,16 @@
                         <div id="rare_case"></div>  -->
                     </div>
                     <div id='info3_container' class='infoCon'>
-                        <p>请输入 Y 变量（结局变量）的名称: <i id='info3' class="far fa-question-circle" onclick="remind()"></i> </p>
+                        <p id="info3_title" onclick="remind()">请输入 Y 变量（结局变量）的名称: 
+                            <i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
                         
                         <textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
                     </div>
                     <div id='info4_container' class='infoCon'>
-                        <p> Y 变量的值类型: <i id='info4' class="far fa-question-circle" onclick="remind()"></i> </p>
-                        
+                        <p id="info4_title" onclick="remind()"> Y 变量的值类型: 
+                            <i id="info4" class='bx bx-help-circle' onclick="remind()"></i> 
+                        </p>
                         <div class="single_choice">
                             <label class="container">连续变量
                                 <input type="radio" checked="checked" name="radio">
@@ -194,30 +232,32 @@
                         </div>
                     </div>
                     <div id='info5_container' class='infoCon'>
-                        <p id="info5_question">预测本研究中的 Y （结局）发生率: <i id='info5' class="far fa-question-circle" onclick="remind()"></i></p>
+                        <p id="info5_title" onclick="remind()">预测本研究中的 Y （结局）发生率: 
+                            <i id="info5" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
                          
                         <textarea class="user_input" id='info5_input' onclick="remind()" style="height: 20px; width: 50px"></textarea>
                     </div>
                 </div>
                 <div class="grid_child remind_container" id='remind_container'>
                     <div id='info1_remind1' class='remind' onclick="remind()">
-                        <p id='info1_txt1'><span class="dot"></span>  提示1——这里是提示1的简要说明和相关解释</p>
+                        <p id='info1_txt1'><span class="dot" style="background: red;"></span>  提示1——这里是提示1的简要说明和相关解释</p>
                     </div>
     
                     <div id='info2_remind1' class='remind' onclick="remind()">
                         
-                        <p id='info2_txt1'><span class="dot"></span>  提示2——这里是提示2的简要说明和相关解释</p>
+                        <p id='info2_txt1'><span class="dot" style="background: red;"></span>  提示2——这里是提示2的简要说明和相关解释</p>
                     </div>
     
                     <div id='info3_remind1' class='remind' onclick="remind()">
-                        <p id='info3_txt1'><span class="dot"></span>  提示3——这里是提示3的简要说明和相关解释</p>
+                        <p id='info3_txt1'><span class="dot" style="background: red;"></span>  提示3——这里是提示3的简要说明和相关解释</p>
                     </div>
     
                     <div id='info4_remind1' class='remind' onclick="remind()">
-                        <p id='info4_txt1'><span class="dot"></span>  提示4——这里是提示4的简要说明和相关解释</p>
+                        <p id='info4_txt1'><span class="dot" style="background: red;"></span>  提示4——这里是提示4的简要说明和相关解释</p>
                     </div>
                     <div id='info5_remind1' class='remind' onclick="remind()">
-                        <p id='info5_txt1'><span class="dot"></span>  提示5——这里是提示5的简要说明和相关解释</p>
+                        <p id='info5_txt1'><span class="dot" style="background: red;"></span>  提示5——这里是提示5的简要说明和相关解释</p>
                     </div>
                 </div>
 
