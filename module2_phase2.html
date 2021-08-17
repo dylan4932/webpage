@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./module2_phase2.css">
+    <title>Module2-phase2</title>
+</head>
+<body>
+    <div class="tool_bar">
+        <img src="./pic/toolbar.png">
+    </div>
+
+    <div class="guide">
+        <div class="title_content">
+            <div class="title">
+                <i class='bx bx-folder-open' ></i>
+                <span class="title_name">CASE #00001</span>
+            </div>   
+        </div>
+        
+        <ul id="modules_container">
+            <li id="module1">
+                <div class="guide_btn" id="module1_guide" onclick="guide()"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 1</span>
+                    </a>
+                </div>
+                <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
+            </li>
+            <li id="module2">
+                <div class="guide_btn" id="module2_guide" onclick="guide()"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 2</span>
+                    </a>
+                     
+                </div>
+                <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
+            </li>
+            <li id="module3">
+                <div class="guide_btn" id="module3_guide" onclick="guide()"> 
+                    <a href="#" onclick="guide()">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 3</span>
+                    </a>
+                </div>
+                <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
+            </li>
+            <li id="module4">
+                <div class="guide_btn" id="module4_guide"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 4</span>
+                    </a>
+                </div>
+                <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
+            </li>
+            <li id="module5">
+                <div class="guide_btn" id="module5_guide"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 5</span>
+                    </a> 
+                </div>
+                <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
+            </li>   
+        </ul>
+        <ul>
+            <li>
+                <div class="function_btn">
+                    <a href="#">
+                        <span class="function_name">输出：临床现状问题分析</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="function_btn">
+                    <a href="#">
+                        <i class='bx bx-save' ></i>
+                        <span class="function_name">保存</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="function_btn" href="index.html">
+                    <a href="index.html">
+                        <i class='bx bxs-left-arrow-circle' ></i>
+                        <span class="function_name">返回</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="function_btn">
+                    <a href="xyz.html">
+                        <i class='bx bxs-right-arrow-circle' ></i>
+                        <span class="function_name">下一步</span>                           
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content">
+        <div class="sheet">
+            <div class="information_container">
+                <div class="info1_container">
+                    <div class="info_title" style="border-bottom: 5px solid rgb(230, 206, 177);">研究目的</div>
+                    <div class="info1_content">
+                        <div class="single_choice">
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                有效检验
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                非劣效性检验
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                等效性检验
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                差异性检验
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                预测
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                对均数、率的参数估计
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info2_container">
+                    <div class="info_title" style="border-bottom: 5px solid rgb(176, 198, 199);">研究类型</div>
+                    <div class="info1_content">
+                        <div class="single_choice">
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                RCT
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                RWS队列研究（包括 巢式设计）
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                RWS 病例对照研究 （包括 巢式设计）
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                横断面研究
+                            </div>
+                            <div class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                诊断试验
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="remind_container" id="remind_container">
+                <div id='info1_remind1' class='remind' onclick="remind()">
+                    <p id='info1_txt1'><span class="dot" style="background: red;"></span>  提示1——这里是提示1的简要说明和相关解释</p>
+                </div>
+                <div id='info2_remind1' class='remind' onclick="remind()">
+                    <p id='info2_txt1'><span class="dot" style="background: red;"></span>  提示2——这里是提示2的简要说明和相关解释</p>
+                </div>
+                <div id='info3_remind1' class='remind' onclick="remind()">
+                    <p id='info3_txt1'><span class="dot" style="background: red;"></span>  提示3——这里是提示3的简要说明和相关解释</p>
+                </div>
+
+                <div id='info4_remind1' class='remind' onclick="remind()">
+                    <p id='info4_txt1'><span class="dot" style="background: red;"></span>  提示4——这里是提示4的简要说明和相关解释</p>
+                </div>
+                <div id='info5_remind1' class='remind' onclick="remind()">
+                    <p id='info5_txt1'><span class="dot" style="background: red;"></span>  提示5——这里是提示5的简要说明和相关解释</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./guide.js"></script>
+    <script src="./remind.js"></script>
+</body>
+</html>

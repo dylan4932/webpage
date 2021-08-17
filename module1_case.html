@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./case_des.css">
+    <link rel="stylesheet" href="./module1_case.css">
     <head>
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
@@ -181,8 +181,13 @@
                         <p id='info2_title' onclick="remind()"> X 变量的值类型：
                             <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
-                        <div>
-                            <label>
+                        <div class="test_opt">
+                            <button class="opt" onclick="clicked()">连续变量</button>
+                            <button class="opt" onclick="clicked()">记次变量</button>
+                            <button class="opt" onclick="clicked()">二分类变量</button>
+                            <button class="opt" onclick="clicked()">名义变量</button>
+                            <button class="opt" onclick="clicked()">有许多分类</button>
+                            <!-- <label>
                               <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />连续变量</label>
                             <label>
                               <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />记次变量</label>
@@ -191,7 +196,7 @@
                             <label>
                               <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />名义变量</label>
                             <label>
-                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />有许多分类变量</label>
+                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />有许多分类变量</label> -->
                         </div>
                         <!-- <input id="info2_success" type='checkbox' onclick="addRare()">是
                         <input id="info2_fail" type="checkbox">否
@@ -244,8 +249,7 @@
                         <p id='info1_txt1'><span class="dot" style="background: red;"></span>  提示1——这里是提示1的简要说明和相关解释</p>
                     </div>
     
-                    <div id='info2_remind1' class='remind' onclick="remind()">
-                        
+                    <div id='info2_remind1' class='remind' onclick="remind()"> 
                         <p id='info2_txt1'><span class="dot" style="background: red;"></span>  提示2——这里是提示2的简要说明和相关解释</p>
                     </div>
     
@@ -267,5 +271,6 @@
         </div>
         <br>
         <script src='case.js'></script>
+        <script src="./guide.js"></script>
     </body>
 </html>

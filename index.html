@@ -1,163 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <style>
-        .grid_header{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 50px;
-        }
-        .header_pic{
-            height: 60px;
-            margin-left: 17%;
-            margin-top:25px;
-            margin-bottom: 15px;
-        }
-        .user_info{
-            background-color:transparent;
-            text-align: center;
-            font-size: large;
-            margin-right: 8%;
-            color:white;
-            float: right;
-        }
-        .video_iframe{
-            height: 338px;
-        }
-        nav ul{
-	        margin-left: 20%;
-            padding-top: 30px;
-	        list-style: none;    
-        }
-
-        nav a{
-	        text-decoration: none;
-	        color:rgb(26,39,60);
-            /* font-family: cursive; */
-        }
-
-        nav a:hover{
-	        color: rgb(75, 122, 138);
-        }
-
-        nav a::before{
-	        content: "";
-	        height: 3px;
-	        display: block;
-	        width: 0%;
-	        background-color: rgb(75, 122, 138);
-	        margin-bottom: 1px;
-	        transition: all ease-in-out 300ms;
-        }
-        nav li{
-	        font-size: 20px;
-	        display: inline-block;
-	        position: relative;
-	        margin-right: 20px;
-        }
-
-        nav a:hover::before{
-        	width: 100%;
-        }
-        .banner{
-            background-color: rgb(26,39,60);
-            width: 100%;
-        }
-        .fa-home{
-            color: white;
-            padding: 10px;
-            margin-left: 8%;
-        }
-
-        .subbanner_content{
-            margin-left: 60px;
-        }
-
-        .subbanner_text{
-            color:white;
-            margin-left: 9%;
-            padding-top: 80px;
-            font-size: 30px;
-        }
-        .subbanner_subtext{
-            color: white;
-            margin-left: 9%;
-            margin-top: 20px;
-            font-size: 20px;
-        }
-        .sub_banner{
-            background-color: rgb(75, 122, 138); 
-            height: 260px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .subbanner_img{
-            height: 260px;
-            margin-left: 120px;
-        }
-       
-        
-        .grid-container{
-            margin-top: 50px;
-            margin-bottom: 30px;
-            margin-left: 65px;
-            display: grid;
-            grid-template-columns: 1fr 1fr; 
-        }
-
-        .left{
-            padding-left: 10%;
-        }
-
-        .right{
-            width: 80%;
-            margin-left: -40px;
-            height: 338px;
-            padding: 25px;
-            padding-top: 10%;
-            background-color: rgb(231, 243, 243);
-        }
-        p{
-            padding-left: 30px;
-            color: rgb(26,39,60);
-            font-weight: bold;
-        }
-        .module_entree{
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin-bottom: 20px;
-        }
-        .item{
-            padding: 10px;
-            margin-top: 30px;
-            margin-left: 120px;
-            padding-left: 40px;
-            width: 200px;
-            float: left;
-        }
-        .item_link{
-            color: rgb(26,39,60);
-            font-weight: bold;
-        }
-
-        .options{
-            position:absolute;
-            left: 45%;
-            margin-left: -50px;
-        }
-        
-    </style>
     <head>
         <meta charset="utf-8">
-        <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script>
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./index.css">
         <title> 首页 </title>
     </head>
     <body style="font-family: cursive;">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <div class="grid_header">
             
-            <div>
-                <img class='header_pic' src='http://www.chinahpa.org/templets/custom/img/logo.png'> 
+            <div class="logo_content">
+                <img class='header_pic' src='./pic/logo.png'> 
             </div>
             <div>
                 <div class='user_info'>
@@ -165,9 +19,9 @@
                 </div>
                 <nav>
                     <ul>
-                        <li>
+                        <!-- <li>
                             <a href='index.html'>首页</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="case.html">Case</a>
                         </li>
@@ -177,13 +31,19 @@
                         <li>
                             <a href="search_conclude.html">检索归纳</a>
                         </li>
+                        <li>
+                            <a href="edit.html">导引编辑</a>
+                        </li>
+                        <!-- <li>
+                            <a href="./module2_phase2.html">Module2_phase2</a>
+                        </li> -->
                     </ul>       
                 </nav>
             </div>
         </div>
          
         <div class='banner'>
-            <i class="fas fa-home"></i>
+            <i class='bx bx-home'></i>
         </div>
         <div class='sub_banner'>
             <div class='subbanner_content'>
@@ -213,36 +73,53 @@
         <br>
         <div class="module_entree">
             <div class="item">
-                <a class="item_link" href="./case_des.html">
+                <a href="./module1_case.html">
                     <img src='./icon/tasks.png'>
-                    module 1
+                    <div class="item_link">Module 1</div>
                 </a>
             </div>
 
             <div class="item">
-                <img src='./icon/configure.png'>
-                <a class="item_link">module 2</a>
+                
+                <a href="./module2_phase2.html">
+                    <img src='./icon/configure.png'>
+                    <div class="item_link">Module 2</div>
+                </a>
             </div>
 
             <div class="item">
-                <img src='./icon/computer.png'>
-                <a class="item_link">module 3</a>
+                <a href="#">
+                    <img src='./icon/computer.png'>
+                    <div class="item_link">Module 3</div>
+                </a>
             </div>
 
             <div class="item">
-                <img src='./icon/design.png'>
-                <a class="item_link">module 4</a>
+                
+                <a class="item_link">
+                    <img src='./icon/design.png'>
+                    <div class="item_link">Module 4</div>
+                </a>
             </div>
 
             <div class="item">
-                <img src='./icon/hand.png'>
-                <a class="item_link">module 5</a>
+                <a href="#">
+                    <img src='./icon/hand.png'>
+                    <div class="item_link">Module 5</div>
+                </a>
             </div>
 
             <div class="item">
-                <img src='./icon/information.png'>
-                <a class="item_link">关于临床科研辅助系统</a>
+                
+                <a href="#">
+                    <img src='./icon/information.png'>
+                    <div class="item_link">关于临床科研辅助系统</div>
+                    
+                </a>
             </div>
+        </div>
+        <div class="footer">
+            
         </div>
         <!-- <hr>
         <div class="options">

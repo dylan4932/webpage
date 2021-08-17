@@ -105,10 +105,10 @@
     </div>
     <div class="home_content">
         <div class="search_container">
-            <div class="filter_container">
+            <div class="filter_container" id="filter_container">
                 <div class="filter_content">
                     <div class="filter_title">选择搜索维度</div>
-                    <select id="demension">
+                    <select id="demension1">
                         <option value="疾病">疾病</option>
                         <option value="人群">人群</option>
                         <option value="X （暴露/干预措施）">X （暴露/干预措施）</option>
@@ -117,23 +117,23 @@
                 </div>
                 <div class="key_content">
                     <div class="key_title">输入关键词</div>
-                    <input type="text" class="key_input">
+                    <input type="text" class="key_input" id="key_input1">
                 </div>
                 <div class="filter_btn_content">
-                    <button class="filter_btn">添加</button>
+                    <button class="filter_btn" onclick="add()">添加</button>
                     <div class="filter_option">
-                        <button class="options">AND</button>
-                        <button class="options">OR</button>
-                        <button class="options">NO</button>
+                        <button class="options" onclick="addRow()" value="AND">AND</button>
+                        <button class="options" onclick="addRow()" value="OR">OR</button>
+                        <button class="options" onclick="addRow()" value="NO">NO</button>
                     </div>
                 </div>
             </div>
             <div class="search">
                 <div class="label_content">
-                    <div class="search_label"></div>
+                    <div class="search_label" id="search_content"></div>
                 </div>
                 <div class="search_btn_content">
-                    <button class="search_btn">搜索</button>
+                    <button class="search_btn" onclick="search()">搜索</button>
                 </div>
             </div>
         </div>
@@ -219,6 +219,7 @@
             </div>
         </div>
     </div>
+    <script src="./guide.js"></script>
     <script src="./search.js"></script>
 </body>
 </html>
