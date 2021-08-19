@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <style>
-        .idea{
-            width: 300px;
-            border: 2px solid #5DADE2;
-            padding: 30px;
-            margin: 20px;
-        }
-        .user_info{
-            width: auto;
-            border: 1px solid grey;
-            background-color:#5DADE2;
-            text-align: center;
-            padding: 15px;
-            font-size: large;
-            color:white;
-            position:fixed;
-            margin-left: 88%;
-        }
-        .options{
-            position:absolute;
-            left: 45%;
-            margin-left: -50px;
-        }
-        .question{
-            position: absolute;
-            left: 85%;
-            margin-left: -50px;
-        }
-    </style>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./login.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <title>注册/登录</title>
     </head>
     <body>
-        <h1>登录</h1>
-        <hr>
-        <h3>账号: </h2><input id='user_acc'>
-        <h3>密码：</h2><input id='user_passwd' type="password">
-        <br>
-        <hr>
-        <div class="options">
-            <button onclick="login()">登陆</button>
-            |
-            <button><a style="text-decoration: none;" href="index.html">取消</a></button>
-            <br>
+        <div class="right">
+            <a href="./index.html">
+                <i class='bx bx-x'></i>
+            </a>
+            
         </div>
-        <div class="question">
-            <button><a style="text-decoration: none;" href="register.html">第一次登陆/注册</a></button> ｜ <button>忘记密码</button>
-        </div>
-        <script src='login.js'></script>  
+        <div class="center">
+            <h1>登录</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required id="user_acc"> 
+                    <span></span>
+                    <label>用户名</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required id="user_psswd">
+                    <span></span>
+                    <label>密码</label>
+                </div>
+                <div class="pass">忘记密码?</div>
+                <input type="submit" value="登录" onclick="login()">
+                <div class="signup_link">
+                    还未注册? 
+                    <a href="./register.html">注册</a>
+                </div>
+            </form>
+        </div> 
+        <script src="./login.js"></script>
     </body>
 </html>

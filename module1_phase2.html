@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./search.css">
+    <link rel="stylesheet" href="./search_page.css">
     <title>搜索</title>
 </head>
 <body>
@@ -87,7 +87,7 @@
             </li>
             <li>
                 <div class="function_btn" href="index.html">
-                    <a href="index.html">
+                    <a href="javascript:history.back()">
                         <i class='bx bxs-left-arrow-circle' ></i>
                         <span class="function_name">返回</span>
                     </a>
@@ -124,12 +124,12 @@
                     <div class="filter_option">
                         <button class="options" onclick="addRow()" value="AND">AND</button>
                         <button class="options" onclick="addRow()" value="OR">OR</button>
-                        <button class="options" onclick="addRow()" value="NO">NO</button>
+                        <button class="options" onclick="addNo()" value="NO">NO</button>
                     </div>
                 </div>
             </div>
             <div class="search">
-                <div class="label_content">
+                <div class="label_content" id='label_content'>
                     <div class="search_label" id="search_content"></div>
                 </div>
                 <div class="search_btn_content">
@@ -146,9 +146,10 @@
                         Item1
                     </div>
                     <div class="more_content">
-                        <a href="#">
-                            <div class="more_btn">Learn more</div>
-                        </a>
+                        <details>
+                            <summary>更多解释</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -159,9 +160,10 @@
                         Report 1
                     </div>
                     <div class="more_content">
-                        <a href="#">
-                            <div class="more_btn">Learn more</div>
-                        </a>
+                        <details>
+                            <summary>更多解释</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -172,9 +174,10 @@
                         Item 2
                     </div>
                     <div class="more_content">
-                        <a href="#">
-                            <div class="more_btn">Learn more</div>
-                        </a>
+                        <details>
+                            <summary>更多解释</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -185,9 +188,10 @@
                         Item 3
                     </div>
                     <div class="more_content">
-                        <a href="#">
-                            <div class="more_btn">Learn more</div>
-                        </a>
+                        <details>
+                            <summary>更多解释</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -198,9 +202,10 @@
                         Item 4
                     </div>
                     <div class="more_content">
-                        <a href="#">
-                            <div class="more_btn">Learn more</div>
-                        </a>
+                        <details>
+                            <summary>更多解释</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -211,9 +216,10 @@
                         Item 5
                     </div>
                     <div class="more_content">
-                        <a href="#">
-                            <div class="more_btn">Learn more</div>
-                        </a>
+                        <details>
+                            <summary>更多解释</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                        </details>
                     </div>
                 </div>
             </div>

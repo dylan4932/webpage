@@ -1,3 +1,6 @@
+*{
+    font-family: cursive;
+}
 .tool_bar{
     right:0;
     top: 0;
@@ -261,8 +264,27 @@ ul li .function_btn:hover{
 
 .output_container .output_content{
         box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
-        padding: 10px;
-    
+        padding: 10px;    
+}
+
+.output_content textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    border: none;
+    font-size: 14px;
+}
+
+.output_content .output_savebtn{
+
+    border: none;
+    background: rgb(230, 206, 177);
+    border-radius: 5px;
+    margin-left: 80%;
+}
+
+.output_content .output_savebtn:hover{
+    background: red;
 }
 
 .standard_container .standard_content{
@@ -271,12 +293,24 @@ ul li .function_btn:hover{
     margin-top: 20px;
 }
 
-.standard_content .more_content{
-    
-    display: block;
-    right: 0;
-    bottom: 0;
+
+.more_content details{
+    padding: 2px;
+    height: auto;
+    overflow: hidden;
+    transition: max-height ease-in-out;
+    transition-duration: var(--duration, 0.1s);
+}
+
+details summary {
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+details summary p{
     font-size: 14px;
+    padding: 2px;
 }
 
 .dot {

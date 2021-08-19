@@ -96,7 +96,6 @@ function remind(){
         info.style.borderBottom = '2px solid red'
         const info_rect = info.getBoundingClientRect()
     // }
-	console.log()
     
     const sheet = document.getElementById("sheet")
     // sheet.scrollTo(0, info_rect.top)

@@ -17,6 +17,16 @@
     color:white;
     float: right;
 }
+
+.user_info a{
+    text-decoration: none;
+    color: #adadad;
+}
+
+.user_info a:hover{
+    text-decoration: underline;
+}
+
 .video_iframe{
     height: 338px;
 }

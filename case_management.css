@@ -193,7 +193,7 @@ body{
     top: 50px;
     /* border-radius: 12px; */
     outline: none;
-    padding-left: 10px;
+    padding-left: 15px;
     border: none;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
 }
@@ -203,8 +203,8 @@ body{
     z-index: 99;
     font-size: 22px;
     right: 8px;
-    top: 53px;
-    color: #000;
+    top: 54px;
+    color: black;
 }
 
 .case_content{

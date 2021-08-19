@@ -1,8 +1,30 @@
+function addNo(){
+    var evt = window.event || evt;
+    const checked = document.getElementById('opt_checked')
+    if(checked){
+        checked.className = "options"
+        checked.id = ""
+    }
+    evt.target.id = "opt_checked"
+    evt.target.className = "options checked"
+
+    const container = document.getElementById('filter_container')
+    if(container.childElementCount!== 3){
+        container.removeChild(container.lastElementChild)
+        container.removeChild(container.lastElementChild)
+    }
+}
+
 function addRow(){
     var evt = window.event || evt;
 
-    evt.target.id = "checked"
-    // btn.className = "options checked"
+    const checked = document.getElementById('opt_checked')
+    if(checked){
+        checked.className = "options"
+        checked.id = ""
+    }
+    evt.target.id = "opt_checked"
+    evt.target.className = "options checked"
 
     const container = document.getElementById('filter_container')
     console.log(container.childElementCount)
@@ -74,22 +96,43 @@ function add(){
     var output2 = ""
     const search_centent = document.getElementById('search_content')
 
+    const option = document.getElementById('opt_checked')
+
     if(container.childElementCount > 3){
         const select2 = document.getElementById('demension2')
         const value2 = select2.options[select2.selectedIndex].value;
 
         const input2 = document.getElementById('key_input2')
         const key2 = input2.value
-        output2 = key2 +'(' + value2 + ")" 
+        output2 = key2 +' (' + value2 + ")" 
 
-        const option = document.getElementById('checked')
+        
         const search_txt = document.createTextNode(output + " " + option.value+ " " + output2+"; ")
         search_centent.append(search_txt)
 
-        option.id = ""
+    } else if (option && option.value === "NO"){
+        const search_txt = document.createTextNode("NO " + output + "; ")
+        search_centent.append(search_txt)
     } else{
         
         const search_txt = document.createTextNode(output)
         search_centent.append(search_txt)
     }
+
+    const label_container = document.getElementById('label_content')
+
+    const x_btn = document.createElement("i")
+    x_btn.className = 'bx bx-x'
+    x_btn.setAttribute('onclick', 'clear()')
+
+    label_container.appendChild(x_btn)
+}
+
+function clear() {
+    const container = document.getElementById('label_content')
+    console.log(container)
+    alert('111')
+    // container.removeChild(container.lastElementChild)
+    // const content = document.getElementById('search_content')
+    // content.removeChild(content.lastElementChild)
 }

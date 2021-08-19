@@ -1,3 +1,23 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FZZhongDengXian-Z07S';
+    font-weight: 110;
+     font-size: 12px;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+} */
+
+*{
+    font-family: cursive;
+}
+
 .tool_bar{
     right:0;
     top: 0;
@@ -214,46 +234,164 @@ ul li .function_btn:hover{
     z-index: 1;
 }
 
-.home_content .conclude{
+.filter_container{
+    /* margin-top: 10px;
+    margin-bottom: 30px; */
+}
+
+.filter_content select{
+
+    border: none;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    height: 30px;
+    width: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.key_content input{
+    border: none;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    height: 30px;
+    width: 90%;
+    padding-left: 10px;
+}
+
+.filter_container .filter_btn_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
-.conclude .conclude_content{
-    padding-left: 15%;
+.filter_btn_content .filter_btn{
+    background: rgb(230, 206, 177);
+    width: 60px;
+    height: 30px;
+    margin: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
 }
 
-.conclude .conclude_title{
-    width: 88%;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+.filter_btn_content .filter_option{
+    width: 50px;
+    align-content: center;
 }
 
-.conclude_content .output_container{
-    font-size: 14px;
-    width: 88%;
-}
-
-.conclude_content .note_container{
-    font-size: 14px;
-    width: 88%;
-}
-
-.output_container .output_title{
-    padding: 10px;
-}
-
-.output_container .output_content{
+.filter_option .options{
+    border: none;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
-    padding: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    margin: 5px;
+    margin-top: -30px;
 }
 
-.note_container .note_content{
+.checked{
+    background: rgb(230, 206, 177);
+    transition: all 0.4s ease;
+}
+
+.search_container{
+    margin-left: 60px;
+    padding-left: 30px;
+    border-left: 5px solid rgb(230, 206, 177);
+    margin-bottom: 50px;
+}
+
+.search_container .filter_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 30px;
+}
+
+.search_container .search{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 30px;
+    column-gap: 30px;
+   
+}
+
+.search .label_content{
+    position: absolute;
+    width: 66%;
+    height: 35px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
-    padding: 10px;
-    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 1;
+    font-size: 14px;
+}
+
+.label_content  .bx-x{
+    position: absolute;
+    z-index: 99;
+    font-size: 22px;
+    right: 8px;
+    top: 5px;
+    color: black;
+    transition: .5s;
+}
+
+.label_content  .bx-x:hover{
+    transform: rotate(90deg);    
+}
+
+.search_btn_content .search_btn{
+    background: rgb(230, 206, 177);
+    margin-left: 720px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.result_container{
+    border-left: 5px solid rgb(176, 198, 199);
+    margin: 50px 60px;
+    padding-left: 30px;
+}
+
+.result_container .result_content{
+
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+}
+
+.result_content .result{
+    align-items: center;
+    padding: 5px;
+    align-content: center;
+    min-height: 50px;
+}
+
+
+.result .result_title{
+    left: 0;
+    top: 0;
+    font-size: 16px;
+}
+
+
+.more_content details{
+    padding: 2px;
+    height: auto;
+    overflow: hidden;
+    transition: max-height ease-in-out;
+    transition-duration: var(--duration, 0.1s);
+}
+
+details summary {
+    font-size: 12px;
+    cursor: pointer;
+    float:right; 
+}
+
+details summary p{
+    font-size: 14px;
+    padding: 2px;
 }
 
 .dot {

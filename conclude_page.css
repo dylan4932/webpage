@@ -1,3 +1,7 @@
+*{
+    font-family: cursive;
+}
+
 .tool_bar{
     right:0;
     top: 0;
@@ -214,80 +218,47 @@ ul li .function_btn:hover{
     z-index: 1;
 }
 
-.home_content .sheet{
-    margin-left: 30px;
+.home_content .conclude{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+
 }
 
-.sheet .information_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+.conclude .conclude_content{
+    padding-left: 15%;
 }
 
-.information_container .info1_container{
-    width: 200px;
-}
-
-.information_container .info2_container{
-    width: 280px;
-    
-}
-
-.info_title{
-    width: 100%;
+.conclude .conclude_title{
+    width: 88%;
     text-align: center;
+    margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
-.single_choice{
-    list-style: none;
-    margin-top: 20px;
+.conclude_content .output_container{
     font-size: 14px;
+    width: 88%;
 }
 
-.remind_container{
+.conclude_content .note_container{
     margin-top: 30px;
+    font-size: 14px;
+    width: 88%;
 }
 
-.remind{
-    font-size: 13px;
+.output_container .output_title{
+    padding: 10px;
+}
+
+.output_container .output_content{
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
-    border-radius: 3px;
-    width: 330px;
-    background-color: white;
-    margin-bottom: 10px;
-    padding: 1px 1px;
-    padding-left: 10px;
-    padding-right: 10px;   
+    padding: 10px;
 }
 
-.clicked{
-    animation: .3s linear flip 1;
-}
-
-@keyframes flip{
-    from{
-        transform: scaleY(0);
-    }to{
-        transform: scaleY(1);
-    }
-}
-
-.unclicked{
-    animation: .5s linear wrap 1;
-}
-
-@keyframes wrap{
-    0%{
-        transform: scaleY(0);
-    } 50% {
-        tansform: scaleY(0.5)
-    } 100%{
-        transform: scale(1);
-    }
+.note_container .note_content{
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .dot {
@@ -296,4 +267,3 @@ ul li .function_btn:hover{
     border-radius: 50%;
     display: inline-block;
 }
-
