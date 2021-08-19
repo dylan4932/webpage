@@ -19,6 +19,20 @@
     margin-left: 70px;
 }
 
+.infoCon .save_btn{
+    margin-top: 10px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    
+    background: rgb(176, 198, 199);
+    color: white;
+}
+
+.infoCon .save_btn:hover{
+    background: rgb(230, 206, 177);
+}
+
 .textarea{
     display: block;
     width: 100%;
@@ -29,6 +43,7 @@
     border-radius: 3px;
     box-shadow:-4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
 }
+
 .user_input{
     padding: 5px 10px 5px 10px;
     resize: none;
@@ -45,6 +60,8 @@
     min-height: 40px;
     line-height: 20px
 }
+
+
 
 .module_list{
     margin-top: 15px;

@@ -278,13 +278,14 @@ ul li .function_btn:hover{
 .output_content .output_savebtn{
 
     border: none;
-    background: rgb(230, 206, 177);
+    background: rgb(176, 198, 199);
+    color: white;
     border-radius: 5px;
     margin-left: 80%;
 }
 
 .output_content .output_savebtn:hover{
-    background: red;
+    background: rgb(230, 206, 177);
 }
 
 .standard_container .standard_content{

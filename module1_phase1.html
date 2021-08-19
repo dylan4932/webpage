@@ -101,7 +101,7 @@
                     <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
                 </li>
                 <li id="module3">
-                    <div class="guide_btn" id="module3_guide" onclick="guide()"> 
+                    <div class="guide_btn" id="module3_guide"> 
                         <a href="#" onclick="guide()">
                             <i class='bx bx-file-blank' ></i>
                             <span class="module_name">Module 3</span>
@@ -130,13 +130,13 @@
                 
             </ul>
             <ul style="list-style: none;">
-                <li>
+                <!-- <li>
                     <div class="function_btn">
                         <a href="#">
                             <span class="function_name">输出：临床现状问题分析</span>
                         </a>
                     </div>
-                </li>
+                </li> -->
                 <li>
                     <div class="function_btn">
                         <a href="#">
@@ -155,7 +155,7 @@
                 </li>
                 <li>
                     <div class="function_btn">
-                        <a href="xyz.html">
+                        <a href="module1_phase2.html">
                             <i class='bx bxs-right-arrow-circle' ></i>
                             <span class="function_name">下一步</span>                           
                         </a>
@@ -176,6 +176,7 @@
                         <input id='info1_fail' type="checkbox" onclick="addFail()">失败
                         <div id="case_des"></div> -->
                         <textarea class="user_input" id='info1_input' onclick="remind()"></textarea>
+                        <button class="save_btn">保存</button>
                     </div>
                     <div id='info2_container' class='infoCon'> 
                         <p id='info2_title' onclick="remind()"> X 变量的值类型：
@@ -208,6 +209,7 @@
                         </p>
                         
                         <textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
+                        <button class="save_btn">保存</button>
                     </div>
                     <div id='info4_container' class='infoCon'>
                         <p id="info4_title" onclick="remind()"> Y 变量的值类型: 
@@ -242,6 +244,7 @@
                         </p>
                          
                         <textarea class="user_input" id='info5_input' onclick="remind()" style="height: 20px; width: 50px"></textarea>
+                        <button class="save_btn">保存</button>
                     </div>
                 </div>
                 <div class="grid_child remind_container" id='remind_container'>
