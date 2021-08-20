@@ -90,7 +90,13 @@ function add(){
     const value1 = select1.options[select1.selectedIndex].value;
 
     const input1 = document.getElementById('key_input1')
+    input1.style.border = ""
     const key1 = input1.value
+
+    if(key1 === ""){
+        input1.style.border = '2px solid red'
+        return;
+    }
 
     const output = key1 + "(" + value1+")";
     var output2 = ""
@@ -106,6 +112,10 @@ function add(){
         const key2 = input2.value
         output2 = key2 +' (' + value2 + ")" 
 
+        if(key2 === ""){
+            input2.style.border = '2px solid red'
+            return;
+        }
         
         const search_txt = document.createTextNode(output + " " + option.value+ " " + output2+"; ")
         search_centent.append(search_txt)
@@ -115,24 +125,41 @@ function add(){
         search_centent.append(search_txt)
     } else{
         
-        const search_txt = document.createTextNode(output)
+        const search_txt = document.createTextNode(output + "; ")
         search_centent.append(search_txt)
     }
 
     const label_container = document.getElementById('label_content')
 
-    const x_btn = document.createElement("i")
-    x_btn.className = 'bx bx-x'
-    x_btn.setAttribute('onclick', 'clear()')
+    if(label_container.childElementCount == 1){
+        const btn_container = document.createElement('div')
+        btn_container.className = 'clear_btn'
+        const x_btn = document.createElement("i")
+        x_btn.className = 'bx bx-x'
+        btn_container.setAttribute('onclick', 'clear_btn()')
 
-    label_container.appendChild(x_btn)
+        btn_container.appendChild(x_btn)
+        label_container.appendChild(btn_container)
+    }
+
+    input1.value = ""
+    if(!input2){
+        input2.value = ""
+    }
 }
 
-function clear() {
+// function search() {
+
+//     const 
+// }
+
+function clear_btn() {
     const container = document.getElementById('label_content')
     console.log(container)
-    alert('111')
-    // container.removeChild(container.lastElementChild)
+    container.removeChild(container.lastElementChild)
+
+    const search_label = document.getElementById('search_content')
+    search_label.innerText = ''
     // const content = document.getElementById('search_content')
     // content.removeChild(content.lastElementChild)
 }

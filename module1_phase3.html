@@ -1,187 +1,278 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./edit_page.css">
-    <title>Module1_phase3</title>
-</head>
-<body>
-    <div class="tool_bar">
-        <img src="./pic/toolbar.png">
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./information_page.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <!-- <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script> -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <title>Module1_phase1</title>
+    </head>
+    <body>
+        <div class="tool_bar">
+            <img src="./pic/toolbar.png">
+            <!-- <div>
+                <img class="user_img" src="icon/avatar.png"> 
+                <p class="user_info">用户名称</p>
+            </div>
+            <hr>
+            <div class="module_list">
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/tasks.png'>
+                    <a class="item_link">module 1</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/configure.png'>
+                    <a class="item_link">module 2</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/computer.png'>
+                    <a class="item_link"> module 3</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/design.png'>
+                    <a class="item_link">module 4</a>
+                </div>
+                <i class="fas fa-angle-double-down"></i>
+                <div class="item">
+                    <img style="height: 35px;" src='./icon/hand.png'>
+                    <a class="item_link">module 5</a>
+                </div> -->
+            <!-- </div>
+            <label style="margin-left: 68px;">我的方案：</label>
+            <div class="case_list">
+                <div class="case">
+                    <img style="padding: 8.5px;" src="icon/add.png">
+                </div>
+                <div class="case">
+                    <img style="margin-left: 8.5px;" src="icon/case.png">
+                    1
+                </div>
+                <div class="case">
+                    <p style="color: rgb(26,39,60);">2</p>
+                </div>
+                <div class="case">
+                    <p style="color: rgb(26,39,60);">3</p>
+                </div>
+                <div class="case">
+                    <p style="color: rgb(26,39,60);">4</p>
+                </div>
 
-    <div class="guide">
-        <div class="title_content">
-            <div class="title">
-                <i class='bx bx-folder-open' ></i>
-                <span class="title_name">CASE #00001</span>
-            </div>   
+            </div>
+            <hr>
+            <div>
+                <button style="margin-left: 88px;">退出</button>
+            </div> -->
         </div>
         
-        <ul id="modules_container">
-            <li id="module1">
-                <div class="guide_btn" id="module1_guide" onclick="guide()"> 
-                    <a href="#">
-                        <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 1</span>
-                    </a>
-                </div>
-                <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
-            </li>
-            <li id="module2">
-                <div class="guide_btn" id="module2_guide" onclick="guide()"> 
-                    <a href="#">
-                        <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 2</span>
-                    </a>
-                     
-                </div>
-                <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
-            </li>
-            <li id="module3">
-                <div class="guide_btn" id="module3_guide"> 
-                    <a href="#" onclick="guide()">
-                        <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 3</span>
-                    </a>
-                </div>
-                <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
-            </li>
-            <li id="module4">
-                <div class="guide_btn" id="module4_guide"> 
-                    <a href="#">
-                        <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 4</span>
-                    </a>
-                </div>
-                <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
-            </li>
-            <li id="module5">
-                <div class="guide_btn" id="module5_guide"> 
-                    <a href="#">
-                        <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 5</span>
-                    </a> 
-                </div>
-                <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
-            </li>   
-        </ul>
-        <ul style="margin-top: -15px;">
-            <li>
-                <div class="function_btn">
-                    <a href="#">
-                        <i class='bx bx-save' ></i>
-                        <span class="function_name">保存</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="function_btn">
-                    <a href="#">
-                        <span class="function_name">输出：临床现状问题分析</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="function_btn" href="index.html">
-                    <a href="javascript:history.back()">
-                        <i class='bx bxs-left-arrow-circle' ></i>
-                        <span class="function_name">返回</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="function_btn">
-                    <a href="#">
-                        <i class='bx bxs-right-arrow-circle' ></i>
-                        <span class="function_name">下一步</span>                           
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="home_content">
-        <div class="ads_container">
-            <div class="ads">
-                <img src="./pic/ads.png">
-            </div>  
-        </div>
-        <div class="edit_container">
-            <div class="edit_content">
-                <div class="edit_title" style="border-bottom: 5px solid rgb(230, 206, 177);""> 我的研究课题 </div>
-                <div class="output_container" onclick="edit()" id="info1_container">
-                    <div class="output_title">
-                        <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                        Module1_phase3_information1_save_output1
-                    </div>
-                    <div class="output_content" id="info1_content">
-                        <div id="info1_output">【output】Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex repellendus, velit quas corporis nulla explicabo eum enim ipsam rerum facere expedita rem sequi, hic asperiores ab aspernatur iste optio.</div>
-                    </div>
-                </div>
-                <div class="output_container" onclick="edit()">
-                    <div class="output_title">
-                        <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                        Module1_phase3_information1_save_output2
-                    </div>
-                    <div class="output_content" id="info2_content">
-                        <div id="info2_output">【output】Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex repellendus, velit quas corporis nulla explicabo eum enim ipsam rerum facere expedita rem sequi, hic asperiores ab aspernatur iste optio.</div>
-                    </div>
-                </div>
-                <div class="output_container" onclick="edit()">
-                    <div class="output_title">
-                        <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                        Module1_phase3_information1_save_output3
-                    </div>
-                    <div class="output_content" id="info3_content">
-                        <div id="info3_output">【output】Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex repellendus, velit quas corporis nulla explicabo eum enim ipsam rerum facere expedita rem sequi, hic asperiores ab aspernatur iste optio.</div>
-                    </div>
-                </div>
+        <!-- <div id="myProgress">
+            <div id="myBar"></div>
+        </div> -->
+        <div class="guide">
+            <div class="title_content">
+                <div class="title">
+                    <i class='bx bx-folder-open' ></i>
+                    <span class="title_name">CASE #00001</span>
+                </div>               
             </div>
-            <div class="edit_content">
-                <div class="edit_title" style="border-bottom:5px solid rgb(176, 198, 199);"> 规范笔记 </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        【Note】: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde maxime modi repellat dignissimos, doloribus pariatur dolorem, dolores in, quaerat eaque minus est quos soluta. Nesciunt optio repellat quis velit deserunt.
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
+            
+            <ul id="modules_container">
+                <li id="module1">
+                    <div class="guide_btn" id="module1_guide" onclick="guide()"> 
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 1</span>
+                        </a>
                     </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        【Note】: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla asperiores quam dolore natus, expedita suscipit eum atque fugit saepe ipsa! Explicabo recusandae dicta quos deserunt sed voluptates provident assumenda?
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
+                    <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
+                </li>
+                <li id="module2">
+                    <div class="guide_btn" id="module2_guide" onclick="guide()"> 
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 2</span>
+                        </a>     
                     </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        【Note】: Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellendus commodi adipisci aliquid quibusdam temporibus deserunt labore eius voluptatum vel accusamus delectus et, officiis modi earum at! Maiores, perferendis similique!
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
+                    <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
+                </li>
+                <li id="module3">
+                    <div class="guide_btn" id="module3_guide"> 
+                        <a href="#" onclick="guide()">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 3</span>
+                        </a>
                     </div>
-                </div>
-            </div>
+                    <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
+                </li>
+                <li id="module4">
+                    <div class="guide_btn" id="module4_guide"> 
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 4</span>
+                        </a>
+                    </div>
+                    <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
+                </li>
+                <li id="module5">
+                    <div class="guide_btn" id="module5_guide"> 
+                        <a href="#">
+                            <i class='bx bx-file-blank' ></i>
+                            <span class="module_name">Module 5</span>
+                        </a> 
+                    </div>
+                    <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
+                </li>
+                
+            </ul>
+            <ul style="list-style: none;">
+                <!-- <li>
+                    <div class="function_btn">
+                        <a href="#">
+                            <span class="function_name">输出：临床现状问题分析</span>
+                        </a>
+                    </div>
+                </li> -->
+                <li>
+                    <div class="function_btn">
+                        <a href="#">
+                            <i class='bx bx-save' ></i>
+                            <span class="function_name">保存</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="function_btn" href="index.html">
+                        <a href="javascript:history.back()">
+                            <i class='bx bxs-left-arrow-circle' ></i>
+                            <span class="function_name">返回</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="function_btn">
+                        <a href="module1_phase2.html">
+                            <i class='bx bxs-right-arrow-circle' ></i>
+                            <span class="function_name">下一步</span>                           
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            
         </div>
-    </div>
-    <script src="./guide.js"></script>
-    <script src="./edit.js"></script>
-</body>
+        <div class='grid_container'>
+            <div class="sheet" id="sheet">
+                <div class='grid_child information' id='information'>
+                    <strong> 首选治疗案例分析</strong>
+                    <div id='info1_container' class='infoCon'>
+                        <p id='info1_title' onclick="remind()">请输入 X 变量（暴露/干预措施）的名称：
+                            <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
+                        <!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
+                        <input id='info1_fail' type="checkbox" onclick="addFail()">失败
+                        <div id="case_des"></div> -->
+                        <textarea class="user_input" id='info1_input' onclick="remind()"></textarea>
+                        <button class="save_btn">保存</button>
+                    </div>
+                    <div id='info2_container' class='infoCon'> 
+                        <p id='info2_title' onclick="remind()"> X 变量的值类型：
+                            <i id="info2" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
+                        <div class="test_opt">
+                            <button class="opt" onclick="clicked()">连续变量</button>
+                            <button class="opt" onclick="clicked()">记次变量</button>
+                            <button class="opt" onclick="clicked()">二分类变量</button>
+                            <button class="opt" onclick="clicked()">名义变量</button>
+                            <button class="opt" onclick="clicked()">有许多分类</button>
+                            <!-- <label>
+                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />连续变量</label>
+                            <label>
+                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />记次变量</label>
+                            <label>
+                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />二分类变量</label>
+                            <label>
+                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />名义变量</label>
+                            <label>
+                              <input type="checkbox" class="blue_btn" value="1" name="fooby[1][]" />有许多分类变量</label> -->
+                        </div>
+                        <!-- <input id="info2_success" type='checkbox' onclick="addRare()">是
+                        <input id="info2_fail" type="checkbox">否
+                        <div id="rare_case"></div>  -->
+                    </div>
+                    <div id='info3_container' class='infoCon'>
+                        <p id="info3_title" onclick="remind()">请输入 Y 变量（结局变量）的名称: 
+                            <i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
+                        
+                        <textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
+                        <button class="save_btn">保存</button>
+                    </div>
+                    <div id='info4_container' class='infoCon'>
+                        <p id="info4_title" onclick="remind()"> Y 变量的值类型: 
+                            <i id="info4" class='bx bx-help-circle' onclick="remind()"></i> 
+                        </p>
+                        <div class="single_choice">
+                            <label class="container">连续变量
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">记次变量
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">二分类变量
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">名义变量
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">有序多分类变量
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id='info5_container' class='infoCon'>
+                        <p id="info5_title" onclick="remind()">预测本研究中的 Y （结局）发生率: 
+                            <i id="info5" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
+                         
+                        <textarea class="user_input" id='info5_input' onclick="remind()" style="height: 20px; width: 50px"></textarea>
+                        <button class="save_btn">保存</button>
+                    </div>
+                </div>
+                <div class="grid_child remind_container" id='remind_container'>
+                    <div id='info1_remind1' class='remind' onclick="remind()">
+                        <p id='info1_txt1'><span class="dot" style="background: red;"></span>  提示1——这里是提示1的简要说明和相关解释</p>
+                    </div>
+    
+                    <div id='info2_remind1' class='remind' onclick="remind()"> 
+                        <p id='info2_txt1'><span class="dot" style="background: red;"></span>  提示2——这里是提示2的简要说明和相关解释</p>
+                    </div>
+    
+                    <div id='info3_remind1' class='remind' onclick="remind()">
+                        <p id='info3_txt1'><span class="dot" style="background: red;"></span>  提示3——这里是提示3的简要说明和相关解释</p>
+                    </div>
+    
+                    <div id='info4_remind1' class='remind' onclick="remind()">
+                        <p id='info4_txt1'><span class="dot" style="background: red;"></span>  提示4——这里是提示4的简要说明和相关解释</p>
+                    </div>
+                    <div id='info5_remind1' class='remind' onclick="remind()">
+                        <p id='info5_txt1'><span class="dot" style="background: red;"></span>  提示5——这里是提示5的简要说明和相关解释</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        </div>
+        <br>
+        <script src='case.js'></script>
+        <script src="guide.js"></script>
+    </body>
 </html>

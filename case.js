@@ -92,9 +92,9 @@ function remind(){
     const remind = document.getElementById(evt.target.id.slice(0,5)+'_remind1')
 	remind.className = "remind clicked"
     // if(evt.target.id.slice(6,10) === 'txt1'){
-        const info = document.getElementById(evt.target.id.slice(0,5)+'_container')
-        info.style.borderBottom = '2px solid red'
-        const info_rect = info.getBoundingClientRect()
+    const info = document.getElementById(evt.target.id.slice(0,5)+'_container')
+    info.style.borderBottom = '2px solid red'
+    const info_rect = info.getBoundingClientRect()
     // }
     
     const sheet = document.getElementById("sheet")

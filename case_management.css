@@ -207,18 +207,25 @@ body{
     color: black;
 }
 
+.module_content{
+    position:absolute;
+    top: 240px;
+}
+
 .case_content{
     position:absolute;
     top: 320px;
-
 }
 
-.case_content .case_name{
+ .module_content .case_name{
+    font-size: 20px;
     margin-left: 50px;
     font-weight: 500;
+    text-align: center;
+    background: linear-gradient(to right,rgb(246, 246, 246),rgb(118, 119, 122), rgb(246, 246, 246));
 }
 
-.case_content .module_sheet{
+.module_sheet{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 50px;
@@ -226,14 +233,14 @@ body{
     margin-left: 50px;
 }
 
-.case_content .module_sheet .module{
+.module_sheet .module{
     background: #fff;
     width: 150px;
-    height: 300px;
+    height: 400px;
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
 
-.case_content .module_sheet .module:hover{
+.module_sheet .module:hover{
     box-shadow: -2px -2px 15px rgba(60, 60, 60, 0.3), 2px 2px 15px rgba(60, 60, 60, 0.19);
     /* color: red; */
 }
@@ -256,12 +263,110 @@ body{
     margin-top: 20px;
 }
 
+.case_content .module_sheet .mycase{
+    background: #fff;
+    width: 150px;
+    height: 200px;
+
+}
+
+.case_content .module_sheet .mycase:hover{
+    box-shadow: -2px -2px 15px rgba(60, 60, 60, 0.3), 2px 2px 15px rgba(60, 60, 60, 0.19);
+    /* color: red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.mycase a .case_description{
+    border-bottom: 1px dashed grey;
+    height: 150px;
+}
+
+.case_description  .case_number{
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: black;
+}
+
+.case_content .module_sheet .newcase{
+    background: #fff;
+    width: 150px;
+    height: 200px;
+
+}
+
+.case_content .module_sheet .newcase:hover{
+    box-shadow: -2px -2px 15px rgba(60, 60, 60, 0.3), 2px 2px 15px rgba(60, 60, 60, 0.19);
+}
+
+.newcase .new_case_description{   
+    height: 200px;
+}
+
+.newcase .new_case_description .new_case{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.new_case i{
+    margin-top: 30px;
+    font-size: 60px;
+    /* -webkit-text-stroke: 0.1px; */
+    color: rgb(230, 101, 96);
+}
+
+.newcase:hover .new_case_description .new_case i{
+    color: rgb(225, 67, 63);
+}
+
+.new_case_description .new_case_title{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.newcase:hover .new_case_description .new_case_title{
+    color: rgb(225, 67, 63);
+}
+
+.mycase .case_description .description{
+    padding-left: 10px;
+    color: rgb(118, 119, 122);
+}
+
+.mycase .case_function{
+    width: 100%;
+}
+
+.case_function i{
+    margin-left: 80%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(225, 67, 63);
+    opacity: 0;
+}
+
+.case_function:hover i{
+    opacity: 1;
+}
+
 .phase_list{
     padding: 10px;
 }
 
 .phase_list ul{
-    list-style: none;
+    margin-left: 10px;
 }
 
 .phase_list ul li{

@@ -122,6 +122,10 @@ ul li .function_btn:hover{
     background-color: rgb(228, 228, 228);
 }
 
+.phases a{
+    text-decoration: none;
+    color: black;
+}
 
 .guide ul li .tooltip{
     position: absolute;
@@ -234,10 +238,6 @@ ul li .function_btn:hover{
     z-index: 1;
 }
 
-.filter_container{
-    /* margin-top: 10px;
-    margin-bottom: 30px; */
-}
 
 .filter_content select{
 
@@ -272,6 +272,10 @@ ul li .function_btn:hover{
     margin-top: 30px;
 }
 
+.filter_btn_content .filter_btn:hover{
+    background: rgb(176, 198, 199);
+}
+
 .filter_btn_content .filter_option{
     width: 50px;
     align-content: center;
@@ -285,6 +289,10 @@ ul li .function_btn:hover{
     width: 50px;
     margin: 5px;
     margin-top: -30px;
+}
+
+.filter_option .options:hover{
+    background: rgba(185, 185, 185, 0.5);
 }
 
 .checked{
@@ -315,36 +323,53 @@ ul li .function_btn:hover{
 }
 
 .search .label_content{
-    position: absolute;
-    width: 66%;
-    height: 35px;
+    width: 155%;
+    min-height: 35px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
-    padding-left: 10px;
     font-size: 1;
     font-size: 14px;
-}
-
-.label_content  .bx-x{
-    position: absolute;
     z-index: 99;
-    font-size: 22px;
-    right: 8px;
-    top: 5px;
-    color: black;
-    transition: .5s;
 }
 
-.label_content  .bx-x:hover{
-    transform: rotate(90deg);    
+.label_content .search_label{
+    width: 93%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.serach .search_btn_content{
+    margin-left: 70%;
+    z-index: 0;
 }
 
 .search_btn_content .search_btn{
+    margin-left: 55%;
     background: rgb(230, 206, 177);
-    margin-left: 720px;
     width: 60px;
     height: 30px;
     border: none;
     border-radius: 5px;
+}
+
+.label_content .clear_btn{
+
+    font-size: 22px;
+    margin-left: 95%;
+    margin-top: -30px;
+}
+
+.clear_btn  .bx-x{ 
+    color: black;
+    transition: .3s; 
+}
+
+.clear_btn  .bx-x:hover{
+    transform: rotate(90deg);    
+}
+
+.search_btn_content .search_btn:hover{
+    background: rgb(176, 198, 199);
+    transition: .3s ease-in-out;
 }
 
 .result_container{
