@@ -138,8 +138,15 @@ function add(){
         x_btn.className = 'bx bx-x'
         btn_container.setAttribute('onclick', 'clear_btn()')
 
+        const btn1_container = document.createElement('div')
+        btn1_container.className = 'save_btn'
+        const x_save = document.createElement("i")
+        x_save.className = 'bx bx-save'
+
         btn_container.appendChild(x_btn)
+        btn1_container.appendChild(x_save)
         label_container.appendChild(btn_container)
+        label_container.appendChild(btn1_container)
     }
 
     input1.value = ""
@@ -156,6 +163,7 @@ function add(){
 function clear_btn() {
     const container = document.getElementById('label_content')
     console.log(container)
+    container.removeChild(container.lastElementChild)
     container.removeChild(container.lastElementChild)
 
     const search_label = document.getElementById('search_content')

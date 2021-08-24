@@ -13,7 +13,7 @@
         <div class="logo_content">
             <div class="logo">
                 <i class='bx bxs-message-square-dots'></i>
-                <div class="logo_name">我的科研管理平台</div>
+                <div class="logo_name">2.案例管理页面</div>
             </div>
             <!-- <i class='bx bx-menu' id="btn"></i> -->
         </div>
@@ -21,35 +21,42 @@
             <li>
                 <a href="index.html">
                     <i class='bx bxs-dashboard' ></i>
-                    <span class="links_name">主页/首页</span>
+                    <span class="links_name">Home Page 主页/首页</span>
                     <!-- <span class="tooltip">Dashboard</span> -->
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-user-circle'></i>
-                    <span class="links_name">用户信息</span>
+                    <span class="links_name">My Account 我的信息</span>
                     <!-- <span class="tooltip">Dashboard</span> -->
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="case_mana.html">
                     <i class='bx bx-folder'></i>
-                    <span class="links_name">案例管理</span>
+                    <span class="links_name">My Onion 我的研究</span>
                     <!-- <span class="tooltip">Dashboard</span> -->
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class='bx bx-heart' ></i>
-                    <span class="links_name">存储案例</span>
+                    <i class='bx bx-file-find'></i>
+                    <span class="links_name">My Guideline 我搜索的指南</span>
                     <!-- <span class="tooltip">Dashboard</span> -->
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class='bx bx-cog' ></i>
-                    <span class="links_name">设置选项</span>
+                    <i class='bx bx-align-left'></i>
+                    <span class="links_name">My Accumulation 我的文献积累</span>
+                    <!-- <span class="tooltip">Dashboard</span> -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-trash-alt' ></i>
+                    <span class="links_name">My Deleted 我的删除</span>
                     <!-- <span class="tooltip">Dashboard</span> -->
                 </a>
             </li>
@@ -94,9 +101,9 @@
             </a>
         </div>
         <div class="case_content">
-            <div class="module_sheet">
+            <div class="module_sheet" id='case_con'>
                 <div class="newcase" >
-                    <a href="#">
+                    <a onclick="addCase()">
                         <div class="new_case_description">
                             <div class="new_case"> 
                                 <i class='bx bx-message-alt-add'></i>
@@ -107,27 +114,26 @@
                         </div>
                     </a>
                 </div>
-                <div class="mycase">
-                    <a href="case_management.html">
-                        <div class="case_description">
+                <div class="mycase" id="case1">
+                    <div class="case_description" id="case1_description">
+                        <a href="case_management.html">
                             <div class="case_number"> 
-                                <p> Case #0001</p>
+                                <p id="case1_name"> Case #0001</p>
                             </div>
-                            <div class="description"> 
-                                <p>description</p>
+                            <div class="case_des"> 
+                                <p id='case1_info'>description</p>
                             </div>
-                        </div>
-                    </a>
-                    <div class="case_function">
-                        <i class='bx bx-trash' ></i>
+                        </a>
                     </div>
                     
-                    
+                    <div class="case_function">
+                        <i onclick="editCase()" class='bx bx-edit-alt' id="case1_icon1"></i>
+                        <i onclick="deleteCase()" class='bx bx-trash' id="case1_icon2"></i>
+                    </div>    
                 </div>
-                
-
             </div>
         </div>
     </div>
+    <script src="case_management.js"></script>
 </body>
 </html>

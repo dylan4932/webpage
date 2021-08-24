@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'FZZhongDengXian-Z07S';
-    /* font-weight: 110; */
-    font-size: 12px;
+    /* font-family: 'FZZhongDengXian-Z07S';
+    font-size: 12px;  */
+    /* font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; */
+    font: 12px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
+    /* font-weight: bold; */
 }
 
 body{
@@ -54,11 +57,12 @@ body{
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
+    
 }
 
 .sidebar ul{
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .sidebar ul li{
@@ -78,6 +82,7 @@ body{
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 12px;
+     
 }
 
 .sidebar ul li a:hover{
@@ -90,8 +95,10 @@ body{
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
+    font-weight: lighter;  
 }
+
 
 .sidebar .details_container{
     position: absolute;
@@ -123,8 +130,8 @@ body{
 
 .community_content{
     background: rgb(37, 38, 43);
-    margin-top: 15%;
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 15%;
     border-radius: 12px;
     height: 200px;
     width: 70%;
@@ -214,7 +221,7 @@ body{
 
 .case_content{
     position:absolute;
-    top: 320px;
+    top: 280px;
 }
 
  .module_content .case_name{
@@ -222,7 +229,7 @@ body{
     margin-left: 50px;
     font-weight: 500;
     text-align: center;
-    background: linear-gradient(to right,rgb(246, 246, 246),rgb(118, 119, 122), rgb(246, 246, 246));
+    background: linear-gradient(to right,rgb(246, 246, 246),rgb(228, 228, 228), rgb(246, 246, 246));
 }
 
 .module_sheet{
@@ -267,7 +274,7 @@ body{
     background: #fff;
     width: 150px;
     height: 200px;
-
+    margin-top: 20px;
 }
 
 .case_content .module_sheet .mycase:hover{
@@ -280,9 +287,12 @@ a{
 }
 
 
-.mycase a .case_description{
+
+.mycase .case_description{
+    position: relative;
     border-bottom: 1px dashed grey;
-    height: 150px;
+    height: 160px;
+    padding: 10px;
 }
 
 .case_description  .case_number{
@@ -294,11 +304,45 @@ a{
     color: black;
 }
 
+.case_description .name_textarea{
+    width: 100%;
+    resize: none;
+    padding-left: 10px;
+    /* font-weight: 700; */
+    border: none;
+}
+
+.case_description .info_textarea{
+    width: 100%;
+    height: 60px;
+    resize: none;
+    padding-left: 10px;
+    color: rgb(118, 119, 122);
+    /* font-weight: 700; */
+    border: none;
+}
+
+.case_description .case_save{
+    position: absolute;
+    border: none;
+    width: 60px;
+    background: rgb(176, 198, 199);
+    color: white;
+    border-radius: 5px;
+    margin-left: 50%;
+    bottom: 10px;
+    left: 0;
+}
+
+.case_description .case_save:hover{
+    background: rgb(230, 206, 177);
+}
+
 .case_content .module_sheet .newcase{
     background: #fff;
     width: 150px;
     height: 200px;
-
+    margin-top: 20px;
 }
 
 .case_content .module_sheet .newcase:hover{
@@ -340,17 +384,18 @@ a{
     color: rgb(225, 67, 63);
 }
 
-.mycase .case_description .description{
+.mycase .case_description .case_des{
     padding-left: 10px;
     color: rgb(118, 119, 122);
 }
 
 .mycase .case_function{
-    width: 100%;
+    margin-left: 50%;
+    width: 50%;
 }
 
 .case_function i{
-    margin-left: 80%;
+    margin-left: 10px;
     font-size: 20px;
     margin-top: 10px;
     color: rgb(225, 67, 63);
@@ -359,6 +404,11 @@ a{
 
 .case_function:hover i{
     opacity: 1;
+}
+
+.case_function i:hover{
+    background: rgb(228, 228, 228);
+    border-radius: 5px;
 }
 
 .phase_list{
@@ -378,8 +428,10 @@ a{
     display:flex;
     align-items: center;
     text-decoration: none;
-    color: rgb(176, 198, 199);
+    color: grey;
 }
+
+
 
 
 /* .sidebar ul li a{

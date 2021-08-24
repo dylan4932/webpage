@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./literature_page.css">
+    <title>检索文献</title>
+</head>
+<body>
+    <div class="tool_bar">
+        <!-- <img src="./pic/toolbar.png"> -->
+
+        <div class="toolbar_title">
+            <i class='bx bx-file-find'>
+                <span>下面的“report”可能有启发</span>
+            </i>
+        </div>
+        <div class="history_result">
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>发表期刊</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(234, 69, 47)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>影响因子</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(79, 114, 225)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>研究人群</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(87, 191, 145)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>研究类型</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(140, 72, 189)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>研究的样本量</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(253, 224, 129)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="guide">
+        <div class="title_content">
+            <ul>
+                <li>
+                    
+                    <div class="title">
+                        <a href="index.html">
+                            <i class='bx bx-home' ></i>
+                            <span class="title_name">Home Page 主页</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    
+                    <div class="title">
+                        <a href="./case_mana.html">
+                            <i class='bx bx-user-circle'></i>
+                            <span class="title_name">My Onion</span>
+                        </a>
+                        
+                    </div>
+                </li>
+                <li>
+                    
+                        <div class="title">
+                            <a href="./case_management.html">
+                                <i class='bx bx-folder-open' ></i>
+                                <span class="title_name">CASE #00001</span>
+                            </a>            
+                        </div>
+                </li>
+            </ul>     
+        </div>
+        
+        <ul id="modules_container">
+            <li id="module1">
+                <div class="guide_btn" id="module1_guide" onclick="guide()"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 1</span>
+                    </a>
+                </div>
+                <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
+            </li>
+            <li id="module2">
+                <div class="guide_btn" id="module2_guide" onclick="guide()"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 2</span>
+                    </a>
+                     
+                </div>
+                <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
+            </li>
+            <li id="module3">
+                <div class="guide_btn" id="module3_guide"> 
+                    <a href="#" onclick="guide()">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 3</span>
+                    </a>
+                </div>
+                <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
+            </li>
+            <li id="module4">
+                <div class="guide_btn" id="module4_guide"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 4</span>
+                    </a>
+                </div>
+                <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
+            </li>
+            <li id="module5">
+                <div class="guide_btn" id="module5_guide"> 
+                    <a href="#">
+                        <i class='bx bx-file-blank' ></i>
+                        <span class="module_name">Module 5</span>
+                    </a> 
+                </div>
+                <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
+            </li>   
+        </ul>
+        <div class="page_des">
+            <div>
+                <p>Module 1 · phase 2 您的文献累计</p>
+            </div>
+            <div>
+                <p>这个phase 帮助您建立一个“文献检索归纳”的思考方式，目的是通过文献积累的基础上，经过数个维度的思考，建立一个具有“创新”的课题；</p>
+            </div>
+            <div>
+                <p>同时提供一个“文献积累”的归纳工具。</p>
+            </div>
+            <div>
+                <p>分析归纳图示可以帮助您可视化的呈现检索文献的特征，激发您的思路。</p>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="content_description">
+            <p>请将您检索的文献按照下面的工具表格进行积累、归纳；他是一个不错的工具；如果您不想在本系统内进行文献的积累，您可以点击右侧的功能键，显示某个维度的思考驱动信息，在不同维度上思考“文献积累”对“研究选题”的启发，希望可以对您的选题有些许帮助。</p>
+        </div>
+        <div class="main_container">
+            <div class="main_content">
+                <div class="row_content">
+                    <div class="colum_content">
+                        <span>文献标题</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>发表期刊名称</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>发表时间</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>影响因子</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>研究人群特征</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>研究类型</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>样本量</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>协变量</span>
+                    </div>
+                    <div class="colum_content" style="margin-top: -15px;">
+                        <span>研究设计&统计学处理</span>
+                    </div>
+                    <div class="colum_content">
+                        <span>结论</span>
+                    </div>
+                </div>
+                <div class="row_content">
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                </div>
+                <div class="row_content">
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                </div>
+                <div class="row_content">
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                </div>
+                <div class="row_content">
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                    <div class="colum_content"><input type="text"></div>
+                </div>
+            </div>
+        </div>
+        <div class="save_btn_container">
+            <div class="save_btn">
+                <a href="#">
+                    <span>保存您的文献归纳</span>
+                </a>
+            </div>
+            
+        </div>
+        <div class="sub_content">
+            <div class="sub_content_title">
+                <div>检索文献归纳图示</div>
+            </div>
+            <div class="sub_options_container">
+                <div class="sub_option">
+                    <div class="option_content" style="border-bottom: 2px solid rgb(234, 69, 47);">
+                        <a href="#">
+                            <span>期刊发表分析</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sub_option">
+                    <div class="option_content" style="border-bottom: 2px solid rgb(79, 114, 225);">
+                        <a href="#">
+                            <span>研究设计分析</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sub_option">
+                    <div class="option_content" style="border-bottom: 2px solid rgb(87, 191, 145);">
+                        <a href="#">
+                            <span>结论分析</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="sub_content_display">
+                <div class="display_title">
+                    <span>Analysis</span>
+                </div>
+                <div class="display_content">
+
+                </div>
+                <div class="display_options">
+                    <a href="#">
+                        <span>vedio remind</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="guide.js"></script>
+</body>
+</html>

@@ -77,9 +77,6 @@
     margin-left: 48px;
 }
 
-.fa-angle-double-down{
-    margin-left: 100px;
-}
 
 .case_list{
     margin-left: 30px;
@@ -182,6 +179,7 @@ ul li .function_btn:hover{
     background-color: rgb(228, 228, 228);
 }
 
+
 .function_btn a{
     text-decoration: none;
     color: #000;
@@ -210,8 +208,7 @@ ul li .function_btn:hover{
 .guide ul li .tooltip{
     position: absolute;
     top:-10px;
-    left: 400px;
-    transform: translateX(-50%);
+    left: 214px;
     width: 200px;
     height: 60px;
     color: white;
@@ -230,7 +227,7 @@ ul li .function_btn:hover{
 .guide ul li .tooltip::before {
     position: absolute;
     top: 18px;
-    left: -20px;
+    left: -17px;
     content: '';
     width: 0;
     height: 0;
@@ -242,8 +239,9 @@ ul li .function_btn:hover{
 
 .guide ul li:hover .tooltip{
     transition: all 0.5s ease;
+    transition-delay: 1s;
     top: -10px;
-    left: 320px;
+    left: 214px;
     opacity: 1;
 }
 
@@ -265,8 +263,8 @@ ul li .function_btn:hover{
 
 .phases .phase_container .phasetip{
     position: absolute;
-    left: 300px;
-    /* transform: translateX(-50%); */
+    left: 214px;
+    top: -10px;
     width: 200px;
     height: 60px;
     color: white;
@@ -285,7 +283,7 @@ ul li .function_btn:hover{
 .phases .phase_container .phasetip::before {
     position: absolute;
     top: 18px;
-    left: -20px;
+    left: -17px;
     content: '';
     width: 0;
     height: 0;
@@ -297,7 +295,9 @@ ul li .function_btn:hover{
 
 .phases .phase_container:hover .phasetip{
     transition: all 0.5s ease;
-    left: 220px;
+    transition-delay: 1s;
+    left: 214px;
+    top: -10px;
     opacity: 1;
 }
 

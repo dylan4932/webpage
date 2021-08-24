@@ -10,15 +10,99 @@
 </head>
 <body>
     <div class="tool_bar">
-        <img src="./pic/toolbar.png">
+        <!-- <img src="./pic/toolbar.png"> -->
+
+        <div class="toolbar_title">
+            <i class='bx bx-file-find'>
+                <span>搜索记录</span>
+            </i>
+        </div>
+        <div class="history_result">
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>---搜索记录1---</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(234, 69, 47)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>---搜索记录2---</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(79, 114, 225)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>---搜索记录3---</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(87, 191, 145)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>---搜索记录4---</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(140, 72, 189)"></div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <a href="#">
+                        <span>---搜索记录5---</span>
+                    </a>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="background: rgb(253, 224, 129)"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="guide">
         <div class="title_content">
-            <div class="title">
-                <i class='bx bx-folder-open' ></i>
-                <span class="title_name">CASE #00001</span>
-            </div>   
+            <ul>
+                <li>
+                    
+                    <div class="title">
+                        <a href="index.html">
+                            <i class='bx bx-home' ></i>
+                            <span class="title_name">Home Page 主页</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    
+                    <div class="title">
+                        <a href="./case_mana.html">
+                            <i class='bx bx-user-circle'></i>
+                            <span class="title_name">My Onion</span>
+                        </a>
+                        
+                    </div>
+                </li>
+                <li>
+                    
+                        <div class="title">
+                            <a href="./case_management.html">
+                                <i class='bx bx-folder-open' ></i>
+                                <span class="title_name">CASE #00001</span>
+                            </a>            
+                        </div>
+                </li>
+            </ul>     
         </div>
         
         <ul id="modules_container">
@@ -69,7 +153,22 @@
                 <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
             </li>   
         </ul>
-        <ul>
+        <div class="page_des">
+            <div>
+                <p>Module 1 · phase 1:在选择“搜索维度”后，输入您搜索的关键词；</p>
+            </div>
+            <div>
+                <p>→点击“添加”后，关键词将纳入“搜索策略”；</p>
+            </div>
+            <div>
+                <p>→点击“搜索”，Onion 将为您展现相关的指南 item；</p>
+            </div>
+            <div>
+                <p>→“更多解释”将为您展现关于“所选 item”的研究建议，从而帮助您确立研究课题的方向。
+                </p>
+            </div>
+        </div>
+        <!-- <ul>
             <li>
                 <div class="function_btn">
                     <a href="#">
@@ -94,7 +193,7 @@
                     </a>
                 </div>
             </li>
-        </ul>
+        </ul> -->
     </div>
     <div class="home_content">
         <div class="search_container">
@@ -114,11 +213,11 @@
                 </div>
                 <div class="filter_btn_content">
                     <button class="filter_btn" onclick="add()">添加</button>
-                    <div class="filter_option">
+                    <!-- <div class="filter_option">
                         <button class="options" onclick="addRow()" value="AND">AND</button>
                         <button class="options" onclick="addRow()" value="OR">OR</button>
                         <button class="options" onclick="addNo()" value="NO">NO</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="search">
@@ -129,6 +228,10 @@
                     <button class="search_btn">搜索</button>
                 </div>
             </div>
+            <!-- <a href="#">
+                <i class='bx bx-save' ></i>
+                <span class="function_name">保存</span>
+            </a> -->
         </div>
         <hr>
         <div class="result_container">
