@@ -94,9 +94,9 @@ ul li .function_btn:hover{
 
 .phase_container{
     /* background-color: red; */
-    width: 83%;
+    width: 78%;
     margin-top: 5px;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px; 
@@ -165,7 +165,7 @@ ul li .function_btn:hover{
 
 .phases .phase_container .phasetip{
     position: absolute;
-    left: 214px;
+    left: 224px;
     top: -10px;
     /* transform: translateX(-50%); */
     width: 200px;
@@ -199,7 +199,7 @@ ul li .function_btn:hover{
 .phases .phase_container:hover .phasetip{
     transition: all 0.5s ease;
     transition-delay: 1s;
-    left: 214px;
+    left: 224px;
     top: -10px;
     opacity: 1;
 }

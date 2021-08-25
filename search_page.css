@@ -5,14 +5,14 @@
     font-family: 'FZZhongDengXian-Z07S';
     font-weight: 110;
      font-size: 12px;
-}
+} */
 
 body{
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-} */
+}
 
 *{
     font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
@@ -83,9 +83,9 @@ body{
 
 .history .myBar {
     /* border-radius: 20px; */
-    width: 90%;
+    /* width: 90%; */
     height: 3px;
-    background-color: rgb(34, 133, 179);
+    /* background-color: rgb(34, 133, 179); */
 }
 
 .guide{
@@ -194,24 +194,7 @@ ul li .function_btn:hover{
     color: #000;
 }
 
-.phase_container{
-    /* background-color: red; */
-    width: 83%;
-    margin-top: 5px;
-    padding-left: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px; 
-}
 
-.phase_container:hover{
-    background-color: rgb(228, 228, 228);
-}
-
-.phases a{
-    text-decoration: none;
-    color: black;
-}
 
 .guide ul li .tooltip{
     position: absolute;
@@ -262,6 +245,23 @@ ul li .function_btn:hover{
     }
 }
 
+.phase_container{
+    width: 78%;
+    margin-top: 5px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px; 
+}
+
+.phase_container:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.phases a{
+    text-decoration: none;
+    color: black;
+}
 
 .phase_container{
     position: relative;
@@ -271,7 +271,7 @@ ul li .function_btn:hover{
 
 .phases .phase_container .phasetip{
     position: absolute;
-    left: 214px;
+    left: 224px;
     width: 200px;
     height: 60px;
     color: white;
@@ -303,7 +303,7 @@ ul li .function_btn:hover{
 .phases .phase_container:hover .phasetip{
     transition: all 0.5s ease;
     transition-delay: 1s;
-    left: 214px;
+    left: 224px;
     top: -10px;
     opacity: 1;
 }

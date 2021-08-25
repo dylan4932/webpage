@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <title>我的案例</title>
+    <title>案例管理</title>
 </head>
 <body>
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
                 <i class='bx bxs-message-square-dots'></i>
-                <div class="logo_name">3.案例管理页面</div>
+                <div class="logo_name">2.案例管理页面</div>
             </div>
             <!-- <i class='bx bx-menu' id="btn"></i> -->
         </div>
@@ -33,7 +33,7 @@
                 </a>
             </li>
             <li>
-                <a href="case_mana.html">
+                <a href="case_management.html">
                     <i class='bx bx-folder'></i>
                     <span class="links_name">My Onion 我的研究</span>
                     <!-- <span class="tooltip">Dashboard</span> -->
@@ -60,12 +60,6 @@
                     <!-- <span class="tooltip">Dashboard</span> -->
                 </a>
             </li>
-            <!-- <li>
-                <a href="#">
-                    <i class='bx bx-cog' ></i>
-                    <span class="links_name">设置选项</span>
-                </a>
-            </li> -->
         </ul>
         <div class="community_content">
             <div class="icon_container">
@@ -100,139 +94,46 @@
                 </div>     
             </div>
         </div>
-        <!-- <div class="search_content">
+        <div class="search_content">
             <a href="#">
                 <i class='bx bx-search-alt'></i>
                 <input type="text" placeholder="搜索我的案例" id="search_case_input">
             </a>
-        </div> -->
-        <div class="module_content">
-            <div class="case_name">
-                Case #0001
-            </div>
-            <div class="module_sheet">
-                <div class="module">
-                    <div class="module_description">
-                        <div class="module_name"> Module 1</div>
-                        <div class="description"> 建立什么研究课题</div>
-                    </div>
-                    <div class="phase_list">
-                        <ul>
-                            <li>
-                                <a href="./module1_phase1.html">
-                                    <span class="phase_name">Phase 1: 回顾指南、共识，帮助您建立科研课题</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./module1_phase2.html">
-                                    <span class="phase_name">Phase 2：检索文献，如何积累总结是关键</span>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="module1_phase3.html">
-                                    <span class="phase_name">Phase 3: 确定您的X & Y</span>
-                                </a>
-                            </li> -->
-                            <li>
-                                <a href="./module1_phase4.html">
-                                    <span class="phase_name">Phase 3：提出假说，规范书写您的研究课题（PICOST）</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="phase_name" style="color: red;"> Research Topic</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="case_content">
+            <div class="module_sheet" id='case_con'>
+                <div class="newcase" >
+                    <a onclick="addCase()">
+                        <div class="new_case_description">
+                            <div class="new_case"> 
+                                <i class='bx bx-message-alt-add'></i>
+                            </div>
+                            <div class="new_case_title"> 
+                                新建案例
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="module">
-                    <div class="module_description">
-                        <div class="module_name"> Module 2</div>
-                        <div class="description"> 怎样的研究设计适合我的临床实践</div>
+                <div class="mycase" id="case1">
+                    <div class="case_description" id="case1_description">
+                        <a href="case_phase_management.html">
+                            <div class="case_number"> 
+                                <p id="case1_name"> Case #0001</p>
+                            </div>
+                            <div class="case_des"> 
+                                <p id='case1_info'>description</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="phase_list">
-                        <ul>
-                            <li>
-                                <a href="./module2_phase1.html">
-                                    <span class="phase_name">Phase 1: 辅助您确定研究目的 & 研究类型</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="module1_phase3.html">
-                                    <span class="phase_name" style="color: rgb(176, 198, 199);">Phase 2：构建研究中最核心的框架（framework）</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./module2_phase3.html">
-                                    <span class="phase_name" style="color: rgb(176, 198, 199);">Phase 3：偏倚控制在RWS中极其器重要，决定着成败</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="phase_name" style="color:red"> FrameWork</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="module_description">
-                        <div class="module_name"> Module 3</div>
-                        <div class="description"> 建立我的研究方案</div>
-                    </div>
-                    <div class="phase_list">
-                        <ul>
-                            <li>
-                                <a href="./module3_edit.html">
-                                    <span class="phase_name"> 跟着走，将研究框架完善成为“高规范的研究方案”</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="phase_name"> Planning</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="module_description">
-                        <div class="module_name"> Module 4</div>
-                        <div class="description"> 研究数据预试验｜数据处理</div>
-                    </div>
-                    <div class="phase_list">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <span class="phase_name">先进的临床研究数据处理，帮助您完成“预试验”</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="module_description">
-                        <div class="module_name"> Module 5</div>
-                        <div class="description"> 撰写我的研究文献</div>
-                    </div>
-                    <div class="phase_list">
-                        <ul>
-                            <li>
-                                <a href="./module5_edit.html">
-                                    <span class="phase_name">“跟着走”，撰写高质量的研究报告（文献）</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="phase_name">article</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
+                    <div class="case_function">
+                        <i onclick="editCase()" class='bx bx-edit-alt' id="case1_icon1"></i>
+                        <i onclick="deleteCase()" class='bx bx-trash' id="case1_icon2"></i>
+                    </div>    
                 </div>
             </div>
         </div>
     </div>
+    <script src="case_management.js"></script>
 </body>
 </html>

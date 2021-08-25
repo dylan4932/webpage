@@ -1,5 +1,12 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
 *{
-    font-family: "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
     font-weight: 200;
 }
 
@@ -15,7 +22,9 @@
 }
 
 .tool_bar .toolbar_title{
-    margin: 20px 40px;
+    margin: 20px 20px;
+    font-size: 14px;
+    text-align: start;
 }
 
 .tool_bar .history_result{
@@ -23,7 +32,7 @@
     margin-right: 10px;
     position: absolute;
     width: 80%;
-    height: 50%;
+    height: 70%;
     /* padding: 10px; */
     border-top: 2px solid rgb(97, 116, 139);
     border-bottom:  2px solid rgb(97, 116, 139);
@@ -67,9 +76,7 @@
 
 .history .myBar {
     /* border-radius: 20px; */
-    width: 90%;
     height: 3px;
-    background-color: rgb(34, 133, 179);
 }
 
 .guide{
@@ -180,9 +187,9 @@ ul li .function_btn:hover{
 
 .phase_container{
     /* background-color: red; */
-    width: 83%;
+    width: 78%;
     margin-top: 5px;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px; 
@@ -255,7 +262,7 @@ ul li .function_btn:hover{
 
 .phases .phase_container .phasetip{
     position: absolute;
-    left: 214px;
+    left: 224px;
     width: 200px;
     height: 60px;
     color: white;
@@ -287,7 +294,7 @@ ul li .function_btn:hover{
 .phases .phase_container:hover .phasetip{
     transition: all 0.5s ease;
     transition-delay: 1s;
-    left: 214px;
+    left: 224px;
     top: -10px;
     opacity: 1;
 }
@@ -375,11 +382,15 @@ ul li .function_btn:hover{
 }
 
 .sub_content{
-    margin: 30px 50px;
+    margin: 20px 50px;
+}
+
+.sub_content .sub_content_title{
+    color: gray;
 }
 
 .sub_content .sub_options_container{
-    margin-top: 20px;
+    margin: 20px 20px;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -413,7 +424,7 @@ ul li .function_btn:hover{
     border-radius: 25px;
     position: relative;
     margin: 20px 0;
-    width: 80%;
+    width: 85%;
     height: 150px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
 }
@@ -435,4 +446,11 @@ ul li .function_btn:hover{
 .display_options a{
     text-decoration: none;
     color: black;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
 }
