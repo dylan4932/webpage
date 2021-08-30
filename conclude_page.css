@@ -1,5 +1,13 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
 *{
-    font-family: cursive;
+    font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
 }
 
 .tool_bar{
@@ -22,22 +30,36 @@
     z-index: 99;
 }
 
-.title{
-    margin: 20px 30px;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
+.guide .title_content {
+    height: 10%;
 }
 
-.title i{
-    font-size: 20px;
-    margin-right: 5px;
+.title{
+    width: 88%;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.title:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.title a{
+    width: 88%;
+    text-decoration: none;
+    color: black;
 }
 
 .title .title_name{
     font-size: 14px;
     font-weight: 400;
+}
+
+
+.title i{
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 .guide ul{
@@ -109,6 +131,10 @@ ul li .function_btn:hover{
 .phases a{
     text-decoration: none;
     color: black;
+}
+
+.picked{
+    background-color: rgb(228, 228, 228);
 }
 
 .guide ul li .tooltip{

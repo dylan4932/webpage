@@ -15,10 +15,33 @@
 
     <div class="guide">
         <div class="title_content">
-            <div class="title">
-                <i class='bx bx-folder-open' ></i>
-                <span class="title_name">CASE #00001</span>
-            </div>   
+            <ul>
+                <li>
+                    <div class="title">
+                        <a href="index.html">
+                            <i class='bx bx-home' ></i>
+                            <span class="title_name">Home Page 主页</span>
+                        </a>
+                    </div>
+                </li>
+                <li> 
+                    <div class="title">
+                        <a href="./case_mana.html">
+                            <i class='bx bx-user-circle'></i>
+                            <span class="title_name">My Onion</span>
+                        </a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <a href="./case_management.html">
+                            <i class='bx bx-folder-open' ></i>
+                            <span class="title_name">CASE #00001</span>
+                        </a>            
+                    </div>
+                </li>
+            </ul>     
         </div>
         
         <ul id="modules_container">
@@ -26,7 +49,7 @@
                 <div class="guide_btn" id="module1_guide" onclick="guide()"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 1</span>
+                        <span class="module_name" id="module1_name">Module 1</span>
                     </a>
                 </div>
                 <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
@@ -35,17 +58,17 @@
                 <div class="guide_btn" id="module2_guide" onclick="guide()"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 2</span>
+                        <span class="module_name" id="module2_name">Module 2</span>
                     </a>
                      
                 </div>
                 <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
             </li>
             <li id="module3">
-                <div class="guide_btn" id="module3_guide"> 
-                    <a href="#" onclick="guide()">
+                <div class="guide_btn picked" id="module3_guide"> 
+                    <a href="module3_edit.html"">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 3</span>
+                        <span class="module_name" id="module3_name">Module 3</span>
                     </a>
                 </div>
                 <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
@@ -54,16 +77,16 @@
                 <div class="guide_btn" id="module4_guide"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 4</span>
+                        <span class="module_name" id="module4_name">Module 4</span>
                     </a>
                 </div>
                 <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
             </li>
             <li id="module5">
                 <div class="guide_btn" id="module5_guide"> 
-                    <a href="#">
+                    <a href="module5_edit.html">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 5</span>
+                        <span class="module_name" id="module5_name">Module 5</span>
                     </a> 
                 </div>
                 <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>

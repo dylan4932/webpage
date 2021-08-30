@@ -1,6 +1,6 @@
 
 function login(){
 
-    window.location.replace('case_mana.html')
+    window.location.replace('case_management.html')
     
 }

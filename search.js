@@ -1,3 +1,6 @@
+const color = ['rgb(234, 69, 47)', 'rgb(79, 114, 225)', 'rgb(87, 191, 145)', 'rgb(140, 72, 189)']
+const background = ['#f9dae3', '#dbebfe', '#ebfbf7', '#f2e0ff', 'rgb(253, 248, 216)']
+
 function addNo(){
     var evt = window.event || evt;
     const checked = document.getElementById('opt_checked')
@@ -142,6 +145,7 @@ function add(){
         btn1_container.className = 'save_btn'
         const x_save = document.createElement("i")
         x_save.className = 'bx bx-save'
+        btn1_container.setAttribute('onclick', 'save_btn()')
 
         btn_container.appendChild(x_btn)
         btn1_container.appendChild(x_save)
@@ -149,10 +153,10 @@ function add(){
         label_container.appendChild(btn1_container)
     }
 
-    input1.value = ""
-    if(!input2){
-        input2.value = ""
-    }
+    // input1.value = ""
+    // if(!input2){
+    //     input2.value = ""
+    // }
 }
 
 // function search() {
@@ -170,4 +174,43 @@ function clear_btn() {
     search_label.innerText = ''
     // const content = document.getElementById('search_content')
     // content.removeChild(content.lastElementChild)
+}
+
+function save_btn() {
+    const search = document.getElementById('search_content').innerText
+
+    const container = document.getElementById('history_container')
+
+    const history = document.createElement('div')
+    history.className = 'history'
+
+    const history_content = document.createElement('div')
+    history_content.className = 'history_content'
+
+    const history_a = document.createElement('a')
+    history_a.href = '#'
+
+    const history_span = document.createElement('span')
+    history_span.append(search)
+
+    history_a.appendChild(history_span)
+    history_content.appendChild(history_a)
+
+    const progress = document.createElement('div')
+    progress.className = 'myProgress'
+
+    const progress_bar = document.createElement('div')
+    progress_bar.className = 'myBar'
+    progress_bar.style.width = '60%'    //设置搜索热度， 搜索得到的总报告数据
+    
+    const n = Math.floor(Math.random() * (4));
+    progress_bar.style.background = color[n]
+    progress.style.background = background[n]
+
+    progress.appendChild(progress_bar)
+
+    history.appendChild(history_content)
+    history.appendChild(progress)
+
+    container.appendChild(history)
 }

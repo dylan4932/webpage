@@ -1,15 +1,128 @@
-*{
-    font-family: cursive;
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
+
+*{
+    font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
+}
+
 .tool_bar{
+    right:0;
+    top: 0;
     position:fixed;
     height: 100%;
-    width: 210px;
-    top: 0;
-    right: 0;
+    width: 13%;
     background-color: white;
-    /* box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3), 0 20px 50px 0 rgba(95, 69, 69, 0.19); */
+    /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
+    overflow: scroll;
 }
+
+.tool_bar .toolbar_title{
+    margin: 20px 20px;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
+}
+
+.toolbar_title i{
+    font-size: 20px;
+    
+}
+
+.toolbar_title span{
+    font-size: 14px;
+}
+
+.tool_bar .history_result{
+    margin-left: 20px;
+    margin-right: 10px;
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    /* padding: 10px; */
+    border-top: 1px dashed rgb(156, 156, 156);
+}
+
+.history_result .history{
+    position: relative;
+    margin-top: 15px;
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    /* border-radius: 10px; */
+    /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
+}
+
+
+/* .history_result .history:hover{
+    background: rgb(240, 242, 252);
+} */
+
+.history .history_content{
+    width: 100%;
+    height: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.history .history_content a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.incomplete_item a{
+    text-decoration: none;
+    color: black;
+}
+
+.incomplete_content .incomplete_item{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.incomplete_content .incomplete_item:hover{
+    background: rgb(240, 242, 252);
+}
+
+details .complete_item{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+details .complete_item:hover{
+    background: rgb(240, 242, 252);
+}
+
+.complete_item a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.history .myProgress {
+    /* border-radius: 20px; */
+    height: 3px;
+    width: 100%;
+}
+
+.history .myBar {
+    /* border-radius: 20px; */
+    /* width: 90%; */
+    height: 3px;
+    /* background-color: rgb(34, 133, 179); */
+}
+
 .user_img{
     margin-top: 15px;
     margin-left: 80px;
@@ -114,17 +227,25 @@
     z-index: 99;
 }
 
-.title{
-    margin: 20px 30px;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
+.guide .title_content {
+    height: 10%;
 }
 
-.title i{
-    font-size: 20px;
-    margin-right: 5px;
+.title{
+    width: 88%;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.title:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.title a{
+    width: 88%;
+    text-decoration: none;
+    color: black;
 }
 
 .title .title_name{
@@ -132,12 +253,19 @@
     font-weight: 400;
 }
 
+
+.title i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
 .guide ul{
     margin-top: 50px;
     list-style: none;
     position: relative;
     margin-left: -38px;
-    height: 450px;
+    height: 48%;
+    font-size: 14px;
 }
 
 .guide ul li{
@@ -148,12 +276,13 @@
 
 ul li .guide_btn{   
     width: 88%;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
     margin-top: 10px;
 }
+
 ul li .guide_btn:hover{
     background-color: rgb(228, 228, 228);
 }
@@ -166,6 +295,14 @@ ul li .guide_btn:hover{
 .guide_btn i{
     font-weight: 100px;
     font-size: 20px;
+}
+
+.guide .page_des{
+    border-top: 1px dashed grey;
+    width: 95%;
+    height: calc(42%-100px);
+    font-size: 12px;
+    padding-left: 10px;
 }
 
 ul li .function_btn{
@@ -199,6 +336,10 @@ ul li .function_btn:hover{
     background-color: rgb(228, 228, 228);
 }
 
+.picked{
+    background-color: rgb(228, 228, 228);
+}
+
 .phases a{
     text-decoration: none;
     color: black;
@@ -208,7 +349,7 @@ ul li .function_btn:hover{
 .guide ul li .tooltip{
     position: absolute;
     top:-10px;
-    left: 214px;
+    left: 224px;
     width: 200px;
     height: 60px;
     color: white;
@@ -241,7 +382,7 @@ ul li .function_btn:hover{
     transition: all 0.5s ease;
     transition-delay: 1s;
     top: -10px;
-    left: 214px;
+    left: 224px;
     opacity: 1;
 }
 
@@ -303,9 +444,8 @@ ul li .function_btn:hover{
 
 
 .grid_container{
-    margin-left: 50px;
     top: 20px;
-    left: 13%;
+    left: 17%;
     position: absolute;
     background-color: white;
     overflow: scroll;
@@ -325,6 +465,7 @@ ul li .function_btn:hover{
     column-gap: 50px;
     height: 100%;
     overflow: auto;
+    position: relative;
 }
 
 .information{
@@ -336,8 +477,9 @@ ul li .function_btn:hover{
 }
 
 .remind_container{
-    margin-top: 50px;
-    margin-left: -30px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
 }
 
 .remind{
@@ -350,6 +492,22 @@ ul li .function_btn:hover{
     padding: 1px 1px;
     padding-left: 10px;
     padding-right: 10px;   
+    position: relative;
+}
+
+.remind .mini_btn_container{
+    border-radius: 50%;
+    position: absolute;
+    padding-left: 3px;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+.remind .mini_btn_container:hover{
+    background: #f0f2fc;
 }
 
 .clicked{
@@ -415,7 +573,7 @@ p{
 }
 
 
-.container {
+.check_container {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -429,13 +587,13 @@ p{
   }
   
 
-  .container input {
+.check_container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
   
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -443,51 +601,50 @@ p{
     width: 17px;
     background-color: #eee;
     border-radius: 50%;
-  }
+}
   
-  .container:hover input ~ .checkmark {
+.check_container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
-  
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  .checkmark:after {
+}
+
+.check_container input:checked ~ .checkmark {
+    background-color: rgb(74,110,224);
+}
+
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
+}
 
-  .container input:checked ~ .checkmark:after {
+
+.check_container input:checked ~ .checkmark:after {
     display: block;
-  }
-  
- 
-  .container .checkmark:after {
-       top: 5px;
-      left: 5px;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: white;
-  }
+}
+
+
+.check_container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
 
 
 
 .opt{
-
     border-radius: 5px;
-      border: none;
-      background: rgb(240, 242, 252);
-      color: rgb(74, 110, 224);
-      height: 100%;
-  }
+    border: none;
+    background: rgb(240, 242, 252);
+    color: rgb(74, 110, 224);
+    height: 100%;
+}
 
-  .checked{
+.checked{
       background: rgb(74,110,224);
       color: white;
       height: 100%;
       transition: all 0.3s ease-in-out;
-  }
+}

@@ -17,8 +17,8 @@
                 <span>搜索记录</span>
             </i>
         </div>
-        <div class="history_result">
-            <div class="history">
+        <div class="history_result" id="history_container">
+            <!-- <div class="history">
                 <div class="history_content">
                     <a href="#">
                         <span>---搜索记录1---</span>
@@ -67,7 +67,7 @@
                 <div class="myProgress">
                     <div class="myBar" style="background: rgb(253, 224, 129); width: 60%;"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -75,7 +75,6 @@
         <div class="title_content">
             <ul>
                 <li>
-                    
                     <div class="title">
                         <a href="index.html">
                             <i class='bx bx-home' ></i>
@@ -83,8 +82,7 @@
                         </a>
                     </div>
                 </li>
-                <li>
-                    
+                <li> 
                     <div class="title">
                         <a href="./case_mana.html">
                             <i class='bx bx-user-circle'></i>
@@ -94,13 +92,12 @@
                     </div>
                 </li>
                 <li>
-                    
-                        <div class="title">
-                            <a href="./case_management.html">
-                                <i class='bx bx-folder-open' ></i>
-                                <span class="title_name">CASE #00001</span>
-                            </a>            
-                        </div>
+                    <div class="title">
+                        <a href="./case_management.html">
+                            <i class='bx bx-folder-open' ></i>
+                            <span class="title_name">CASE #00001</span>
+                        </a>            
+                    </div>
                 </li>
             </ul>     
         </div>
@@ -110,16 +107,42 @@
                 <div class="guide_btn" id="module1_guide" onclick="guide()"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 1</span>
+                        <span class="module_name" id="module1_name">Module 1</span>
                     </a>
                 </div>
                 <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
             </li>
+            <div class="phases" id="curr">
+                <a href="module1_phase1.html">
+                    <div class="phase_container picked">
+                        ├─ Phase1
+                        <span class="phasetip">
+                            ---这是关于phase1的提示---
+                        </span>
+                    </div>
+                </a>
+                <a href="module1_phase2.html">
+                    <div class="phase_container">
+                        └─ Phase2
+                        <span class="phasetip">
+                            ---这是关于phase2的提示---
+                        </span>
+                    </div>
+                </a>
+                <a href="module1_phase3.html">
+                    <div class="phase_container">
+                        └─ Phase3
+                        <span class="phasetip">
+                            ---这是关于phase3的提示---
+                        </span>
+                    </div>
+                </a>
+            </div>
             <li id="module2">
                 <div class="guide_btn" id="module2_guide" onclick="guide()"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 2</span>
+                        <span class="module_name" id="module2_name">Module 2</span>
                     </a>
                      
                 </div>
@@ -127,9 +150,9 @@
             </li>
             <li id="module3">
                 <div class="guide_btn" id="module3_guide"> 
-                    <a href="#" onclick="guide()">
+                    <a href="module3_edit.html">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 3</span>
+                        <span class="module_name" id="module3_name">Module 3</span>
                     </a>
                 </div>
                 <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
@@ -138,16 +161,16 @@
                 <div class="guide_btn" id="module4_guide"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 4</span>
+                        <span class="module_name" id="module4_name">Module 4</span>
                     </a>
                 </div>
                 <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
             </li>
             <li id="module5">
                 <div class="guide_btn" id="module5_guide"> 
-                    <a href="#">
+                    <a href="module5_edit.html">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 5</span>
+                        <span class="module_name" id="module5_name">Module 5</span>
                     </a> 
                 </div>
                 <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
@@ -168,32 +191,6 @@
                 </p>
             </div>
         </div>
-        <!-- <ul>
-            <li>
-                <div class="function_btn">
-                    <a href="#">
-                        <i class='bx bx-save' ></i>
-                        <span class="function_name">保存</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="function_btn" href="index.html">
-                    <a href="javascript:history.back()">
-                        <i class='bx bxs-left-arrow-circle' ></i>
-                        <span class="function_name">返回</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="function_btn">
-                    <a href="module1_phase3.html">
-                        <i class='bx bxs-right-arrow-circle' ></i>
-                        <span class="function_name">下一步</span>                           
-                    </a>
-                </div>
-            </li>
-        </ul> -->
     </div>
     <div class="home_content">
         <div class="search_container">

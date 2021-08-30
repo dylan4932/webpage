@@ -7,44 +7,92 @@
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <!-- <script src="https://kit.fontawesome.com/85d4801a64.js" crossorigin="anonymous"></script> -->
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <title>偏倚控制</title>
+        <title>Module1_phase1</title>
     </head>
     <body>
         <div class="tool_bar">
             <img src="./pic/toolbar.png">
         </div>
-    
+        
         <div class="guide">
             <div class="title_content">
-                <div class="title">
-                    <i class='bx bx-folder-open' ></i>
-                    <span class="title_name">CASE #00001</span>
-                </div>               
+                <ul>
+                    <li>
+                        <div class="title">
+                            <a href="index.html">
+                                <i class='bx bx-home' ></i>
+                                <span class="title_name">Home Page 主页</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="title">
+                            <a href="./case_mana.html">
+                                <i class='bx bx-user-circle'></i>
+                                <span class="title_name">My Onion</span>
+                            </a>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <a href="./case_management.html">
+                                <i class='bx bx-folder-open' ></i>
+                                <span class="title_name">CASE #00001</span>
+                            </a>            
+                        </div>
+                    </li>
+                </ul>     
             </div>
             
             <ul id="modules_container">
                 <li id="module1">
                     <div class="guide_btn" id="module1_guide" onclick="guide()"> 
-                        <a href="#">
+                        <a href="#" onclick="guide()" id="module1_a">
                             <i class='bx bx-file-blank' ></i>
                             <span class="module_name">Module 1</span>
                         </a>
                     </div>
                     <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
                 </li>
+                <div class="phases" id="curr">
+                    <a href="module1_phase1.html">
+                        <div class="phase_container">
+                            ├─ Phase1
+                            <span class="phasetip">
+                                ---这是关于phase1的提示---
+                            </span>
+                        </div>
+                    </a>
+                    <a href="module1_phase2.html">
+                        <div class="phase_container">
+                            └─ Phase2
+                            <span class="phasetip">
+                                ---这是关于phase2的提示---
+                            </span>
+                        </div>
+                    </a>
+                    <a href="module1_phase3.html">
+                        <div class="phase_container picked">
+                            └─ Phase3
+                            <span class="phasetip">
+                                ---这是关于phase3的提示---
+                            </span>
+                        </div>
+                    </a>
+                </div>
                 <li id="module2">
                     <div class="guide_btn" id="module2_guide" onclick="guide()"> 
                         <a href="#">
                             <i class='bx bx-file-blank' ></i>
                             <span class="module_name">Module 2</span>
-                        </a>
-                         
+                        </a>     
                     </div>
                     <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
                 </li>
                 <li id="module3">
                     <div class="guide_btn" id="module3_guide"> 
-                        <a href="#" onclick="guide()">
+                        <a href="module3_edit.html"">
                             <i class='bx bx-file-blank' ></i>
                             <span class="module_name">Module 3</span>
                         </a>
@@ -62,7 +110,7 @@
                 </li>
                 <li id="module5">
                     <div class="guide_btn" id="module5_guide"> 
-                        <a href="#">
+                        <a href="module5_edit.html">
                             <i class='bx bx-file-blank' ></i>
                             <span class="module_name">Module 5</span>
                         </a> 
@@ -97,7 +145,7 @@
                 </li>
                 <li>
                     <div class="function_btn">
-                        <a href="#">
+                        <a href="module1_phase2.html">
                             <i class='bx bxs-right-arrow-circle' ></i>
                             <span class="function_name">下一步</span>                           
                         </a>
@@ -111,7 +159,7 @@
                 <div class='grid_child information' id='information'>
                     <strong> 首选治疗案例分析</strong>
                     <div id='info1_container' class='infoCon'>
-                        <p id='info1_title' onclick="remind()"> Module2_phase3_information1_question1：
+                        <p id='info1_title' onclick="remind()">请输入 X 变量（暴露/干预措施）的名称：
                             <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         <!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
@@ -121,19 +169,19 @@
                         <button class="save_btn">保存</button>
                     </div>
                     <div id='info2_container' class='infoCon'> 
-                        <p id='info2_title' onclick="remind()"> Module2_phase3_information1_question2：
-                            <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
+                        <p id='info2_title' onclick="remind()"> X 变量的值类型：
+                            <i id="info2" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         <div class="test_opt">
-                            <button class="opt" onclick="clicked()">option1</button>
-                            <button class="opt" onclick="clicked()">option2</button>
-                            <button class="opt" onclick="clicked()">option3</button>
-                            <button class="opt" onclick="clicked()">option4</button>
-                            <button class="opt" onclick="clicked()">option5</button>
+                            <button class="opt" onclick="clicked()">连续变量</button>
+                            <button class="opt" onclick="clicked()">记次变量</button>
+                            <button class="opt" onclick="clicked()">二分类变量</button>
+                            <button class="opt" onclick="clicked()">名义变量</button>
+                            <button class="opt" onclick="clicked()">有许多分类</button>
                         </div>
                     </div>
                     <div id='info3_container' class='infoCon'>
-                        <p id="info3_title" onclick="remind()">Module2_phase3_information1_question3: 
+                        <p id="info3_title" onclick="remind()">请输入 Y 变量（结局变量）的名称: 
                             <i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         
@@ -141,38 +189,38 @@
                         <button class="save_btn">保存</button>
                     </div>
                     <div id='info4_container' class='infoCon'>
-                        <p id="info4_title" onclick="remind()"> Module2_phase3_information1_question4: 
+                        <p id="info4_title" onclick="remind()"> Y 变量的值类型: 
                             <i id="info4" class='bx bx-help-circle' onclick="remind()"></i> 
                         </p>
                         <div class="single_choice">
-                            <label class="container">option1
+                            <label class="check_container">连续变量
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="container">option2
+                            <label class="check_container">记次变量
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="container">option3
+                            <label class="check_container">二分类变量
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="container">option4
+                            <label class="check_container">名义变量
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="container">option5
+                            <label class="check_container">有序多分类变量
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
                     </div>
                     <div id='info5_container' class='infoCon'>
-                        <p id="info5_title" onclick="remind()">Module2_phase3_information1_question5: 
+                        <p id="info5_title" onclick="remind()">预测本研究中的 Y （结局）发生率: 
                             <i id="info5" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                          
-                        <textarea class="user_input" id='info5_input' onclick="remind()"></textarea>
+                        <textarea class="user_input" id='info5_input' onclick="remind()" style="height: 10px; width: 50px"></textarea>
                         <button class="save_btn">保存</button>
                     </div>
                 </div>
@@ -198,10 +246,10 @@
                 </div>
 
             </div>
-               
+              
         </div>
         <br>
         <script src='case.js'></script>
-        <script src="./guide.js"></script>
+        <script src="guide.js"></script>
     </body>
 </html>

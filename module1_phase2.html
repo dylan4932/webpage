@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,9 @@
         <!-- <img src="./pic/toolbar.png"> -->
 
         <div class="toolbar_title">
-            <i class='bx bx-file-find'>
+            <!-- <i class='bx bx-file-find'> -->
                 <span>下面的report可能有启发</span>
-            </i>
+            <!-- </i> -->
         </div>
         <div class="history_result">
             <div class="history">
@@ -24,7 +24,7 @@
                         <span>发表期刊</span>
                     </a>
                 </div>
-                <div class="myProgress">
+                <div class="myProgress" style="background: #f9dae3;">
                     <div class="myBar" style="background: rgb(234, 69, 47); width: 80%;"></div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                         <span>影响因子</span>
                     </a>
                 </div>
-                <div class="myProgress">
+                <div class="myProgress" style="background: #dbebfe">
                     <div class="myBar" style="background: rgb(79, 114, 225); width: 30%;"></div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                         <span>研究人群</span>
                     </a>
                 </div>
-                <div class="myProgress">
+                <div class="myProgress" style="background: #ebfbf7;">
                     <div class="myBar" style="background: rgb(87, 191, 145); width: 90%;"></div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                         <span>研究类型</span>
                     </a>
                 </div>
-                <div class="myProgress">
+                <div class="myProgress" style="background: #f2e0ff;">
                     <div class="myBar" style="background: rgb(140, 72, 189); width: 10%;"></div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         <span>研究的样本量</span>
                     </a>
                 </div>
-                <div class="myProgress">
+                <div class="myProgress" style="background: rgb(253, 248, 216);">
                     <div class="myBar" style="background: rgb(253, 224, 129); width: 50%;"></div>
                 </div>
             </div>
@@ -75,7 +75,6 @@
         <div class="title_content">
             <ul>
                 <li>
-                    
                     <div class="title">
                         <a href="index.html">
                             <i class='bx bx-home' ></i>
@@ -83,8 +82,7 @@
                         </a>
                     </div>
                 </li>
-                <li>
-                    
+                <li> 
                     <div class="title">
                         <a href="./case_mana.html">
                             <i class='bx bx-user-circle'></i>
@@ -94,13 +92,12 @@
                     </div>
                 </li>
                 <li>
-                    
-                        <div class="title">
-                            <a href="./case_management.html">
-                                <i class='bx bx-folder-open' ></i>
-                                <span class="title_name">CASE #00001</span>
-                            </a>            
-                        </div>
+                    <div class="title">
+                        <a href="./case_management.html">
+                            <i class='bx bx-folder-open' ></i>
+                            <span class="title_name">CASE #00001</span>
+                        </a>            
+                    </div>
                 </li>
             </ul>     
         </div>
@@ -110,16 +107,42 @@
                 <div class="guide_btn" id="module1_guide" onclick="guide()"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 1</span>
+                        <span class="module_name" id="module1_name">Module 1</span>
                     </a>
                 </div>
                 <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
             </li>
+            <div class="phases" id="curr">
+                <a href="module1_phase1.html">
+                    <div class="phase_container">
+                        ├─ Phase1
+                        <span class="phasetip">
+                            ---这是关于phase1的提示---
+                        </span>
+                    </div>
+                </a>
+                <a href="module1_phase2.html">
+                    <div class="phase_container picked">
+                        └─ Phase2
+                        <span class="phasetip">
+                            ---这是关于phase2的提示---
+                        </span>
+                    </div>
+                </a>
+                <a href="module1_phase3.html">
+                    <div class="phase_container">
+                        └─ Phase3
+                        <span class="phasetip">
+                            ---这是关于phase3的提示---
+                        </span>
+                    </div>
+                </a>
+            </div>
             <li id="module2">
                 <div class="guide_btn" id="module2_guide" onclick="guide()"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 2</span>
+                        <span class="module_name" id="module2_name">Module 2</span>
                     </a>
                      
                 </div>
@@ -127,9 +150,9 @@
             </li>
             <li id="module3">
                 <div class="guide_btn" id="module3_guide"> 
-                    <a href="#" onclick="guide()">
+                    <a href="module3_edit.html">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 3</span>
+                        <span class="module_name" id="module3_name">Module 3</span>
                     </a>
                 </div>
                 <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
@@ -138,16 +161,16 @@
                 <div class="guide_btn" id="module4_guide"> 
                     <a href="#">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 4</span>
+                        <span class="module_name" id="module4_name">Module 4</span>
                     </a>
                 </div>
                 <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
             </li>
             <li id="module5">
                 <div class="guide_btn" id="module5_guide"> 
-                    <a href="#">
+                    <a href="module5_edit.html">
                         <i class='bx bx-file-blank' ></i>
-                        <span class="module_name">Module 5</span>
+                        <span class="module_name" id="module5_name">Module 5</span>
                     </a> 
                 </div>
                 <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
@@ -261,8 +284,7 @@
                 <a href="#">
                     <span>保存您的文献归纳</span>
                 </a>
-            </div>
-            
+            </div>   
         </div>
         <div class="sub_content">
             <div class="sub_content_title">

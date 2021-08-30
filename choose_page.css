@@ -1,5 +1,13 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
 *{
-    font-family: cursive;
+    font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
 }
 
 .tool_bar{
@@ -11,6 +19,7 @@
     background-color: white;
     /* box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3), 0 20px 50px 0 rgba(95, 69, 69, 0.19); */
 }
+
 .guide{
     margin-right: 10px;
     margin-left: 10px;
@@ -22,17 +31,25 @@
     z-index: 99;
 }
 
-.title{
-    margin: 20px 30px;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
+.guide .title_content {
+    height: 10%;
 }
 
-.title i{
-    font-size: 20px;
-    margin-right: 5px;
+.title{
+    width: 88%;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.title:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.title a{
+    width: 88%;
+    text-decoration: none;
+    color: black;
 }
 
 .title .title_name{
@@ -40,12 +57,19 @@
     font-weight: 400;
 }
 
+
+.title i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
 .guide ul{
     margin-top: 50px;
     list-style: none;
     position: relative;
     margin-left: -38px;
-    height: 450px;
+    height: 48%;
+    font-size: 14px;
 }
 
 .guide ul li{
@@ -56,12 +80,13 @@
 
 ul li .guide_btn{   
     width: 88%;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
     margin-top: 10px;
 }
+
 ul li .guide_btn:hover{
     background-color: rgb(228, 228, 228);
 }
@@ -74,6 +99,14 @@ ul li .guide_btn:hover{
 .guide_btn i{
     font-weight: 100px;
     font-size: 20px;
+}
+
+.guide .page_des{
+    border-top: 1px dashed grey;
+    width: 95%;
+    height: calc(42%-100px);
+    font-size: 12px;
+    padding-left: 10px;
 }
 
 ul li .function_btn{
@@ -94,15 +127,19 @@ ul li .function_btn:hover{
 
 .phase_container{
     /* background-color: red; */
-    width: 83%;
+    width: 78%;
     margin-top: 5px;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px; 
 }
 
 .phase_container:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.picked{
     background-color: rgb(228, 228, 228);
 }
 
@@ -114,7 +151,7 @@ ul li .function_btn:hover{
 .guide ul li .tooltip{
     position: absolute;
     top:-10px;
-    left: 214px;
+    left: 224px;
     width: 200px;
     height: 60px;
     color: white;
@@ -147,7 +184,7 @@ ul li .function_btn:hover{
     transition: all 0.5s ease;
     transition-delay: 1s;
     top: -10px;
-    left: 214px;
+    left: 224px;
     opacity: 1;
 }
 
@@ -169,7 +206,7 @@ ul li .function_btn:hover{
 
 .phases .phase_container .phasetip{
     position: absolute;
-    left: 214px;
+    left: 224px;
     top: -10px;
     /* transform: translateX(-50%); */
     width: 200px;
@@ -204,7 +241,7 @@ ul li .function_btn:hover{
     transition: all 0.5s ease;
     transition-delay: 1s;
     top: -10px;
-    left: 214px;
+    left: 224px;
     opacity: 1;
 }
 
@@ -323,4 +360,109 @@ p{
     border-radius: 50%;
     display: inline-block;
 }
+
+.test_opt{
+    margin: 20px 20px;
+}
+
+.opt{
+    border-radius: 5px;
+    border: none;
+    background: rgb(240, 242, 252);
+    color: rgb(74, 110, 224);
+    height: 100%;
+    margin-top: 5px;
+}
+
+.checked{
+    background: rgb(74,110,224);
+    color: white;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.check_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+.check_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+.check_container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.check_container input:checked ~ .checkmark {
+    background-color: rgb(74,110,224);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.check_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.check_container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+.next_btn_container{
+    margin: 50px 40%;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.next_btn{
+    width: 100%;
+    border-bottom: 2px solid rgb(79, 114, 225);
+    text-align: center;
+    font-size: 14px;
+}
+
+.next_btn_container:hover{
+    background: rgb(240, 242, 252);
+}  
+
+
+.next_btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
 

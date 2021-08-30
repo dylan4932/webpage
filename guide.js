@@ -1,8 +1,9 @@
 function guide(){
 	var evt = window.event || evt;
 
+    console.log(evt.target)
+
     const module = document.getElementById(evt.target.id.slice(0,7))
-    console.log(module)
 
     const tip = document.getElementById(evt.target.id.slice(0,7)+"_tip")
     tip.style.opacity = "0"
@@ -28,7 +29,11 @@ function guide(){
         phase2.className="phase_container"
 
         const phase2_link = document.createElement('a')
-        phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2.html"
+        if(evt.target.id.slice(0,7) === 'module2'){
+            phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2_1.html"
+        } else{
+            phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2.html"
+        }
         const phase2_txt = document.createTextNode('└─ Phase2')
         phase2.append(phase2_txt)
         const tip2 = document.createElement('span')
@@ -42,7 +47,11 @@ function guide(){
         phase3.className="phase_container"
 
         const phase3_link = document.createElement('a')
-        phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3.html"
+        if(evt.target.id.slice(0,7) === 'module2'){
+            phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3_1.html"
+        } else{
+            phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3.html"
+        }
         const phase3_txt = document.createTextNode('└─ Phase3')
         phase3.append(phase3_txt)
         const tip3 = document.createElement('span')
@@ -75,6 +84,11 @@ function guide(){
     }
 
     const modules_container = document.getElementById("modules_container")
+    const curr = document.getElementById('curr')
+    if(curr){
+        modules_container.removeChild(curr)
+    }
+   
     for(var i = 0; i<modules_container.childElementCount;i++){
         const element = modules_container.children[i] 
         if(element.childElementCount !== 2 && element != module){
@@ -82,3 +96,15 @@ function guide(){
             }
     }
 }
+
+function clicked(){
+    var evt = window.event || evt;
+    const checked = document.getElementById('opt_checked')
+    if(checked){
+        checked.className = "opt"
+        checked.id = ""
+    }
+    evt.target.className = "opt checked"
+    evt.target.id = "opt_checked"
+}
+

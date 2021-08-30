@@ -399,12 +399,11 @@ a{
     font-size: 20px;
     margin-top: 10px;
     color: rgb(225, 67, 63);
-    opacity: 0;
 }
 
-.case_function:hover i{
+/* .case_function:hover i{
     opacity: 1;
-}
+} */
 
 .case_function i:hover{
     background: rgb(228, 228, 228);

@@ -1,6 +1,15 @@
-*{
-    font-family: cursive;
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
+
+*{
+    font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
+}
+
 .tool_bar{
     right:0;
     top: 0;
@@ -22,17 +31,25 @@
     z-index: 99;
 }
 
-.title{
-    margin: 20px 30px;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
+.guide .title_content {
+    height: 10%;
 }
 
-.title i{
-    font-size: 20px;
-    margin-right: 5px;
+.title{
+    width: 88%;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.title:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.title a{
+    width: 88%;
+    text-decoration: none;
+    color: black;
 }
 
 .title .title_name{
@@ -40,12 +57,19 @@
     font-weight: 400;
 }
 
+
+.title i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
 .guide ul{
     margin-top: 50px;
     list-style: none;
     position: relative;
     margin-left: -38px;
-    height: 450px;
+    height: 48%;
+    font-size: 14px;
 }
 
 .guide ul li{
@@ -56,12 +80,13 @@
 
 ul li .guide_btn{   
     width: 88%;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
     margin-top: 10px;
 }
+
 ul li .guide_btn:hover{
     background-color: rgb(228, 228, 228);
 }
@@ -76,6 +101,14 @@ ul li .guide_btn:hover{
     font-size: 20px;
 }
 
+.guide .page_des{
+    border-top: 1px dashed grey;
+    width: 95%;
+    height: calc(42%-100px);
+    font-size: 12px;
+    padding-left: 10px;
+}
+
 ul li .function_btn{
     width: 98%;
     margin-top: 10px;
@@ -86,6 +119,7 @@ ul li .function_btn{
 ul li .function_btn:hover{
     background-color: rgb(228, 228, 228);
 }
+
 
 .function_btn a{
     text-decoration: none;
@@ -106,11 +140,20 @@ ul li .function_btn:hover{
     background-color: rgb(228, 228, 228);
 }
 
+.picked{
+    background-color: rgb(228, 228, 228);
+}
+
+.phases a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .guide ul li .tooltip{
     position: absolute;
     top:-10px;
-    left: 214px;
+    left: 224px;
     width: 200px;
     height: 60px;
     color: white;
@@ -143,7 +186,7 @@ ul li .function_btn:hover{
     transition: all 0.5s ease;
     transition-delay: 1s;
     top: -10px;
-    left: 214px;
+    left: 224px;
     opacity: 1;
 }
 
@@ -167,7 +210,6 @@ ul li .function_btn:hover{
     position: absolute;
     left: 224px;
     top: -10px;
-    /* transform: translateX(-50%); */
     width: 200px;
     height: 60px;
     color: white;
@@ -204,16 +246,9 @@ ul li .function_btn:hover{
     opacity: 1;
 }
 
-.phases a{
-    text-decoration: none;
-    color: black;
-}
-
 .home_content{
-    margin-left: 50px;
-    margin-top: 20px;
-    top: 0;
-    left: 13%;
+    top: 20px;
+    left: 17%;
     position: absolute;
     background-color: white;
     overflow: scroll;
