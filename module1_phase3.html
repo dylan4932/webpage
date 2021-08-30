@@ -17,27 +17,27 @@
             <!-- </i> -->
         </div>
         <div class="recent_result">
-            <div class="recent">
+            <div class="recent" onclick="edit1()">
                 <a href="#">
                     <span>假说1</span>    
                 </a>
             </div>
-            <div class="recent">
+            <div class="recent" onclick="edit1()">
                 <a href="#">
                     <span>假说2</span> 
                 </a>
             </div>
-            <div class="recent">
+            <div class="recent" onclick="edit1()">
                 <a href="#">
                     <span>假说3</span> 
                 </a>
             </div>
-            <div class="recent">
+            <div class="recent" onclick="edit1()">
                 <a href="#">
                     <span>假说4</span> 
                 </a>
             </div>
-            <div class="recent">
+            <div class="recent" onclick="edit1()">
                 <a href="#">
                     <span>假说5</span> 
                 </a>
@@ -48,41 +48,31 @@
             <span>近来的题目（recently 5）</span>
         </div>
         <div class="history_result">
-            <div class="history">
+            <a class="history" onclick="edit2()" href="#">
                 <div class="history_content">
-                    <a href="#">
-                        <span>题目1</span>
-                    </a>
+                    <span>题目1</span>
                 </div>
-            </div>
-            <div class="history">
+            </a>
+            <a class="history" onclick="edit2()" href="#">
                 <div class="history_content">
-                    <a href="#">
-                        <span>题目2</span>
-                    </a>
+                    <span>题目2</span>
                 </div>
-            </div>
-            <div class="history">
+            </a>
+            <a class="history" onclick="edit2()" href="#">
                 <div class="history_content">
-                    <a href="#">
-                        <span>题目3</span>
-                    </a>
+                    <span>题目3</span>
                 </div>
-            </div>
-            <div class="history">
+            </a>
+            <a class="history" onclick="edit2()" href="#">
                 <div class="history_content">
-                    <a href="#">
-                        <span>题目4</span>
-                    </a>
+                    <span>题目4</span>
                 </div>
-            </div>
-            <div class="history">
+            </a>
+            <a class="history" onclick="edit2()" href="#">
                 <div class="history_content">
-                    <a href="#">
-                        <span>题目5</span>
-                    </a>
+                    <span>题目5</span>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -117,7 +107,7 @@
             </ul>     
         </div>
         
-        <ul id="modules_container">
+        <ul id="modules_container" class="modules_container">
             <li id="module1">
                 <div class="guide_btn" id="module1_guide" onclick="guide()"> 
                     <a href="#">
@@ -149,6 +139,14 @@
                         └─ Phase3
                         <span class="phasetip">
                             ---这是关于phase3的提示---
+                        </span>
+                    </div>
+                </a>
+                <a href="module1_phase4.html">
+                    <div class="phase_container">
+                        └─ Research Topic
+                        <span class="phasetip">
+                            ---这是关于Research Topic的提示---
                         </span>
                     </div>
                 </a>
@@ -203,253 +201,259 @@
         </div>
 
     </div>
-    <div class="home_content">
+    <div class="home_content" id="home_content">
         <div class="ads_container">
             <div class="ads">
                 <img src="./pic/ads.png">
             </div>  
         </div>
         <div class="edit_container">
-            <div class="edit_content">
-                <div class="edit_title" style="border-bottom: 5px solid rgb(230, 206, 177);""> </div>
-                <div class="output_container" id="info1_container">
-                    <!-- <div class="output_title">
-                        
-                        Module1_phase3_information1_save_output1
-                    </div> -->
-                    <div class="output_content" id="info1_content">
-                        <div id="info1_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【我的临床观察现象】">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container" >
-                    <div class="output_content" id="info2_content">
-                        <div id="info2_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【此种观察现象在指南 & 文献中的解释？】">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container">
-                    <div class="output_content" id="info2_content">
-                        <div id="info2_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【我对此现象的解释 VS 指南 & 文献 的不同或发展？】">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container">
-                    <div class="output_content" id="info2_content">
-                        <div id="info2_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【此现象中，我推断的“因果关联”是怎样的？】"> 
-                            
-                        </div>
-                    </div>
-                </div>
+            <div class="part1_title">
+                <span>跟随右侧的“提示（remind）”，在左侧的编辑框中完善您的“研究假说”，假说是完善研究课题的重要步骤，可以帮助您审视您的研究方向的临床基础、必要性 & 因果推断  </span>
             </div>
             <div class="edit_content">
-                <div class="edit_title" style="border-bottom:5px solid rgb(176, 198, 199);"> </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind 1】Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, debitis!</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
+                <div class="col2">
+                    <div class="edit_title" style="border-bottom: 5px solid rgb(230, 206, 177);""> </div>
+                    <div class="output_container" id="info1_container">
+                        <!-- <div class="output_title">
+                            
+                            Module1_phase3_information1_save_output1
+                        </div> -->
+                        <div class="output_content" id="info1_content">
+                            <div id="info1_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【我的临床观察现象】">
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind 2】Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nisi.</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
+                    <div class="output_container" >
+                        <div class="output_content" id="info2_content">
+                            <div id="info2_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【此种观察现象在指南 & 文献中的解释？】">
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind3】 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quis.</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
+                    <div class="output_container">
+                        <div class="output_content" id="info2_content">
+                            <div id="info2_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【我对此现象的解释 VS 指南 & 文献 的不同或发展？】">
+                                
+                            </div>
                         </div>
                     </div>
+                    <div class="output_container">
+                        <div class="output_content" id="info2_content">
+                            <div id="info2_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【此现象中，我推断的“因果关联”是怎样的？】"> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save_btn_container">
+                        <div class="save_btn">
+                            <a href="#">
+                                <span>save</span>
+                            </a>
+                        </div>   
+                    </div>
                 </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind4】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
+                <div class="col2">
+                    <div class="edit_title" style="border-bottom:5px solid rgb(176, 198, 199);"> </div>
+                    <div class="standard_container">
+                        <div class="standard_content" id="info1_standard">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind 1】Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, debitis!</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content" id="info2_standard">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind 2】Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nisi.</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content" id="info3_standard">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind3】 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quis.</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content" id="info4_standard">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind4】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="save_btn_container">
-                <div class="save_btn">
-                    <a href="#">
-                        <span>save</span>
-                    </a>
-                </div>   
-            </div>
-            <div></div>
-            </hr>
-            </hr>
-            <div class="edit_content">
-                <div class="output_container" id="info1_container">
-                    <div class="output_content" id="info1_content">
-                        <div id="info1_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【P – Population 研究对象人群】 ">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container" >
-                    <div class="output_content" id="info2_content">
-                        <div id="info1_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【I – intervention 干预】">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container">
-                    <div class="output_content" id="info2_content">
-                        <div id="info2_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【C – Comparison 对照人群】 ">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container">
-                    <div class="output_content" id="info3_content">
-                        <div id="info3_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【O – outcome 研究结局】">     
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container">
-                    <div class="output_content" id="info4_content">
-                        <div id="info4_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【S – setting 研究设计】如果您不确定您得研究设计，可进入Module 2 进行辅助生成。】">     
-                        </div>
-                    </div>
-                </div>
-                <div class="output_container">
-                    <div class="output_content" id="info4_content">
-                        <div id="info4_output">
-                            <span class="dot" style="background: rgb(230, 206, 177);"></span>
-                            <input type="text" placeholder="【T – timely 随访时长】 ">     
-                        </div>
-                    </div>
-                </div>
+            <div class="part2_title" id="edit2">
+                <span>跟随右侧的“提示（remind）”，按照 “PICOST ” 的组成模式进行您研究题目的 书写                </span>
             </div>
             <div class="edit_content">
-                <!-- <div class="edit_title" style="border-bottom:5px solid rgb(176, 198, 199);"> 规范笔记 </div> -->
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind 1】Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, debitis!</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
+                <div class="col1">
+                    <div class="output_container">
+                        <div class="output_content">
+                            <div id="info1_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【P – Population 研究对象人群】 ">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output_container" >
+                        <div class="output_content">
+                            <div id="info1_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【I – intervention 干预】">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output_container">
+                        <div class="output_content">
+                            <div id="info2_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【C – Comparison 对照人群】 ">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output_container">
+                        <div class="output_content">
+                            <div id="info3_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【O – outcome 研究结局】">     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output_container">
+                        <div class="output_content">
+                            <div id="info4_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【S – setting 研究设计】如果您不确定您得研究设计，可进入Module 2 进行辅助生成。】">     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output_container">
+                        <div class="output_content">
+                            <div id="info4_output">
+                                <span class="dot" style="background: rgb(230, 206, 177);"></span>
+                                <input type="text" placeholder="【T – timely 随访时长】 ">     
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind 2】Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nisi.</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
+                <div class="col2">
+                    <!-- <div class="edit_title" style="border-bottom:5px solid rgb(176, 198, 199);"> 规范笔记 </div> -->
+                    <div class="standard_container">
+                        <div class="standard_content">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind 1】Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, debitis!</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind 2】Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nisi.</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind3】 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quis.</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind4】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind5】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard_container">
+                        <div class="standard_content">
+                            <span class="dot" style="background: rgb(153, 0, 51);"></span>
+                            <span>【假说 remind6】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
+                            <div class="more_content">
+                                <details>
+                                    <summary>更多解释</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
+                                </details>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind3】 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quis.</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
-                    </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind4】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
-                    </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind5】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
-                    </div>
-                </div>
-                <div class="standard_container">
-                    <div class="standard_content">
-                        <span class="dot" style="background: rgb(153, 0, 51);"></span>
-                        <span>【假说 remind6】Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi?</span>
-                        <div class="more_content">
-                            <details>
-                                <summary>更多解释</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet. Voluptate blanditiis sequi fugiat aliquid voluptatibus neque quas hic sed, reiciendis exercitationem animi? Quibusdam voluptatum tempora expedita excepturi nihil? Magnam.</p>
-                            </details>
-                        </div>
-                    </div>
+                <div class="save_btn_container">
+                    <div class="save_btn" style="border-bottom: 2px solid rgb(140, 72, 189);">
+                        <a href="#">
+                            <span>save</span>
+                        </a>
+                    </div>   
                 </div>
             </div>
-            <div class="save_btn_container">
-                <div class="save_btn" style="border-bottom: 2px solid rgb(140, 72, 189);">
-                    <a href="#">
-                        <span>save</span>
-                    </a>
-                </div>   
-            </div>
-            <div></div>
             
         </div>
     </div>

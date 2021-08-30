@@ -92,7 +92,13 @@ body{
 }
 
 .guide .title_content {
+    margin-top: 20px;
     height: 10%;
+}
+
+.guide .modules_container{
+    margin-top: 50px;
+    height:52%;
 }
 
 .title{
@@ -124,7 +130,6 @@ body{
 }
 
 .guide ul{
-    margin-top: 50px;
     list-style: none;
     position: relative;
     margin-left: -38px;
@@ -253,6 +258,9 @@ ul li .function_btn:hover{
     background-color: rgb(228, 228, 228);
 }
 
+.phases{
+    
+}
 .phases a{
     text-decoration: none;
     color: black;
@@ -304,29 +312,38 @@ ul li .function_btn:hover{
 }
 
 .home_content{
-    margin-left: 50px;
-    margin-top: 20px;
-    top: 0;
-    left: 13%;
+    top: 20px;
+    left: 17%;
     position: absolute;
     background-color: white;
     overflow: scroll;
-    height: 80%;
+    height: 650px;
     border-radius: 2px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     padding-top: 30px;
     padding-bottom: 50px;
     width: 68%;
-    z-index: 2;
+    z-index: 1;
+}
+
+.home_content .ads_container{
+    height: 120px;
+    width: 92%;
+    margin-left: 30px;
+    margin-top: 10px;
+    box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.ads_container .ads img{
+    width: 100%;
 }
 
 
 .filter_content select{
-
     border: none;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     height: 30px;
-    width: 200px;
+    width: 180px;
     padding-left: 20px;
     padding-right: 10px;
 }
@@ -392,10 +409,15 @@ ul li .function_btn:hover{
 }
 
 .search_container{
-    margin-left: 60px;
+    margin: 50px 60px;
     padding-left: 30px;
     border-left: 5px solid rgb(230, 206, 177);
     margin-bottom: 50px;
+}
+
+.breaker{
+    width: 100%;
+    border-bottom: 1px dashed rgb(190, 190, 190);
 }
 
 .search_container .filter_container{

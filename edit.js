@@ -43,3 +43,14 @@ function save(){
 
     container.appendChild(output)
 }
+
+function edit1() {
+    const sheet = document.getElementById('home_content')
+    sheet.scrollTo(0,0)
+}
+
+function edit2() {
+    const sheet = document.getElementById('home_content')
+    sheet.scrollTo(0,802)
+}
+

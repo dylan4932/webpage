@@ -45,7 +45,7 @@ body{
     width: 80%;
     height: 70%;
     /* padding: 10px; */
-    border-top: 1px dashed rgb(156, 156, 156);
+    border-top: 1px dashed rgb(190, 190, 190);
 }
 
 .history_result .history{
@@ -228,7 +228,13 @@ details .complete_item:hover{
 }
 
 .guide .title_content {
+    margin-top: 20px;
     height: 10%;
+}
+
+.guide .modules_container{
+    margin-top: 50px;
+    height:52%;
 }
 
 .title{
@@ -260,7 +266,6 @@ details .complete_item:hover{
 }
 
 .guide ul{
-    margin-top: 50px;
     list-style: none;
     position: relative;
     margin-left: -38px;
@@ -298,7 +303,7 @@ ul li .guide_btn:hover{
 }
 
 .guide .page_des{
-    border-top: 1px dashed grey;
+    border-top: 1px dashed rgb(190, 190, 190);
     width: 95%;
     height: calc(42%-100px);
     font-size: 12px;
@@ -459,6 +464,7 @@ ul li .function_btn:hover{
     z-index: 1;
 }
 
+
 .sheet{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -559,6 +565,7 @@ details {
 
 summary {
     cursor: pointer;
+    color: rgb(170, 170, 170);
 }
 
 p{

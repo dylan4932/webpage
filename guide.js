@@ -1,7 +1,7 @@
 function guide(){
 	var evt = window.event || evt;
 
-    console.log(evt.target)
+    // console.log(evt.target)
 
     const module = document.getElementById(evt.target.id.slice(0,7))
 
@@ -61,21 +61,39 @@ function guide(){
         phase3.appendChild(tip3)
         phase3_link.appendChild(phase3)
 
-        // const phase4 = document.createElement('div')
-        // phase4.className="phase_container"
-        // const phase4_txt = document.createTextNode('└─ Phase4')
-        // phase4.append(phase4_txt)
-        // const tip4 = document.createElement('span')
-        // tip4.className="phasetip"
-        // const tip4_txt = document.createTextNode('---这是关于phase4的提示---')
-        // tip4.append(tip4_txt)
-        // phase4.appendChild(tip4)
-        // phase4.setAttribute("onmouseover",  "popup()")
+        const phase4 = document.createElement('div')
+        phase4.className="phase_container"
+        const phase4_link = document.createElement('a')
+
+        if(evt.target.id.slice(0,7) === 'module1'){
+            phase4_link.href = "./"+evt.target.id.slice(0,7)+"_phase4.html"
+            const phase4_txt = document.createTextNode('└─ Research Topic')
+            phase4.append(phase4_txt)
+
+            const tip4 = document.createElement('span')
+            tip4.className="phasetip"
+            const tip4_txt = document.createTextNode('---这是关 Research Topic的提示---')
+            tip4.append(tip4_txt)
+            phase4.appendChild(tip4)
+        }else{
+            phase4_link.href = "./"+evt.target.id.slice(0,7)+"_phase4.html"
+            const phase4_txt = document.createTextNode('└─ Research Framework')
+            phase4.append(phase4_txt)
+            const tip4 = document.createElement('span')
+            tip4.className="phasetip"
+            const tip4_txt = document.createTextNode('---这是关 Research Framework的提示---')
+            
+            tip4.append(tip4_txt)
+            phase4.appendChild(tip4)
+        }
+        
+        
+        phase4_link.appendChild(phase4)
 
         phase_container.appendChild(phase1_link)
         phase_container.appendChild(phase2_link)
         phase_container.appendChild(phase3_link)
-        // phase_container.appendChild(phase4)
+        phase_container.appendChild(phase4_link)
         module.appendChild(phase_container)
     }
     else if(module.childElementCount === 3){

@@ -63,26 +63,37 @@ body{
     margin-bottom: 80%;
 }
 
-.tool_bar .history_result .history{
+.tool_bar .history_result a{
     margin: 20px 5%;
+    /* line-height: 14px; */
+    
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+.history_result a .history_content{
+    margin-left: 10px;
     padding-left:8px;
     padding-top: 8px;
-    /* line-height: 14px; */
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     width: 80%;
     height: 25px;
     border-radius: 3px;
-    font-size: 13px;
+
 }
 
-.tool_bar .history_result .history:hover{
+.tool_bar .history_result a:hover .history_content{
     background: rgb(240, 242, 252);
 }
 
-.history .history_content a{
+
+/* .history .history_content a{
     text-decoration: none;
     color: black;
-}
+} */
 
 .guide{
     margin-right: 10px;
@@ -96,7 +107,13 @@ body{
 }
 
 .guide .title_content {
+    margin-top: 20px;
     height: 10%;
+}
+
+.guide .modules_container{
+    margin-top: 50px;
+    height:52%;
 }
 
 .title{
@@ -128,7 +145,6 @@ body{
 }
 
 .guide ul{
-    margin-top: 50px;
     list-style: none;
     position: relative;
     margin-left: -38px;
@@ -339,15 +355,30 @@ ul li .function_btn:hover{
 
 .home_content .edit_container{
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
 
 }
 
 .edit_container .edit_content{  
-    padding-left: 15%;
+    padding-left: 10%;
     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.edit_container .part2_title{
+    margin: 20px 50px;
+    border-top: 1px dashed rgb(190, 190, 190);
+    padding: 10px;
+    color: grey;
+}
+
+.edit_container .part1_title{
+    margin: 20px 50px;
+    padding: 10px;
+    color: grey;
+}
+
 
 .edit_content .edit_title{
     width: 88%;
