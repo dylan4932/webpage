@@ -1,0 +1,88 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+*{
+    font-family: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.home .background_pic{
+    position: fixed;
+    left:-25%;
+    top: -10%;
+    width: 900px;
+}
+
+.home .home_content{
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+
+.left .flash_container{
+    margin-top: 20%;
+    width: 90%;
+    height: 70%;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    background: white;
+    border-radius: 25px;
+}
+
+
+.home_content .right img{
+    width: 20%;
+}
+
+.right .page_title{
+    margin-top: 50px;
+}
+
+.right .page_title .title1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right .page_title .title2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.right .subtitle{
+    margin-top: 20px;
+}
+
+
+.right .login_btn_container{
+    margin:30px 50px;
+    width: 60%;
+    height: 10%;
+    background: #4aa784;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 48px
+    /* align-items: center; */
+    
+}
+
+.right .login_btn_container a{
+    text-decoration: none;
+    color: white;
+}
+

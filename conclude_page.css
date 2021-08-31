@@ -10,6 +10,22 @@ body{
     font-weight: 200;
 }
 
+details > summary {
+    list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '︾';
+}
+
+details[open] > summary::before {
+    content: '︽';
+}
+
 .tool_bar{
     right:0;
     top: 0;
@@ -446,6 +462,7 @@ details {
 summary {
     cursor: pointer;
     color: rgb(170, 170, 170);
+    margin-left: 48%;
 }
 
 .dot {

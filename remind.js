@@ -35,7 +35,6 @@ function remind(){
         remind.appendChild(detail_container)
         more_container.appendChild(more_btn)
         more_container.appendChild(txt_container)
-        more_container.style='--duration: 1s'
         remind.appendChild(more_container)
     }
 
@@ -55,52 +54,4 @@ function remind(){
             }
     }
 
-    const new_details = document.querySelectorAll('details')
-    new_details.forEach((el,index) => animateDetailsElement(el, 1000 + index * 1000 ))
 }
-
-function setInlineAttribute({ element, duration, maxHeight }) {
-    element.setAttribute(
-      'style',
-      `--duration: ${duration / 1000}s; max-height: ${maxHeight}px;`
-    )
-  }
-  
-function calculateContentHeight(element) {
-    if (document.createRange) {
-      let range = document.createRange()
-      range.selectNodeContents(element.lastElementChild)
-      if (range.getBoundingClientRect) {
-        let rect = range.getBoundingClientRect()
-        if (rect) {
-          return rect.bottom - rect.top
-        }
-      }
-    }
-    return 0
-}
-  
-function animateDetailsElement(element, duration = 600) {
-    const initial = element.offsetHeight + 20
-    let height = 0
-    
-    setInlineAttribute({element, duration, maxHeight: initial })
-   
-    element.addEventListener('click', e => {
-      e.preventDefault()
-  
-      const next = !element.open;
-  
-      if (next) {
-        element.open = next
-        height = calculateContentHeight(element)
-        setInlineAttribute({ element, duration, maxHeight: initial + height })
-        
-      } else {
-        setInlineAttribute({ element, duration, maxHeight: initial })
-        timer = setTimeout(() => {
-          element.open = next
-        }, duration)
-      }
-    })
-  }

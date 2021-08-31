@@ -10,6 +10,30 @@ body{
     font-weight: 200;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.history details > summary {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+    margin-left: 48%;
+}
+
+.history details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.history details > summary::before {
+    content: '︾';
+}
+
+.history details[open] > summary::before {
+    content: '︽';
+}
+
 .tool_bar{
     right:0;
     top: 0;
@@ -77,11 +101,6 @@ body{
 }
 
 
-.incomplete_item a{
-    text-decoration: none;
-    color: black;
-}
-
 .incomplete_content .incomplete_item{
     width: 100%;
     height: 30px;
@@ -102,11 +121,6 @@ details .complete_item{
 
 details .complete_item:hover{
     background: rgb(240, 242, 252);
-}
-
-.complete_item a{
-    text-decoration: none;
-    color: black;
 }
 
 
@@ -555,7 +569,7 @@ ul li .function_btn:hover{
     background-color: rgb(34, 133, 179);
 }
 
-details {
+.remind details {
     padding: 2px;
     height: auto;
     overflow: hidden;
@@ -563,10 +577,6 @@ details {
     transition-duration: var(--duration, 0.1s);
 }
 
-summary {
-    cursor: pointer;
-    color: rgb(170, 170, 170);
-}
 
 p{
     padding-left: 2px;
@@ -654,4 +664,80 @@ p{
       color: white;
       height: 100%;
       transition: all 0.3s ease-in-out;
+}
+
+.report_btn_container{
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.report_btn{
+    width: 100%;
+    border-bottom: 2px solid #ea452f;
+    text-align: center;
+    font-size: 14px;
+}
+
+.report_btn_container:hover{
+    background: rgb(240, 242, 252);
+}  
+
+.store_btn_container{
+    margin-top: 20px;
+    
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.store_btn{
+    width: 100%;
+    border-bottom: 2px solid rgb(79, 114, 225);
+    text-align: center;
+    font-size: 14px;
+}
+
+.store_btn_container:hover{
+    background: rgb(240, 242, 252);
+} 
+
+.sheet .report_container{
+    margin: 50px 50px;
+    border-top: 5px solid #e6ceb1;
+    opacity: 0;
+}
+
+.report_container .report{
+    margin: 20px 20px;
+    font-size: 14px;
+    width: 88%;
+}
+
+.report_container .report .report_title{
+    margin-bottom: 10px;
+}
+
+.report_container .report .report_content{
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    padding: 10px;
+}
+
+.sheet .note_container{
+    margin: 50px 50px;
+    border-top: 5px solid #b0c6c7;
+    opacity: 0;
+}
+
+.note_container .note{
+    margin: 30px 20px;
+    font-size: 14px;
+    width: 88%;
+}
+
+.note_container .note_content{
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    padding: 10px;
 }

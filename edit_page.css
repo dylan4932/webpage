@@ -10,14 +10,133 @@ body{
     font-weight: 200;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .tool_bar{
     right:0;
     top: 0;
     position:fixed;
     height: 100%;
-    width: 210px;
+    width: 13%;
     background-color: white;
-    /* box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3), 0 20px 50px 0 rgba(95, 69, 69, 0.19); */
+    /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
+    overflow: scroll;
+}
+
+.tool_bar .toolbar_title{
+    margin: 20px 20px;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
+}
+
+.toolbar_title i{
+    font-size: 20px;
+    
+}
+
+.toolbar_title span{
+    font-size: 14px;
+}
+
+.tool_bar .history_result{
+    margin-left: 20px;
+    margin-right: 10px;
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    /* padding: 10px; */
+    border-top: 1px dashed rgb(190, 190, 190);
+}
+
+.history_result .history{
+    position: relative;
+    margin-top: 15px;
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    /* border-radius: 10px; */
+    /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
+}
+
+.history details > summary {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+    margin-left: 48%;
+}
+
+.history details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.history details > summary::before {
+    content: '︾';
+}
+
+.history details[open] > summary::before {
+    content: '︽';
+}
+
+
+
+/* .history_result .history:hover{
+    background: rgb(240, 242, 252);
+} */
+
+.history .history_content{
+    width: 100%;
+    height: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.history .history_content a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.incomplete_content .incomplete_item{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.incomplete_content .incomplete_item:hover{
+    background: rgb(240, 242, 252);
+}
+
+details .complete_item{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+details .complete_item:hover{
+    background: rgb(240, 242, 252);
+}
+
+
+.history .myProgress {
+    /* border-radius: 20px; */
+    height: 3px;
+    width: 100%;
+}
+
+.history .myBar {
+    /* border-radius: 20px; */
+    /* width: 90%; */
+    height: 3px;
+    /* background-color: rgb(34, 133, 179); */
 }
 
 .guide{

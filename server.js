@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '/')))
 
 
 app.get('/', (req, res) =>{
-    res.redirect('index.html')
+    res.redirect('homepage.html')
 })
 
 // 404 route at the bottom for anything not found.
