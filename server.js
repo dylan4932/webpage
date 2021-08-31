@@ -16,7 +16,7 @@ app.get('/', (req, res) =>{
 
 // 404 route at the bottom for anything not found.
 app.get('*', (req, res) => {
-    res.status(404).send("404 Error<br/>Sorry! We couldn't find that page.");
+    res.status(404).send("404 Error<br/>找不到该网页.");
 });
 
 const port = process.env.PORT || 5000

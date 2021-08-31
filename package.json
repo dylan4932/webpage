@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/dylan4932/webpage/issues"
   },
-  "homepage": "https://github.com/dylan4932/webpage#readme ",
+  "homepage": "https://github.com/dylan4932/webpage/homepage.html ",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
