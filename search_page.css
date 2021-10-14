@@ -524,18 +524,17 @@ ul li .function_btn:hover{
 }
 
 .result_container .result_content{
-    width: 80%;
+    width: 800px;
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .result_container .suggest_content{
-    width: 95%;
+    width: 920px;
     margin-bottom: 20px;
 }
 
 .suggest_content .result{
-    width: 100%;
     align-items: center;
     padding: 5px;
     align-content: center;
@@ -544,7 +543,7 @@ ul li .function_btn:hover{
 }
 
 .result_content .result{
-    width: 200%;
+    width: 800px;
     align-items: center;
     padding: 5px;
     align-content: center;
@@ -552,9 +551,6 @@ ul li .function_btn:hover{
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
 }
 
-.result_content .result:hover{
-    
-}
 
 
 .result .result_title{
@@ -563,9 +559,9 @@ ul li .function_btn:hover{
     font-size: 16px;
 }
 .result_content .result_section{
-    margin-left: 110%;
+    margin-left: 30px;
     height: 50px;
-    width: 26%;
+    width: 60px;
     padding: 8px;
     border-radius: 5px;
     font-size: 12px;
