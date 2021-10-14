@@ -367,7 +367,7 @@ ul li .function_btn:hover{
     border: none;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     height: 30px;
-    width: 115%;
+    width: 150%;
     padding-left: 10px;
 }
 
@@ -378,6 +378,7 @@ ul li .function_btn:hover{
 .filter_container .filter_btn_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 150px;
 }
 
 .filter_btn_content .filter_btn{
@@ -444,7 +445,7 @@ ul li .function_btn:hover{
 }
 
 .search .label_content{
-    width: 220%;
+    width: 200%;
     min-height: 70px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     font-size: 1;
@@ -516,6 +517,12 @@ ul li .function_btn:hover{
     padding-left: 30px;
 }
 
+.result_container .result_info{
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color: rgb(129, 136, 145);
+}
+
 .result_container .result_content{
     width: 80%;
     margin-bottom: 20px;
@@ -578,6 +585,7 @@ ul li .function_btn:hover{
     width: 80%;
     border-radius: 5px;
     font-size: 12px;
+    margin-left: 20px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
 }
 
@@ -585,6 +593,20 @@ ul li .function_btn:hover{
     display: flex;
     justify-content: center;
     line-height: 40px;
+}
+
+.reference_content{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.reference_content .reference_title{
+    font-size: 12px;
+}
+
+.reference_content .reference{
+    font-size: 10px;
 }
 
 .more_content details{
