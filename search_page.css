@@ -330,7 +330,7 @@ ul li .function_btn:hover{
     overflow: scroll;
     height: 85%;
     border-radius: 2px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(44, 44, 44, 0.1), 4px 4px 15px rgba(135, 135, 135, 0.1);
     padding-top: 30px;
     padding-bottom: 50px;
     width: 68%;
@@ -526,12 +526,11 @@ ul li .function_btn:hover{
 .result_container .result_content{
     width: 90%;
     margin-bottom: 20px;
-    border-radius: 5px;
+    
 }
 .result_container .suggest_content{
-    border-radius: 5px;
     width: 90%;
-    background-color: rgb(97, 116, 139);
+    
     margin-bottom: 20px;
 }
 
@@ -540,7 +539,9 @@ ul li .function_btn:hover{
     padding: 5px;
     align-content: center;
     min-height: 50px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    border-radius: 5px;
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
+    background-color: rgb(190, 208, 229);
 }
 
 .result_content .result{
@@ -548,25 +549,27 @@ ul li .function_btn:hover{
     padding: 5px;
     align-content: center;
     min-height: 50px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    border-radius: 2px;
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
 }
 
 
 
 .result .result_title{
-    left: 0;
-    top: 0;
-    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
 }
 .result_content .result_section{
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: 20px;
     height: 50px;
-    width: 100px;
+    width: 30%;
     padding: 8px;
     border-radius: 5px;
     font-size: 12px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
 }
 
 .section_content{
@@ -583,7 +586,7 @@ ul li .function_btn:hover{
     border-radius: 5px;
     font-size: 12px;
     margin-left: 20px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
 }
 
 .section_content .section a{
@@ -614,15 +617,17 @@ ul li .function_btn:hover{
     transition-duration: var(--duration, 0.1s);
 }
 
-details summary {
+.more_content details summary {
     font-size: 12px;
     cursor: pointer;
     float:right; 
 }
 
-details summary p{
-    font-size: 14px;
-    padding: 2px;
+details p{
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 40px;
 }
 
 .dot {
