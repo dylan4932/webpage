@@ -528,20 +528,16 @@ ul li .function_btn:hover{
     margin-bottom: 20px;
     
 }
-.result_container .suggest_content{
-    width: 90%;
-    
-    margin-bottom: 20px;
-}
 
-.suggest_content .result{
-    align-items: center;
+.suggest_section .recommand{
+    font-size: 12px;
     padding: 5px;
     align-content: center;
-    min-height: 50px;
+    margin-left: -100px;
+    width: 95%;
+    height: 50px;
     border-radius: 5px;
     box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
-    background-color: rgb(190, 208, 229);
 }
 
 .result_content .result{
@@ -561,11 +557,16 @@ ul li .function_btn:hover{
     cursor: pointer;
     font-size: 14px;
 }
-.result_content .result_section{
+
+.suggest_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.suggest_section .section{
     margin-left: 20px;
     margin-bottom: 20px;
     height: 50px;
-    width: 30%;
+    width: 50%;
     padding: 8px;
     border-radius: 5px;
     font-size: 12px;
