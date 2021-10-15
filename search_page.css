@@ -524,13 +524,14 @@ ul li .function_btn:hover{
 }
 
 .result_container .result_content{
-    width: 800px;
+    width: 90%;
     margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
 }
 .result_container .suggest_content{
-    width: 920px;
+    border-radius: 5px;
+    width: 90%;
+    background-color: rgb(97, 116, 139);
     margin-bottom: 20px;
 }
 
@@ -543,7 +544,6 @@ ul li .function_btn:hover{
 }
 
 .result_content .result{
-    width: 800px;
     align-items: center;
     padding: 5px;
     align-content: center;
@@ -560,8 +560,9 @@ ul li .function_btn:hover{
 }
 .result_content .result_section{
     margin-left: 30px;
+    margin-bottom: 20px;
     height: 50px;
-    width: 60px;
+    width: 100px;
     padding: 8px;
     border-radius: 5px;
     font-size: 12px;
