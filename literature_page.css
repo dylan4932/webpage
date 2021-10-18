@@ -382,6 +382,11 @@ ul li .function_btn:hover{
     font-size: 14px;
 }
 
+.select_year{
+    outline: none;
+    
+}
+
 .save_btn_container{
     margin-top: 20px;
     margin-left: 80%;
