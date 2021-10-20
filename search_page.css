@@ -574,6 +574,7 @@ ul li .function_btn:hover{
 }
 
 .section_content{
+    margin-top: 20px;
     width: 100%;
     margin-bottom: 20px;
     display: grid;
@@ -618,15 +619,35 @@ ul li .function_btn:hover{
     transition-duration: var(--duration, 0.1s);
 }
 
-.more_content details summary {
+.more_content details > summary {
+    list-style-type: none;
     font-size: 12px;
     cursor: pointer;
-    float:right; 
+    padding-left: 10px;
+}
+
+/* details > summary {
+    list-style-type: none;
+    cursor: pointer;
+    
+    margin-left: 48%;
+} */
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '';
+}
+
+details[open] > summary::before {
+    content: '';
 }
 
 details p{
     font-size: 12px;
-    padding: 5px;
+    /* padding: 5px; */
+    margin-top: 0px;
     padding-left: 10px;
     padding-right: 40px;
 }
