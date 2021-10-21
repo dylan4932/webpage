@@ -75,7 +75,7 @@ details[open] > summary::before {
     width: 90%;
     padding: 10px;
     font-size: 14px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     /* border-radius: 10px; */
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
@@ -408,7 +408,7 @@ ul li .function_btn:hover{
     overflow: scroll;
     height: 85%;
     border-radius: 2px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
     padding-top: 30px;
     padding-bottom: 50px;
     column-gap: 10px;
@@ -454,13 +454,13 @@ ul li .function_btn:hover{
 }
 
 .output_container .output_content{
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     padding: 10px;
     cursor: default;
 }
 
 .note_container .note_content{
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     padding: 10px;
     margin-top: 20px;
     cursor: default;

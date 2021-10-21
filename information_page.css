@@ -83,7 +83,7 @@ a{
     width: 90%;
     padding: 10px;
     font-size: 14px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     /* border-radius: 10px; */
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
@@ -181,7 +181,7 @@ details .complete_item:hover{
     min-height: 40px;
     line-height: 20px;
     border-radius: 3px;
-    box-shadow:-4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+    box-shadow:-4px -4px 15px rgba(100, 100, 100, 0.3), 4px 4px 15px rgba(100, 100, 100, 0.19);
 }
 
 .user_input{
@@ -193,7 +193,7 @@ details .complete_item:hover{
     height: 50px;
     border: hidden;
     border-radius: 3px;
-    box-shadow:-4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow:-4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     vertical-align: top;
 
     overflow: hidden;
@@ -486,7 +486,7 @@ ul li .function_btn:hover{
     overflow: scroll;
     height: 85%;
     border-radius: 2px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
     padding-top: 30px;
     padding-bottom: 50px;
     column-gap: 10px;
@@ -532,7 +532,7 @@ ul li .function_btn:hover{
 
 .remind{
     font-size: 13px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(150, 150, 150, 0.1), 4px 4px 15px rgba(150, 150, 150, 0.1);
     border-radius: 3px;
     width: 400px;
     background-color: white;
@@ -758,11 +758,13 @@ p{
 
 .report_container .report .report_title{
     margin-bottom: 10px;
+    cursor: default;
 }
 
 .report_container .report .report_content{
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     padding: 10px;
+    cursor: default;
 }
 
 .sheet .note_container{
@@ -774,6 +776,7 @@ p{
 .note_container .note{
     margin: 30px 20px;
     font-size: 14px;
+    cursor: default;
     width: 88%;
 }
 

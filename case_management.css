@@ -33,6 +33,7 @@ body{
     display: flex;
     height: 50px;
     width: 100%;
+    cursor: default;
     align-items: center;
 }
 
@@ -229,6 +230,7 @@ body{
     font-size: 20px;
     margin-left: 50px;
     font-weight: 500;
+    cursor: default;
     text-align: center;
     background: linear-gradient(to right,rgb(246, 246, 246),rgb(228, 228, 228), rgb(246, 246, 246));
 }
@@ -261,6 +263,7 @@ body{
 .module .module_description .module_name{
     width: 100%;
     text-align: center;
+    cursor: default;
     padding: 10px;
 }
 
@@ -268,6 +271,7 @@ body{
     width: 100%;
     text-align: center;
     padding: 10px;
+    cursor: default;
     margin-top: 20px;
 }
 
@@ -358,6 +362,7 @@ a{
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 
@@ -400,6 +405,7 @@ a{
     font-size: 20px;
     margin-top: 10px;
     color: rgb(225, 67, 63);
+    cursor: pointer;
 }
 
 /* .case_function:hover i{

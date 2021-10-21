@@ -324,7 +324,7 @@ ul li .function_btn:hover{
     overflow: scroll;
     height: 85%;
     border-radius: 2px;
-    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
     padding-top: 30px;
     padding-bottom: 50px;
     width: 68%;
