@@ -32,6 +32,7 @@ body{
     text-align: center;
     align-items: center;
     line-height: 30px;
+    cursor: default;
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
 }
 
@@ -240,6 +241,7 @@ ul li .guide_btn:hover{
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
+    cursor: default;
 }
 
 ul li .function_btn{
@@ -435,6 +437,7 @@ ul li .function_btn:hover{
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
+    cursor: default;
 }
 
 .single_choice{
@@ -459,8 +462,17 @@ ul li .function_btn:hover{
     padding-right: 10px;   
 }
 
+.remind .pointer_title{
+    cursor: pointer;
+}
+
+.remind p{
+    cursor: default;
+}
+
 .remind details {
     padding: 2px;
+    cursor: pointer;
     /* height: auto;
     overflow: hidden;
     transition: max-height ease-in-out;

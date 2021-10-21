@@ -24,6 +24,7 @@ body{
     margin: 20px 13px;
     font-size: 14px;
     text-align: start;
+    cursor: default;
 }
 
 .tool_bar .recent_result{
@@ -189,6 +190,7 @@ ul li .guide_btn:hover{
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
+    cursor:default;
 }
 
 ul li .function_btn{
@@ -374,12 +376,14 @@ ul li .function_btn:hover{
     border-top: 1px dashed rgb(190, 190, 190);
     padding: 10px;
     color: grey;
+    cursor: default;
 }
 
 .edit_container .part1_title{
     margin: 20px 50px;
     padding: 10px;
     color: grey;
+    cursor: default;
 }
 
 
@@ -446,9 +450,9 @@ ul li .function_btn:hover{
     margin-top: 20px;
 }
 
-/* .standard_content span{
-    width: 78%;
-} */
+.standard_content span{
+    cursor: default;
+}
 
 .more_content details{
     padding: 2px;

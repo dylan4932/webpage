@@ -34,6 +34,7 @@ a{
     margin: 20px 20px;
     text-align: center;
     align-items: center;
+    cursor: default;
     line-height: 30px;
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
 }
@@ -236,6 +237,7 @@ ul li .guide_btn:hover{
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
+    cursor: default;
 }
 
 ul li .function_btn{
@@ -419,6 +421,7 @@ ul li .function_btn:hover{
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    cursor: default;
 }
 
 .edit_content .output_container{
@@ -433,6 +436,7 @@ ul li .function_btn:hover{
 
 .output_container .output_title{
     padding: 10px;
+    cursor: default;
 }
 
 .output_container .output_content{
@@ -455,6 +459,7 @@ ul li .function_btn:hover{
     color: white;
     border-radius: 5px;
     margin-left: 80%;
+    cursor: pointer;
 }
 
 .output_content .output_savebtn:hover{
@@ -467,6 +472,9 @@ ul li .function_btn:hover{
     margin-top: 20px;
 }
 
+.standard_content .default_note{
+    cursor: default;
+}
 
 .more_content details{
     padding: 2px;

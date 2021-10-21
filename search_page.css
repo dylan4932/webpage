@@ -28,6 +28,7 @@ body{
 
 .tool_bar .toolbar_title{
     margin: 20px 40px;
+    cursor: default;
 }
 
 .tool_bar .history_result{
@@ -183,6 +184,7 @@ ul li .guide_btn:hover{
     bottom: 20px;
     font-size: 12px;
     padding-left: 10px;
+    cursor: default;
 }
 
 ul li .function_btn{
@@ -358,10 +360,6 @@ ul li .function_btn:hover{
     padding-right: 10px;
 }
 
-.key_content{
-    
-}
-
 .key_content input{
     
     border: none;
@@ -389,6 +387,7 @@ ul li .function_btn:hover{
     border: none;
     border-radius: 5px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .filter_btn_content .filter_btn:hover{
@@ -463,6 +462,7 @@ ul li .function_btn:hover{
 .serach .search_btn_content{
     margin-left: 70%;
     z-index: 0;
+    
 }
 
 .search_btn_content .search_btn{
@@ -472,6 +472,7 @@ ul li .function_btn:hover{
     height: 30px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .label_content .clear_btn{
@@ -521,6 +522,7 @@ ul li .function_btn:hover{
     margin-bottom: 20px;
     margin-left: 100px;
     color: rgb(129, 136, 145);
+    cursor: default;
 }
 
 .result_container .result_content{

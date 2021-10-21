@@ -46,6 +46,7 @@ details[open] > summary::before {
     text-align: center;
     align-items: center;
     line-height: 30px;
+    cursor: default;
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
 }
 
@@ -258,6 +259,7 @@ ul li .guide_btn:hover{
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
+    cursor: default;
 }
 
 ul li .function_btn{
@@ -432,6 +434,7 @@ ul li .function_btn:hover{
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    cursor: default;
 }
 
 .conclude_content .output_container{
@@ -447,17 +450,20 @@ ul li .function_btn:hover{
 
 .output_container .output_title{
     padding: 10px;
+    cursor: default;
 }
 
 .output_container .output_content{
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     padding: 10px;
+    cursor: default;
 }
 
 .note_container .note_content{
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     padding: 10px;
     margin-top: 20px;
+    cursor: default;
 }
 
 details {

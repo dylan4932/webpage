@@ -54,6 +54,7 @@ a{
     text-align: center;
     align-items: center;
     line-height: 30px;
+    cursor: default;
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
 }
 
@@ -150,12 +151,20 @@ details .complete_item:hover{
     margin-left: 70px;
 }
 
+.infoCon p{
+    cursor: default;
+}
+
+.infoCon p i{
+    cursor: pointer;
+}
+
 .infoCon .save_btn{
     margin-top: 15px;
     float: right;
     border: none;
     border-radius: 5px;
-    
+    cursor: pointer;
     background: rgb(176, 198, 199);
     color: white;
 }
@@ -328,6 +337,7 @@ ul li .guide_btn:hover{
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
+    cursor: default;
 }
 
 ul li .function_btn{
@@ -484,6 +494,10 @@ ul li .function_btn:hover{
     z-index: 1;
 }
 
+.home_content strong{
+    cursor: default;
+}
+
 .home_content::-webkit-scrollbar {
     display: none;
 }
@@ -527,6 +541,17 @@ ul li .function_btn:hover{
     padding-left: 10px;
     padding-right: 10px;   
     position: relative;
+}
+.remind .pointer_title{
+    cursor: pointer;
+}
+
+.remind p{
+    cursor: default;
+}
+
+.remind details{
+    cursor: pointer;
 }
 
 .remind .mini_btn_container{
@@ -671,6 +696,7 @@ p{
     background: rgb(240, 242, 252);
     color: rgb(74, 110, 224);
     height: 100%;
+    cursor: pointer;
 }
 
 .checked{

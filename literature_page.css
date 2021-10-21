@@ -25,6 +25,7 @@ body{
     margin: 20px 16px;
     font-size: 14px;
     text-align: start;
+    cursor: default;
 }
 
 .tool_bar .history_result{
@@ -178,6 +179,7 @@ ul li .guide_btn:hover{
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
+    cursor: default;
 }
 
 ul li .function_btn{
@@ -385,6 +387,10 @@ ul li .function_btn:hover{
     margin-bottom: 5px;
     padding-bottom: 5px;  
     text-align: center;
+}
+
+.re_content p{
+    cursor: default;
 }
 
 .column_content{
