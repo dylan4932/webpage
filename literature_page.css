@@ -368,7 +368,7 @@ ul li .function_btn:hover{
 
 .main_content .resizable{
     position: relative;
-
+    min-width: 100%;
 }
 
 .resizable .re_content{
