@@ -4,25 +4,82 @@
     </style>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./register.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <h2>用户注册</h2></body></br>
-        <label>姓名：</label><input></html></br>
-        <label>生日：</label><input type="date" id="birthday" name="birthday"></br>
-        <label>账号: </label><input></br>
-        <label>密码：</label><input type="password"></br>
-        <label>再次输入密码：</label> <input type="password"></br>
-        <label>电子邮箱: </label><input></br>
-        <h3>Idea: </h3><input>
-
-        <br>
-        <hr>
-        <div class="options">
-            <button onclick="register()">注册</button>
-            |
-            <button><a style="text-decoration: none;" href="login.html">取消</a></button>
+        <div class="bg"></div>
+        <div class="center">
+            
+            <!-- <div class="txt_field">
+                <input type="text" required id="user_acc"> 
+                <span></span>
+                <label>姓名</label>
+            </div> -->
+            <h2>用户注册</h2></body></br>
+            <form>
+                <div class="right">
+                    <a href="./login.html">
+                        <i class='bx bx-x'></i>
+                    </a>  
+                </div>
+                <div class="txt_field">
+                    <input type="text" required id="user_acc"> 
+                    <span></span>
+                    <label>用户名</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required id="user_acc"> 
+                    <span></span>
+                    <label>邮箱</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required id="user_psswd">
+                    <span></span>
+                    <label>密码</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required id="user_psswd">
+                    <span></span>
+                    <label>请再次输入密码</label>
+                </div>
+                <input type="submit" value="注册" onclick="register()">
+                
+            </form>
+            <div class="signup_link">
+                <a href="#">无法注册？</a>
+            </div>
+            <div class="signup_link">
+                尝试以下登陆方式
+            </div>
+            <div class="partner_container">
+                <div class="signup_partner">
+                    <img src="./pic/weibo.png" style="width: 16px;"> 微博
+                </div>
+                <div class="signup_partner">
+                    <img src="./pic/wechat.png" style="width: 16px;"> 微信
+                </div>
+                <div class="signup_partner">
+                    <img src="./pic/tencent.png" style="width: 16px;"> QQ
+                </div>
+            </div>
+            <!-- <label>生日：</label><input type="date" id="birthday" name="birthday"></br>
+            <label>账号: </label><input></br>
+            <label>密码：</label><input type="password"></br>
+            <label>再次输入密码：</label> <input type="password"></br>
+            <label>电子邮箱: </label><input></br>
             <br>
+            <hr>
+            <div class="options">
+                <button onclick="register()">注册</button>
+                |
+                <button><a style="text-decoration: none;" href="login.html">取消</a></button>
+                <br>
+            </div> -->
         </div>
+        
+
+        
         <script src="login.js"></script>
     </body>
 </html>

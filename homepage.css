@@ -18,58 +18,66 @@ body{
 
 .home .background_pic{
     position: fixed;
-    bottom: 0;
     left: -10px;
-    height: 100%;
+    top: 5%;
+    height: 70%;
 }
 
 .home .home_content{
     position: fixed;
     top: 10%;
-    left: 20%;
+    left: 22%;
     width: 60%;
     height: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 60px;
 }
 
-
-.left .flash_container{
-    margin-top: 20%;
-    width: 90%;
-    height: 70%;
+.home_content .right{
+    padding: 20px;
+    margin-top: 12%;
+    width: 600px;
+    height: 400px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     background: white;
     border-radius: 25px;
 }
 
+.flash_container 
 
-.home_content .right img{
+
+.home_content .left{
+    margin-top: 20%;
+}
+
+.home_content .left img{
     width: 20%;
 }
 
-.right .page_title{
+.left .page_title{
     margin-top: 50px;
+    cursor: default;
 }
 
-.right .page_title .title1{
+.left .page_title .title1{
     font-size: 20px;
     font-weight: bold;
 }
 
-.right .page_title .title2{
+.left .page_title .title2{
     font-size: 28px;
     font-weight: bold;
     margin-left: 10px;
 }
 
-.right .subtitle{
+.left .subtitle{
     margin-top: 20px;
+    cursor: default;
 }
 
 
-.right .login_btn_container{
+.left .login_btn_container{
     margin:30px 50px;
     width: 200px;
     height: 50px;
@@ -81,7 +89,7 @@ body{
     
 }
 
-.right .login_btn_container a{
+.left .login_btn_container a{
     text-decoration: none;
     color: white;
 }
