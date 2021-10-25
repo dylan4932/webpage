@@ -13,6 +13,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 0;
 }
 
 .center{
@@ -20,10 +21,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 400px;
     padding:20px;
     border-radius: 5px;
     box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
+    z-index: 99;
 }
 
 .center form{
@@ -91,14 +93,14 @@ form .txt_field{
     left: 0;
     width: 0;
     height: 2px;
-    background: rgb(97, 116, 139);
+    background: rgb(76, 163, 133);
     transition: .5s;
 }
 
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
-    top: -5px;
-    color:rgb(97, 116, 139);
+    top: -10px;
+    color:rgb(76, 163, 133);
 }
 
 .txt_field input:focus ~ span::before,
