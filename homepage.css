@@ -18,9 +18,9 @@ body{
 
 .home .background_pic{
     position: fixed;
-    left:-25%;
-    top: -10%;
-    width: 900px;
+    bottom: 0;
+    left: -10px;
+    height: 100%;
 }
 
 .home .home_content{
@@ -71,8 +71,8 @@ body{
 
 .right .login_btn_container{
     margin:30px 50px;
-    width: 60%;
-    height: 10%;
+    width: 200px;
+    height: 50px;
     background: #4aa784;
     border-radius: 5px;
     text-align: center;
