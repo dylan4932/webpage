@@ -21,11 +21,14 @@
                     <a href="#">
                         <span>---搜索记录1---</span>
                     </a>
+                    
                 </div>
                 <div class="myProgress" style="background: #f9dae3">
                     <div class="myBar" style="background: rgb(234, 69, 47); width: 80%;"></div>
                 </div>
+                <span id="search_tip" class="searchtip">2021年10月23日搜索</span>
             </div>
+            
             <div class="history">
                 <div class="history_content">
                     <a href="#">
@@ -35,6 +38,7 @@
                 <div class="myProgress" style="background: #dbebfe;">
                     <div class="myBar" style="background: rgb(79, 114, 225); width: 20%;"></div>
                 </div>
+                <span id="search_tip" class="searchtip" style="top: 155px;">2021年10月25日搜索</span>
             </div>
             
         </div>
@@ -198,19 +202,28 @@
         </div>
         <div class="search_container">
             <div class="filter_container" id="filter_container">
-                <div class="filter_content">
-                    <div class="filter_title" style="cursor: default;">选择搜索维度</div>
-                    <select id="demension1">
-                        <option value="疾病">疾病</option>
-                        <option value="人群">人群</option>
-                        <option value="X （暴露/干预措施）">X （暴露/干预措施）*</option>
-                        <option value="Y （结局）">Y （结局）*</option>
-                    </select>
+                <div class="dimension">
+                    <div class="filter_content">
+                        <div class="filter_title" style="cursor: default;">选择搜索维度</div>
+                        <select id="demension1">
+                            <option value="疾病">疾病</option>
+                            <option value="人群">人群</option>
+                            <option value="X （暴露/干预措施）">X （暴露/干预措施）*</option>
+                            <option value="Y （结局）">Y （结局）*</option>
+                        </select>
+                    </div>
+                    <div class="key_content">
+                        <div class="key_title" style="cursor: default;">输入关键词</div>
+                        <input type="text" class="key_input" id="key_input1">
+                    </div>
                 </div>
-                <div class="key_content">
-                    <div class="key_title" style="cursor: default;">输入关键词</div>
-                    <input type="text" class="key_input" id="key_input1">
+                <div class="result_output">
+                    <div class="label_content" id='label_content'>
+                        <div class="search_label" id="search_content"></div>   
+                    </div>
                 </div>
+            </div>
+            <div class="function_container">
                 <div class="filter_btn_content">
                     <button class="filter_btn" onclick="add()">添加</button>
                     <!-- <div class="filter_option">
@@ -219,16 +232,11 @@
                         <button class="options" onclick="addNo()" value="NO">NO</button>
                     </div> -->
                 </div>
-            </div>
-            <div class="search">
-                <div class="label_content" id='label_content'>
-                    <div class="search_label" id="search_content"></div>   
-                </div>
-                <div></div>
                 <div class="search_btn_content">
                     <button class="search_btn">搜索</button>
                 </div>
-            </div>
+            </div>   
+                
             <!-- <a href="#">
                 <i class='bx bx-save' ></i>
                 <span class="function_name">保存</span>

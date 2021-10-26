@@ -100,36 +100,15 @@ function add(){
         input1.style.border = '2px solid red'
         return;
     }
-
     const output = key1 + "(" + value1+")";
-    var output2 = ""
     const search_centent = document.getElementById('search_content')
-
-    const option = document.getElementById('opt_checked')
-
-    if(container.childElementCount > 3){
-        const select2 = document.getElementById('demension2')
-        const value2 = select2.options[select2.selectedIndex].value;
-
-        const input2 = document.getElementById('key_input2')
-        const key2 = input2.value
-        output2 = key2 +' (' + value2 + ")" 
-
-        if(key2 === ""){
-            input2.style.border = '2px solid red'
-            return;
-        }
-        
-        const search_txt = document.createTextNode(output + " " + option.value+ " " + output2+"; ")
+    var search_txt = document.createTextNode(output + "; ")
+    if (search_centent.innerText.includes(output)){
+        alert('请勿重复添加')
+        return;
+    } else {
         search_centent.append(search_txt)
-
-    } else if (option && option.value === "NO"){
-        const search_txt = document.createTextNode("NO " + output + "; ")
-        search_centent.append(search_txt)
-    } else{
-        
-        const search_txt = document.createTextNode(output + "; ")
-        search_centent.append(search_txt)
+        input1.value = ""
     }
 
     const label_container = document.getElementById('label_content')
@@ -153,32 +132,24 @@ function add(){
         label_container.appendChild(btn1_container)
     }
 
-    // input1.value = ""
-    // if(!input2){
-    //     input2.value = ""
-    // }
 }
 
-// function search() {
-
-//     const 
-// }
 
 function clear_btn() {
-    const container = document.getElementById('label_content')
-    console.log(container)
-    container.removeChild(container.lastElementChild)
-    container.removeChild(container.lastElementChild)
-
     const search_label = document.getElementById('search_content')
-    search_label.innerText = ''
+    search_label.removeChild(search_label.lastChild)
     // const content = document.getElementById('search_content')
     // content.removeChild(content.lastElementChild)
+    if(search_label.innerText.length < 1){
+        const container = document.getElementById('label_content')
+        container.removeChild(container.lastElementChild)
+        container.removeChild(container.lastElementChild)
+    }
+    
 }
 
 function save_btn() {
     const search = document.getElementById('search_content').innerText
-
     const container = document.getElementById('history_container')
 
     const history = document.createElement('div')
@@ -191,7 +162,12 @@ function save_btn() {
     history_a.href = '#'
 
     const history_span = document.createElement('span')
-    history_span.append(search)
+    if(search.length < 36) {
+        history_span.append(search)
+    } else {
+        history_span.append(search.slice(0, 30)+'...')
+    }
+    
 
     history_a.appendChild(history_span)
     history_content.appendChild(history_a)
