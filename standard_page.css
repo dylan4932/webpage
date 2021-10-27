@@ -113,7 +113,7 @@ body{
 }
 
 .guide .modules_container{
-    margin-top: 50px;
+    margin-top: 40px;
     height:52%;
 }
 
@@ -156,7 +156,7 @@ body{
 .guide ul li{
     position: relative;
     list-style: none;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 ul li .guide_btn{   
