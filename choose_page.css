@@ -164,8 +164,8 @@ details .complete_item:hover{
 }
 
 .guide .modules_container{
-    margin-top: 50px;
-    height:52%;
+    margin-top: 30px;
+    height: 410px;
 }
 
 .title{
@@ -234,14 +234,15 @@ ul li .guide_btn:hover{
 }
 
 .guide .page_des{
-    position: absolute;
     border-top: 1px dashed grey;
     width: 95%;
-    height: calc(42%-100px);
     font-size: 12px;
     bottom: 20px;
     padding-left: 10px;
     cursor: default;
+}
+.page_des div{
+    height: 24px;
 }
 
 ul li .function_btn{
