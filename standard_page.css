@@ -350,11 +350,17 @@ ul li .function_btn:hover{
 }
 
 .home_content .ads_container{
-    height: 120px;
-    width: 500px;
+    height: 130px;
+    width: 850px;
     margin-left: 70px;
     margin-top: 10px;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.advImg{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 800px;
 }
 
 

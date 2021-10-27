@@ -170,3 +170,43 @@ const resizers5 = ele5.querySelectorAll('.resizer');
 [].forEach.call(resizers5, function (resizer) {
     resizer.addEventListener('mousedown', mouseDownHandler5);
 });
+
+
+function article(){
+    const container = document.getElementById('display_container')
+    if (container.childElementCount > 0){
+        container.removeChild(container.lastChild)
+    }
+
+    const content = document.createElement('img')
+    content.className = 'display_chart'
+    content.src = './pic/期刊分析.png';
+
+    container.appendChild(content)
+}
+
+function design() {
+    const container = document.getElementById('display_container')
+    if (container.childElementCount > 0){
+        container.removeChild(container.lastChild)
+    }
+
+    const content = document.createElement('img')
+    content.className = 'display_chart'
+    content.src = './pic/研究设计分析.png';
+
+    container.appendChild(content)
+}
+
+function result() {
+    const container = document.getElementById('display_container')
+    if (container.childElementCount > 0){
+        container.removeChild(container.lastChild)
+    }
+
+    const content = document.createElement('img')
+    content.className = 'display_chart'
+    content.src = './pic/结论分析.png';
+
+    container.appendChild(content)
+}
