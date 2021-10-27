@@ -208,6 +208,7 @@ details .complete_item:hover{
     position: relative;
     list-style: none;
     line-height: 20px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   
@@ -234,7 +235,6 @@ ul li .guide_btn:hover{
 }
 
 .guide .page_des{
-    
     border-top: 1px dashed grey;
     width: 95%;
     bottom: 20px;
@@ -243,9 +243,9 @@ ul li .guide_btn:hover{
     cursor: default;
 }
 
-.page_des div{
+/* .page_des div{
     height: 24px;
-}
+} */
 
 ul li .function_btn{
     width: 98%;

@@ -226,6 +226,7 @@ details .complete_item:hover{
     position: relative;
     list-style: none;
     line-height: 30px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   

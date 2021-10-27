@@ -145,6 +145,7 @@ body{
     position: relative;
     list-style: none;
     line-height: 20px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   
@@ -180,9 +181,9 @@ ul li .guide_btn:hover{
     cursor: default;
 }
 
-.page_des div{
+/* .page_des div{
     height: 24px;
-}
+} */
 
 ul li .function_btn{
     width: 98%;
