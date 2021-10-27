@@ -152,6 +152,10 @@ function save_btn() {
     const search = document.getElementById('search_content').innerText
     const container = document.getElementById('history_container')
 
+    for (i in container.childElementCount){
+        
+    }
+
     const history = document.createElement('div')
     history.className = 'history'
 
