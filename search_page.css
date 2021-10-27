@@ -197,7 +197,7 @@ body{
 }
 
 .guide .modules_container{
-    margin-top: 30px;
+    margin-top: 40px;
     height: 410px;
 }
 
@@ -673,12 +673,16 @@ ul li .function_btn:hover{
     align-items: center;
     padding: 5px;
     align-content: center;
-    min-height: 50px;
+    min-height: 40px;
     border-radius: 2px;
     box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
 }
 
-
+.result .more_content{
+    margin: 5px 5px;
+    font-size: 12px;
+    position: relative;
+}
 
 .result .result_title{
     margin-left: 10px;
@@ -743,7 +747,6 @@ ul li .function_btn:hover{
 }
 
 .more_content details{
-    padding: 2px;
     height: auto;
     overflow: hidden;
     transition: max-height ease-in-out;
@@ -751,10 +754,17 @@ ul li .function_btn:hover{
 }
 
 .more_content details > summary {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
     list-style-type: none;
     font-size: 12px;
     cursor: pointer;
     padding-left: 10px;
+}
+
+.more_content details > summary:hover{
+    text-decoration: underline;
 }
 
 /* details > summary {
@@ -768,11 +778,11 @@ details > summary::-webkit-details-marker {
 }
 
 details > summary::before {
-    content: '';
+    content: '了解更多';
 }
 
 details[open] > summary::before {
-    content: '';
+    content: '收起';
 }
 
 details p{
