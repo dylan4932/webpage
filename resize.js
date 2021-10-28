@@ -210,3 +210,146 @@ function result() {
 
     container.appendChild(content)
 }
+
+function addRow() {
+    const col1 = document.getElementById('resizable')
+    const col2 = document.getElementById('resizable2')
+    const col3 = document.getElementById('col3')
+    const col4 = document.getElementById('col4')
+    const col5 = document.getElementById('col5')
+    const col6 = document.getElementById('col6')
+    const col7 = document.getElementById('col7')
+    const col8 = document.getElementById('resizable3')
+    const col9 = document.getElementById('resizable4')
+    const col10 = document.getElementById('resizable5')
+
+    const container1 = document.createElement('div')
+    container1.className = 're_content'
+    const txt1 = document.createElement('input')
+    txt1.type = 'text'
+    container1.appendChild(txt1)
+
+    const container2 = document.createElement('div')
+    container2.className = 're_content'
+    const txt2 = document.createElement('input')
+    txt2.type = 'text'
+    container2.appendChild(txt2)
+
+    const container3 = document.createElement('div')
+    container3.className = 're_content'
+    const txt3 = document.createElement('input')
+    txt3.type = 'month'
+    container3.appendChild(txt3)
+
+    const container4 = document.createElement('div')
+    container4.className = 're_content'
+    const txt4 = document.createElement('input')
+    txt4.type = 'text'
+    container4.appendChild(txt4)
+
+    const container5 = document.createElement('div')
+    container5.className = 're_content'
+    const txt5 = document.createElement('input')
+    txt5.type = 'text'
+    container5.appendChild(txt5)
+
+    const container6 = document.createElement('div')
+    container6.className = 're_content'
+    const select = document.createElement('select')
+    select.id = 'study_type'
+    select.name = 'type'
+    select.style = 'border: none'
+    const opt1 = document.createElement('option')
+    const optxt1 = document.createTextNode('研究类型')
+    opt1.append(optxt1)
+    const opt2 = document.createElement('option')
+    opt2.value = 'RCT'
+    const optxt2 = document.createTextNode('RCT')
+    opt2.append(optxt2)
+    const opt3 = document.createElement('option')
+    opt3.value = '横断面研究'
+    const optxt3 = document.createTextNode('横断面研究')
+    opt3.append(optxt3)
+    const opt4 = document.createElement('option')
+    opt4.value = '队列研究'
+    const optxt4 = document.createTextNode('队列研究')
+    opt4.append(optxt4)
+    const opt5 = document.createElement('option')
+    opt5.value = '病例对照研究'
+    const optxt5 = document.createTextNode('病例对照研究')
+    opt5.append(optxt5)
+    const opt6 = document.createElement('option')
+    opt6.value = '诊断实验'
+    const optxt6 = document.createTextNode('诊断实验')
+    opt6.append(optxt6)
+
+    select.appendChild(opt1)
+    select.appendChild(opt2)
+    select.appendChild(opt3)
+    select.appendChild(opt4)
+    select.appendChild(opt5)
+    select.appendChild(opt6)
+    container6.appendChild(select)
+
+    const container7 = document.createElement('div')
+    container7.className = 're_content'
+    const txt7 = document.createElement('input')
+    txt7.type = 'text'
+    container7.appendChild(txt7)
+
+    const container8 = document.createElement('div')
+    container8.className = 're_content'
+    const txt8 = document.createElement('input')
+    txt8.type = 'text'
+    container8.appendChild(txt8)
+
+    const container9 = document.createElement('div')
+    container9.className = 're_content'
+    const txt9 = document.createElement('input')
+    txt9.type = 'text'
+    container9.appendChild(txt9)
+
+    const container10 = document.createElement('div')
+    container10.className = 're_content'
+    const txt10 = document.createElement('input')
+    txt10.type = 'text'
+    container10.appendChild(txt10)
+
+    col1.appendChild(container1)
+    col2.appendChild(container2)
+    col3.appendChild(container3)
+    col4.appendChild(container4)
+    col5.appendChild(container5)
+    col6.appendChild(container6)
+    col7.appendChild(container7)
+    col8.appendChild(container8)
+    col9.appendChild(container9)
+    col10.appendChild(container10)
+}
+
+function deleteRow(){
+    const col1 = document.getElementById('resizable')
+    const col2 = document.getElementById('resizable2')
+    const col3 = document.getElementById('col3')
+    const col4 = document.getElementById('col4')
+    const col5 = document.getElementById('col5')
+    const col6 = document.getElementById('col6')
+    const col7 = document.getElementById('col7')
+    const col8 = document.getElementById('resizable3')
+    const col9 = document.getElementById('resizable4')
+    const col10 = document.getElementById('resizable5')
+
+    if (col1.childElementCount > 3) {
+        col1.removeChild(col1.lastElementChild)
+        col2.removeChild(col2.lastElementChild)
+        col3.removeChild(col3.lastElementChild)
+        col4.removeChild(col4.lastElementChild)
+        col5.removeChild(col5.lastElementChild)
+        col6.removeChild(col6.lastElementChild)
+        col7.removeChild(col7.lastElementChild)
+        col8.removeChild(col8.lastElementChild)
+        col9.removeChild(col9.lastElementChild)
+        col10.removeChild(col10.lastElementChild)
+    }
+    
+}

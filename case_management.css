@@ -172,11 +172,17 @@ body{
 .home_content .ads_content{
     display: absolute;
     height: 150px;
-    width: 500px;
-    margin-left: 30px;
+    width: 900px;
+    margin-left: 100px;
     margin-right: 30px;
     margin-top: 30px;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.advImg{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 800px;
 }
 
 .ads_content .ads img{

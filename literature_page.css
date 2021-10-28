@@ -463,6 +463,33 @@ ul li .function_btn:hover{
     outline: none;  
 }
 
+.list_btn_container{
+    margin: 20px 20px;
+    display: flex;
+}
+
+.list_btn_container .list_btn{
+    margin-left: 50px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.list_btn_container .list_btn:hover{
+    background: rgb(240, 242, 252);
+    
+}
+
+.list_btn_container .list_btn a{
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+}
+
+.list_btn_container .list_btn:hover a{
+    color: rgb(79, 114, 225);
+}
+
 .save_btn_container{
     margin-top: 20px;
     margin-left: 80%;
@@ -531,7 +558,7 @@ ul li .function_btn:hover{
     border-radius: 25px;
     position: relative;
     margin: 20px 0;
-    width: 85%;
+    width: 850px;
     height: 350px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
 }

@@ -208,6 +208,7 @@
         <div class="main_container">
             <div class="main_content">
                 <div id='resizable' class="resizable">
+                    <div class="resizer resizer-r"></div>
                     <div class="re_content">
                         <p>文献标题</p>
                     </div>
@@ -221,9 +222,10 @@
                         <input type="text">
                     </div>
                     
-                    <div class="resizer resizer-r"></div>
+                    
                 </div>  
                 <div id='resizable2' class="resizable">
+                    <div class="resizer resizer-r"></div>
                     <div class="re_content">
                         <p>期刊名称</p>
                     </div>
@@ -236,9 +238,9 @@
                     <div class="re_content">
                         <input type="text">
                     </div>
-                    <div class="resizer resizer-r"></div>
                 </div> 
-                <div class="column_content">
+                <div class="column_content" id='col3'>
+                    <div class="border border-r"></div>
                     <div class="re_content">
                         <p>发表时间</p>
                     </div>
@@ -251,9 +253,9 @@
                     <div class="re_content">
                         <input type="month">
                     </div>
-                    <div class="border border-r"></div>
                 </div>
-                <div class="column_content" style="min-width: 70px;">
+                <div class="column_content" style="min-width: 70px;" id='col4'>
+                    <div class="border border-r"></div>
                     <div class="re_content">
                         <p>影响因子</p>
                     </div>
@@ -266,9 +268,10 @@
                     <div class="re_content">
                         <input type="text">
                     </div>
-                    <div class="border border-r"></div>
+                    
                 </div>
-                <div class="column_content" style="min-width: 100px;">
+                <div class="column_content" style="min-width: 100px;" id='col5'>
+                    <div class="border border-r"></div>
                     <div class="re_content">
                         <p>研究人群特征</p>
                     </div>
@@ -281,9 +284,10 @@
                     <div class="re_content">
                         <input type="text">
                     </div>
-                    <div class="border border-r"></div>
+                    
                 </div>
-                <div class="column_content">
+                <div class="column_content" id="col6">
+                    <div class="border border-r"></div>
                     <div class="re_content">
                         <p>研究类型</p>
                     </div>
@@ -317,9 +321,10 @@
                             <option value="诊断实验">诊断实验</option>
                         </select>
                     </div>
-                    <div class="border border-r"></div>
+                    
                 </div>
-                <div class="column_content" style="min-width: 55px;">
+                <div class="column_content" style="min-width: 55px;" id="col7">
+                    <div class="border border-r"></div>
                     <div class="re_content">
                         <p>样本量</p>
                     </div>
@@ -332,9 +337,10 @@
                     <div class="re_content">
                         <input type="text">
                     </div>
-                    <div class="border border-r"></div>
+                    
                 </div>
                 <div id='resizable3' class="resizable">
+                    <div class="resizer resizer-r"></div>
                     <div class="re_content">
                         <p>协变量</p>
                     </div>
@@ -348,9 +354,10 @@
                         <input type="text">
                     </div>
                     
-                    <div class="resizer resizer-r"></div>
+                    
                 </div> 
                 <div id='resizable4' class="resizable" >
+                    <div class="resizer resizer-r"></div>
                     <div class="re_content">
                         <p>研究设计</p>
                     </div>
@@ -364,9 +371,10 @@
                         <input type="text">
                     </div>
                     
-                    <div class="resizer resizer-r"></div>
+                    
                 </div> 
                 <div id='resizable5' class="resizable">
+                    <div class="resizer resizer-r"></div>
                     <div class="re_content">
                         <p>结论</p>
                     </div>
@@ -380,12 +388,26 @@
                         <input type="text">
                     </div>
                     
-                    <div class="resizer resizer-r"></div>
+                    
                 </div> 
             </div>
         </div>
-        
+        <div class="list_btn_container">
+            <div class="list_btn" onclick="addRow()">
+                <a href="#">
+                    <i class='bx bx-list-plus'></i>
+                    <span>添加行</span>
+                </a>
+            </div> 
+            <div class="list_btn" onclick="deleteRow()">
+                <a href="#">
+                    <i class='bx bx-list-minus' ></i>
+                    <span>删除行</span>
+                </a>
+            </div> 
+        </div> 
         <div class="save_btn_container">
+            
             <div class="save_btn">
                 <a href="#">
                     <span>保存您的文献归纳</span>
