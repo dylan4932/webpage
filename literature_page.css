@@ -54,6 +54,11 @@ body{
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
 
+.history details{
+    background-color: grey;
+    z-index: 99;
+}
+
 .history details > summary {
     list-style-type: none;
     cursor: pointer;
@@ -66,7 +71,7 @@ body{
 }
 
 .history details > summary::before {
-    content: '︾';
+    content: '-';
 }
 
 .history details[open] > summary::before {
