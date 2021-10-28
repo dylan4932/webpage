@@ -21,6 +21,10 @@ body{
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
 }
 
+.tool_bar::-webkit-scrollbar {
+    display: none;
+}
+
 .tool_bar .toolbar_title{
     margin: 20px 16px;
     font-size: 14px;
@@ -50,10 +54,29 @@ body{
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
 
-
-.history_result .history:hover{
-    background: rgb(240, 242, 252);
+.history details > summary {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+    margin-left: 48%;
 }
+
+.history details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.history details > summary::before {
+    content: '︾';
+}
+
+.history details[open] > summary::before {
+    content: '︽';
+}
+
+
+/* .history_result .history:hover{
+    background: rgb(240, 242, 252);
+} */
 
 .history .history_content{
     width: 100%;
