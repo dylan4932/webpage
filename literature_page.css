@@ -399,7 +399,7 @@ ul li .function_btn:hover{
     margin-left: 20px;
     margin-right: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0;
 }
 
@@ -415,6 +415,8 @@ ul li .function_btn:hover{
     margin-bottom: 5px;
     padding-bottom: 5px;
     text-align: center;
+    font-size: 12px;
+    cursor: default;
 }
 
 .column_content .re_content{
@@ -424,10 +426,21 @@ ul li .function_btn:hover{
     margin-bottom: 5px;
     padding-bottom: 5px;  
     text-align: center;
+    font-size: 12px;
+    cursor: default;
 }
 
-.re_content p{
-    cursor: default;
+.re_content select{
+    width: 85%;
+    font-size: 12px;
+}
+
+.re_content input[type="month"]{
+    font-size: 12px;
+}
+
+.re_content input[type="text"]{
+    font-size: 12px;
 }
 
 .column_content{
@@ -586,7 +599,7 @@ ul li .function_btn:hover{
     border-radius: 25px;
     position: relative;
     margin: 20px 0;
-    width: 850px;
+    width: 700px;
     height: 350px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
 }
@@ -596,7 +609,7 @@ ul li .function_btn:hover{
 }
 
 .display_content .display_chart{
-    margin-left: 50px;
+    margin-left: 90px;
     width: 500px;
 }
 

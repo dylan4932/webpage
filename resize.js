@@ -157,9 +157,10 @@ function addRow() {
     const col5 = document.getElementById('col5')
     const col6 = document.getElementById('col6')
     const col7 = document.getElementById('col7')
-    const col8 = document.getElementById('resizable3')
-    const col9 = document.getElementById('col9')
+    const col8 = document.getElementById('col8')
+    const col9 = document.getElementById('resizable3')
     const col10 = document.getElementById('col10')
+    const col11 = document.getElementById('col11')
 
     const container1 = document.createElement('div')
     container1.className = 're_content'
@@ -243,6 +244,12 @@ function addRow() {
 
     const container9 = document.createElement('div')
     container9.className = 're_content'
+    const txt9 = document.createElement('input')
+    txt9.type = 'text'
+    container9.appendChild(txt9)
+
+    const container10 = document.createElement('div')
+    container10.className = 're_content'
     const Dselect = document.createElement('select')
     Dselect.id = 'result'
     Dselect.name = 'type'
@@ -287,10 +294,10 @@ function addRow() {
     Dselect.appendChild(Dopt6)
     Dselect.appendChild(Dopt7)
     Dselect.appendChild(Dopt8)
-    container9.appendChild(Dselect)
+    container10.appendChild(Dselect)
 
-    const container10 = document.createElement('div')
-    container10.className = 're_content'
+    const container11 = document.createElement('div')
+    container11.className = 're_content'
     const Rselect = document.createElement('select')
     Rselect.id = 'result'
     Rselect.name = 'type'
@@ -310,7 +317,7 @@ function addRow() {
     Rselect.appendChild(Ropt1)
     Rselect.appendChild(Ropt2)
     Rselect.appendChild(Ropt3)
-    container10.appendChild(Rselect)
+    container11.appendChild(Rselect)
 
     col1.appendChild(container1)
     col2.appendChild(container2)
@@ -322,6 +329,7 @@ function addRow() {
     col8.appendChild(container8)
     col9.appendChild(container9)
     col10.appendChild(container10)
+    col11.appendChild(container11)
 }
 
 function deleteRow(){
@@ -332,9 +340,10 @@ function deleteRow(){
     const col5 = document.getElementById('col5')
     const col6 = document.getElementById('col6')
     const col7 = document.getElementById('col7')
-    const col8 = document.getElementById('resizable3')
-    const col9 = document.getElementById('col9')
+    const col8 = document.getElementById('col8')
+    const col9 = document.getElementById('resizable3')
     const col10 = document.getElementById('col10')
+    const col11 = document.getElementById('col11')
 
     if (col1.childElementCount > 3) {
         col1.removeChild(col1.lastElementChild)
@@ -347,6 +356,7 @@ function deleteRow(){
         col8.removeChild(col8.lastElementChild)
         col9.removeChild(col9.lastElementChild)
         col10.removeChild(col10.lastElementChild)
+        col11.removeChild(col11.lastElementChild)
     }
     
 }

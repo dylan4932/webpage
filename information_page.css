@@ -630,6 +630,9 @@ p{
     display: inline-block;
 }
 
+.single_choice{
+    
+}
 
 .check_container {
     display: block;
@@ -649,7 +652,7 @@ p{
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
+}
   
 .checkmark {
     position: absolute;

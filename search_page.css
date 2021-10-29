@@ -686,6 +686,8 @@ ul li .function_btn:hover{
 }
 
 .result .more_content{
+    height: auto;
+    min-height: 60px;
     margin: 5px 5px;
     font-size: 12px;
     position: relative;

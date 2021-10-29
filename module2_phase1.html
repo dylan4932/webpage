@@ -102,7 +102,7 @@
                         </div>
                     </details>
                 </div>
-                <div class="history">
+                <!-- <div class="history">
                     <div class="history_content">
                         <a href="#">
                             <span>Phase 3 (2/3)</span>
@@ -131,7 +131,7 @@
                             </a>
                         </div>
                     </details>
-                </div>
+                </div> -->
             </div>
         </div>
     
@@ -148,7 +148,7 @@
                     </li>
                     <li> 
                         <div class="title">
-                            <a href="./case_phase_management.html">
+                            <a href="./case_management.html">
                                 <i class='bx bx-user-circle'></i>
                                 <span class="title_name">My Onion</span>
                             </a>
@@ -157,9 +157,9 @@
                     </li>
                     <li>
                         <div class="title">
-                            <a href="./case_management.html">
+                            <a href="./case_phase_management.html">
                                 <i class='bx bx-folder-open' ></i>
-                                <span class="title_name">CASE #00001</span>
+                                <span class="title_name">首选治疗方案分析</span>
                             </a>            
                         </div>
                     </li>
@@ -262,14 +262,6 @@
                     <p>（返回键—phase界面） </p>
                 </div> 
                 <ul>
-                    <!-- <li>
-                        <div class="function_btn">
-                            <a href="#">
-                                <i class='bx bx-save' ></i>
-                                <span class="function_name">保存</span>
-                            </a>
-                        </div>
-                    </li> -->
                     <li>
                         <div class="function_btn">
                             <a href="javascript:history.back()">
@@ -301,12 +293,34 @@
                         <p id='info2_title'> Module2_phase1_information1_question2：
                             <i id="info2" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
-                        <div class="test_opt">
+                        <!-- <div class="test_opt">
                             <button class="opt" onclick="clicked()">option1</button>
                             <button class="opt" onclick="clicked()">option2</button>
                             <button class="opt" onclick="clicked()">option3</button>
                             <button class="opt" onclick="clicked()">option4</button>
                             <button class="opt" onclick="clicked()">option5</button>
+                        </div> -->
+                        <div class="single_choice">
+                            <label class="check_container">option1
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check_container">option2
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check_container">option3
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check_container">option4
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check_container">option5
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                     <div id='info3_container' class='infoCon'>
@@ -355,22 +369,22 @@
                 </div>
                 <div class="grid_child remind_container" id='remind_container'>
                     <div id='info1_remind1' class='remind' onclick="remind()">
-                        <p id='info1_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示1——这里是提示1的简要说明和相关解释</p>
+                        <p id='info1_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示1——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
     
                     <div id='info2_remind1' class='remind' onclick="remind()"> 
-                        <p id='info2_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示2——这里是提示2的简要说明和相关解释</p>
+                        <p id='info2_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示2——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
     
                     <div id='info3_remind1' class='remind' onclick="remind()">
-                        <p id='info3_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示3——这里是提示3的简要说明和相关解释</p>
+                        <p id='info3_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示3——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
     
                     <div id='info4_remind1' class='remind' onclick="remind()">
-                        <p id='info4_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示4——这里是提示4的简要说明和相关解释</p>
+                        <p id='info4_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示4——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
                     <div id='info5_remind1' class='remind' onclick="remind()">
-                        <p id='info5_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示5——这里是提示5的简要说明和相关解释</p>
+                        <p id='info5_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示5——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
                     
                 </div>
@@ -397,8 +411,7 @@
                             研究目的
                         </div>
                          <div class="report_content">   <!-- 获取用户的input 生成研究目的 -->
-                            【output】Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex repellendus, velit quas corporis nulla explicabo eum enim ipsam rerum facere expedita rem sequi, hic asperiores ab aspernatur iste optio.
-                        </div>
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     </div>
                     <div class="report">
                         <div class="report_title">  <!-- 获取用户的input 生成研究类型 -->
@@ -406,19 +419,19 @@
                             研究类型推荐
                         </div>
                         <div class="report_content">
-                            【output】Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex repellendus, velit quas corporis nulla explicabo eum enim ipsam rerum facere expedita rem sequi, hic asperiores ab aspernatur iste optio.
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                         </div>
                     </div>
                 </div>
                 <div class="note_container" id="note_container">
                     <div class="note">
                         <div class="note_content">
-                            【Note】Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione, consectetur repellendus quasi veritatis modi debitis sapiente soluta autem? Facere nam, provident commodi consequuntur ab repudiandae voluptatum iste sunt perspiciatis!</div>
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    
+                        </div>
                     </div>
                     <div class="note">
                         <div class="note_content">
-                            【Note】Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione, consectetur repellendus quasi veritatis modi debitis sapiente soluta autem? Facere nam, provident commodi consequuntur ab repudiandae voluptatum iste sunt perspiciatis!</div>
-                    </div>
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                 </div>
             </div>
             
