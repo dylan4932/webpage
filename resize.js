@@ -109,64 +109,254 @@ const resizers3 = ele3.querySelectorAll('.resizer');
 });
 
 
-//
-const ele4 = document.getElementById('resizable4');
-let w4 = 0;
 
-const mouseDownHandler4 = function (e) {
-    x = e.clientX;
+function article(){
+    const container = document.getElementById('display_container')
+    if (container.childElementCount > 0){
+        container.removeChild(container.lastChild)
+    }
 
-    const styles = window.getComputedStyle(ele4);
-    w4 = parseInt(styles.width, 10);
+    const content = document.createElement('img')
+    content.className = 'display_chart'
+    content.src = './pic/期刊分析.png';
 
-    document.addEventListener('mousemove', mouseMoveHandler4);
-    document.addEventListener('mouseup', mouseUpHandler4);
-};
+    container.appendChild(content)
+}
 
-const mouseMoveHandler4 = function (e) {
-    const dx = e.clientX - x;
+function design() {
+    const container = document.getElementById('display_container')
+    if (container.childElementCount > 0){
+        container.removeChild(container.lastChild)
+    }
 
-    ele4.style.width = `${w4 + dx}px`;
-};
+    const content = document.createElement('img')
+    content.className = 'display_chart'
+    content.src = './pic/研究设计分析.png';
 
-const mouseUpHandler4 = function () {
-    document.removeEventListener('mousemove', mouseMoveHandler4);
-    document.removeEventListener('mouseup', mouseUpHandler4);
-};
+    container.appendChild(content)
+}
 
-const resizers4 = ele4.querySelectorAll('.resizer');
+function result() {
+    const container = document.getElementById('display_container')
+    if (container.childElementCount > 0){
+        container.removeChild(container.lastChild)
+    }
 
-[].forEach.call(resizers4, function (resizer) {
-    resizer.addEventListener('mousedown', mouseDownHandler4);
-});
+    const content = document.createElement('img')
+    content.className = 'display_chart'
+    content.src = './pic/结论分析.png';
 
+    container.appendChild(content)
+}
 
-const ele5 = document.getElementById('resizable5');
-let w5 = 0;
+function addRow() {
+    const col1 = document.getElementById('resizable')
+    const col2 = document.getElementById('resizable2')
+    const col3 = document.getElementById('col3')
+    const col4 = document.getElementById('col4')
+    const col5 = document.getElementById('col5')
+    const col6 = document.getElementById('col6')
+    const col7 = document.getElementById('col7')
+    const col8 = document.getElementById('col8')
+    const col9 = document.getElementById('resizable3')
+    const col10 = document.getElementById('col10')
+    const col11 = document.getElementById('col11')
 
-const mouseDownHandler5 = function (e) {
-    x = e.clientX;
+    const container1 = document.createElement('div')
+    container1.className = 're_content'
+    const txt1 = document.createElement('input')
+    txt1.type = 'text'
+    container1.appendChild(txt1)
 
-    const styles = window.getComputedStyle(ele5);
-    w5 = parseInt(styles.width, 10);
+    const container2 = document.createElement('div')
+    container2.className = 're_content'
+    const txt2 = document.createElement('input')
+    txt2.type = 'text'
+    container2.appendChild(txt2)
 
-    document.addEventListener('mousemove', mouseMoveHandler5);
-    document.addEventListener('mouseup', mouseUpHandler5);
-};
+    const container3 = document.createElement('div')
+    container3.className = 're_content'
+    const txt3 = document.createElement('input')
+    txt3.type = 'month'
+    container3.appendChild(txt3)
 
-const mouseMoveHandler5 = function (e) {
-    const dx = e.clientX - x;
+    const container4 = document.createElement('div')
+    container4.className = 're_content'
+    const txt4 = document.createElement('input')
+    txt4.type = 'text'
+    container4.appendChild(txt4)
 
-    ele5.style.width = `${w5 + dx}px`;
-};
+    const container5 = document.createElement('div')
+    container5.className = 're_content'
+    const txt5 = document.createElement('input')
+    txt5.type = 'text'
+    container5.appendChild(txt5)
 
-const mouseUpHandler5 = function () {
-    document.removeEventListener('mousemove', mouseMoveHandler5);
-    document.removeEventListener('mouseup', mouseUpHandler5);
-};
+    const container6 = document.createElement('div')
+    container6.className = 're_content'
+    const select = document.createElement('select')
+    select.id = 'study_type'
+    select.name = 'type'
+    select.style = 'border: none'
+    const opt1 = document.createElement('option')
+    const optxt1 = document.createTextNode('研究类型')
+    opt1.append(optxt1)
+    const opt2 = document.createElement('option')
+    opt2.value = 'RCT'
+    const optxt2 = document.createTextNode('RCT')
+    opt2.append(optxt2)
+    const opt3 = document.createElement('option')
+    opt3.value = '横断面研究'
+    const optxt3 = document.createTextNode('横断面研究')
+    opt3.append(optxt3)
+    const opt4 = document.createElement('option')
+    opt4.value = '队列研究'
+    const optxt4 = document.createTextNode('队列研究')
+    opt4.append(optxt4)
+    const opt5 = document.createElement('option')
+    opt5.value = '病例对照研究'
+    const optxt5 = document.createTextNode('病例对照研究')
+    opt5.append(optxt5)
+    const opt6 = document.createElement('option')
+    opt6.value = '诊断实验'
+    const optxt6 = document.createTextNode('诊断实验')
+    opt6.append(optxt6)
 
-const resizers5 = ele5.querySelectorAll('.resizer');
+    select.appendChild(opt1)
+    select.appendChild(opt2)
+    select.appendChild(opt3)
+    select.appendChild(opt4)
+    select.appendChild(opt5)
+    select.appendChild(opt6)
+    container6.appendChild(select)
 
-[].forEach.call(resizers5, function (resizer) {
-    resizer.addEventListener('mousedown', mouseDownHandler5);
-});
+    const container7 = document.createElement('div')
+    container7.className = 're_content'
+    const txt7 = document.createElement('input')
+    txt7.type = 'text'
+    container7.appendChild(txt7)
+
+    const container8 = document.createElement('div')
+    container8.className = 're_content'
+    const txt8 = document.createElement('input')
+    txt8.type = 'text'
+    container8.appendChild(txt8)
+
+    const container9 = document.createElement('div')
+    container9.className = 're_content'
+    const txt9 = document.createElement('input')
+    txt9.type = 'text'
+    container9.appendChild(txt9)
+
+    const container10 = document.createElement('div')
+    container10.className = 're_content'
+    const Dselect = document.createElement('select')
+    Dselect.id = 'result'
+    Dselect.name = 'type'
+    Dselect.style = 'border: none'
+    const Dopt1 = document.createElement('option')
+    const Doptxt1 = document.createTextNode('其他设计&方法')
+    Dopt1.append(Doptxt1)
+    const Dopt2 = document.createElement('option')
+    Dopt2.value = '亚组分析'
+    const Doptxt2 = document.createTextNode('亚组分析')
+    Dopt2.append(Doptxt2)
+    const Dopt3 = document.createElement('option')
+    Dopt3.value = '分层分析'
+    const Doptxt3 = document.createTextNode('分层分析')
+    Dopt3.append(Doptxt3)
+    const Dopt4 = document.createElement('option')
+    Dopt4.value = '缺失值填补方法'
+    const Doptxt4 = document.createTextNode('缺失值填补方法')
+    Dopt4.append(Doptxt4)
+    const Dopt5 = document.createElement('option')
+    Dopt5.value = '敏感性分析'
+    const Doptxt5 = document.createTextNode('敏感性分析')
+    Dopt5.append(Doptxt5)
+    const Dopt6 = document.createElement('option')
+    Dopt6.value = '倾向性评分'
+    const Doptxt6 = document.createTextNode('倾向性评分')
+    Dopt6.append(Doptxt6)
+    const Dopt7 = document.createElement('option')
+    Dopt7.value = '工具变量'
+    const Doptxt7 = document.createTextNode('工具变量')
+    Dopt7.append(Doptxt7)
+    const Dopt8 = document.createElement('option')
+    Dopt8.value = '多因素模型分析'
+    const Doptxt8 = document.createTextNode('多因素模型分析')
+    Dopt8.append(Doptxt8)
+
+    Dselect.appendChild(Dopt1)
+    Dselect.appendChild(Dopt2)
+    Dselect.appendChild(Dopt3)
+    Dselect.appendChild(Dopt4)
+    Dselect.appendChild(Dopt5)
+    Dselect.appendChild(Dopt6)
+    Dselect.appendChild(Dopt7)
+    Dselect.appendChild(Dopt8)
+    container10.appendChild(Dselect)
+
+    const container11 = document.createElement('div')
+    container11.className = 're_content'
+    const Rselect = document.createElement('select')
+    Rselect.id = 'result'
+    Rselect.name = 'type'
+    Rselect.style = 'border: none'
+    const Ropt1 = document.createElement('option')
+    const Roptxt1 = document.createTextNode('结论')
+    Ropt1.append(Roptxt1)
+    const Ropt2 = document.createElement('option')
+    Ropt2.value = '与我一致'
+    const Roptxt2 = document.createTextNode('与我一致')
+    Ropt2.append(Roptxt2)
+    const Ropt3 = document.createElement('option')
+    Ropt3.value = '与我相左'
+    const Roptxt3 = document.createTextNode('与我相左')
+    Ropt3.append(Roptxt3)
+
+    Rselect.appendChild(Ropt1)
+    Rselect.appendChild(Ropt2)
+    Rselect.appendChild(Ropt3)
+    container11.appendChild(Rselect)
+
+    col1.appendChild(container1)
+    col2.appendChild(container2)
+    col3.appendChild(container3)
+    col4.appendChild(container4)
+    col5.appendChild(container5)
+    col6.appendChild(container6)
+    col7.appendChild(container7)
+    col8.appendChild(container8)
+    col9.appendChild(container9)
+    col10.appendChild(container10)
+    col11.appendChild(container11)
+}
+
+function deleteRow(){
+    const col1 = document.getElementById('resizable')
+    const col2 = document.getElementById('resizable2')
+    const col3 = document.getElementById('col3')
+    const col4 = document.getElementById('col4')
+    const col5 = document.getElementById('col5')
+    const col6 = document.getElementById('col6')
+    const col7 = document.getElementById('col7')
+    const col8 = document.getElementById('col8')
+    const col9 = document.getElementById('resizable3')
+    const col10 = document.getElementById('col10')
+    const col11 = document.getElementById('col11')
+
+    if (col1.childElementCount > 3) {
+        col1.removeChild(col1.lastElementChild)
+        col2.removeChild(col2.lastElementChild)
+        col3.removeChild(col3.lastElementChild)
+        col4.removeChild(col4.lastElementChild)
+        col5.removeChild(col5.lastElementChild)
+        col6.removeChild(col6.lastElementChild)
+        col7.removeChild(col7.lastElementChild)
+        col8.removeChild(col8.lastElementChild)
+        col9.removeChild(col9.lastElementChild)
+        col10.removeChild(col10.lastElementChild)
+        col11.removeChild(col11.lastElementChild)
+    }
+    
+}

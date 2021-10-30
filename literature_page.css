@@ -21,6 +21,10 @@ body{
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
 }
 
+.tool_bar::-webkit-scrollbar {
+    display: none;
+}
+
 .tool_bar .toolbar_title{
     margin: 20px 16px;
     font-size: 14px;
@@ -50,10 +54,34 @@ body{
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
 
-
-.history_result .history:hover{
-    background: rgb(240, 242, 252);
+.history details{
+    background-color: grey;
+    z-index: 99;
 }
+
+.history details > summary {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+    margin-left: 48%;
+}
+
+.history details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.history details > summary::before {
+    content: '-';
+}
+
+.history details[open] > summary::before {
+    content: '︽';
+}
+
+
+/* .history_result .history:hover{
+    background: rgb(240, 242, 252);
+} */
 
 .history .history_content{
     width: 100%;
@@ -145,6 +173,7 @@ body{
     position: relative;
     list-style: none;
     line-height: 20px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   
@@ -180,9 +209,9 @@ ul li .guide_btn:hover{
     cursor: default;
 }
 
-.page_des div{
+/* .page_des div{
     height: 24px;
-}
+} */
 
 ul li .function_btn{
     width: 98%;
@@ -338,11 +367,17 @@ ul li .function_btn:hover{
 }
 
 .home_content .ads_container{
-    height: 120px;
-    width: 500px;
+    height: 130px;
+    width: 850px;
     margin-left: 70px;
     margin-top: 10px;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.advImg{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 800px;
 }
 
 
@@ -364,7 +399,7 @@ ul li .function_btn:hover{
     margin-left: 20px;
     margin-right: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0;
 }
 
@@ -380,6 +415,8 @@ ul li .function_btn:hover{
     margin-bottom: 5px;
     padding-bottom: 5px;
     text-align: center;
+    font-size: 12px;
+    cursor: default;
 }
 
 .column_content .re_content{
@@ -389,10 +426,21 @@ ul li .function_btn:hover{
     margin-bottom: 5px;
     padding-bottom: 5px;  
     text-align: center;
+    font-size: 12px;
+    cursor: default;
 }
 
-.re_content p{
-    cursor: default;
+.re_content select{
+    width: 85%;
+    font-size: 12px;
+}
+
+.re_content input[type="month"]{
+    font-size: 12px;
+}
+
+.re_content input[type="text"]{
+    font-size: 12px;
 }
 
 .column_content{
@@ -454,6 +502,33 @@ ul li .function_btn:hover{
 
 .select_year{
     outline: none;  
+}
+
+.list_btn_container{
+    margin: 20px 20px;
+    display: flex;
+}
+
+.list_btn_container .list_btn{
+    margin-left: 50px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.list_btn_container .list_btn:hover{
+    background: rgb(240, 242, 252);
+    
+}
+
+.list_btn_container .list_btn a{
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+}
+
+.list_btn_container .list_btn:hover a{
+    color: rgb(79, 114, 225);
 }
 
 .save_btn_container{
@@ -524,9 +599,18 @@ ul li .function_btn:hover{
     border-radius: 25px;
     position: relative;
     margin: 20px 0;
-    width: 85%;
-    height: 150px;
+    width: 700px;
+    height: 350px;
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+}
+
+.sub_content_display .display_content{
+    width: 200px;
+}
+
+.display_content .display_chart{
+    margin-left: 90px;
+    width: 500px;
 }
 
 .sub_content .sub_content_display .display_options{

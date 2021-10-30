@@ -15,24 +15,7 @@ a{
     color: black;
 }
 
-.history details > summary {
-    list-style-type: none;
-    cursor: pointer;
-    color: rgb(170, 170, 170);
-    margin-left: 48%;
-}
 
-.history details > summary::-webkit-details-marker {
-    display: none;
-}
-
-.history details > summary::before {
-    content: '︾';
-}
-
-.history details[open] > summary::before {
-    content: '︽';
-}
 
 .tool_bar{
     right:0;
@@ -88,6 +71,24 @@ a{
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
 }
 
+.history details > summary {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+    margin-left: 48%;
+}
+
+.history details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.history details > summary::before {
+    content: '︾';
+}
+
+.history details[open] > summary::before {
+    content: '︽';
+}
 
 /* .history_result .history:hover{
     background: rgb(240, 242, 252);
@@ -260,7 +261,7 @@ details .complete_item:hover{
 }
 
 .guide .modules_container{
-    margin-top: 50px;
+    margin-top: 40px;
     height:52%;
 }
 
@@ -303,7 +304,8 @@ details .complete_item:hover{
 .guide ul li{
     position: relative;
     list-style: none;
-    line-height: 30px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   
@@ -628,6 +630,9 @@ p{
     display: inline-block;
 }
 
+.single_choice{
+    
+}
 
 .check_container {
     display: block;
@@ -647,7 +652,7 @@ p{
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
+}
   
 .checkmark {
     position: absolute;

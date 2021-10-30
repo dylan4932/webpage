@@ -65,16 +65,7 @@ function guide(){
         
         const phase4_link = document.createElement('a')
 
-        if(evt.target.id.slice(0,7) === 'module1'){
-            phase4_link.href = "#"
-            const phase4_txt = document.createTextNode('└─ Research Topic')
-            phase4.style.paddingLeft = '50px'
-            phase4.append(phase4_txt)
-
-            // const tip4 = document.createElement('span')
-            // tip4.className="phasetip"
-            // phase4.appendChild(tip4)
-        }else{
+        if(evt.target.id.slice(0,7) === 'module2'){
             phase4.className="phase_container"
             phase4_link.href = "./"+evt.target.id.slice(0,7)+"_phase4.html"
             const phase4_txt = document.createTextNode('└─ Research Framework')
@@ -86,6 +77,17 @@ function guide(){
             tip4.append(tip4_txt)
             phase4.appendChild(tip4)
         }
+        // }else{
+            
+        //     phase4_link.href = "#"
+        //     const phase4_txt = document.createTextNode('└─ Research Topic')
+        //     phase4.style.paddingLeft = '50px'
+        //     phase4.append(phase4_txt)
+
+        //     const tip4 = document.createElement('span')
+        //     tip4.className="phasetip"
+        //     phase4.appendChild(tip4)
+        // }
         
         
         phase4_link.appendChild(phase4)

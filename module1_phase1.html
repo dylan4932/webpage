@@ -12,7 +12,7 @@
     <div class="tool_bar">
         <div class="toolbar_title">
             <i class='bx bx-file-find'>
-                <span>搜索记录</span>
+                <span>您保存的搜索策略</span>
             </i>
         </div>
         <div class="history_result" id="history_container">
@@ -44,7 +44,7 @@
         </div>
         <div class="savebar_title">
             <i class='bx bxs-save'>
-                <span>保存记录</span>
+                <span>您保存的指南items</span>
             </i>
         </div>
         <div class="save_container" id="save_container">
@@ -80,7 +80,7 @@
                 </li>
                 <li> 
                     <div class="title">
-                        <a href="./case_phase_management.html">
+                        <a href="./case_management.html">
                             <i class='bx bx-user-circle'></i>
                             <span class="title_name">My Onion</span>
                         </a>
@@ -89,9 +89,9 @@
                 </li>
                 <li>
                     <div class="title">
-                        <a href="./case_management.html">
+                        <a href="./case_phase_management.html">
                             <i class='bx bx-folder-open' ></i>
-                            <span class="title_name">CASE #00001</span>
+                            <span class="title_name">首选治疗方案分析</span>
                         </a>            
                     </div>
                 </li>
@@ -131,11 +131,6 @@
                         <span class="phasetip">
                             ---这是关于phase3的提示---
                         </span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div style="padding-left: 50px; margin-top: 5px; padding-bottom: 5px;">
-                        └─ Research Topic
                     </div>
                 </a>
             </div>
@@ -197,7 +192,7 @@
     <div class="home_content">
         <div class="ads_container">
             <div class="ads">
-                <img src="./pic/ads.png">
+                <img class='advImg' src="./pic/adv.png">
             </div>  
         </div>
         <div class="search_container">
@@ -208,8 +203,8 @@
                         <select id="demension1">
                             <option value="疾病">疾病</option>
                             <option value="人群">人群</option>
-                            <option value="X （暴露/干预措施）">X （暴露/干预措施）*</option>
-                            <option value="Y （结局）">Y （结局）*</option>
+                            <option value="X （暴露/干预措施）">X （暴露/干预措施) </option>
+                            <option value="Y （结局）">Y （结局）</option>
                         </select>
                     </div>
                     <div class="key_content">
@@ -232,7 +227,7 @@
                         <button class="options" onclick="addNo()" value="NO">NO</button>
                     </div> -->
                 </div>
-                <div class="search_btn_content">
+                <div class="search_btn_content" onclick="search_guide()">
                     <button class="search_btn">搜索</button>
                 </div>
             </div>   

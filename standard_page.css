@@ -113,7 +113,7 @@ body{
 }
 
 .guide .modules_container{
-    margin-top: 50px;
+    margin-top: 40px;
     height:52%;
 }
 
@@ -156,7 +156,7 @@ body{
 .guide ul li{
     position: relative;
     list-style: none;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 ul li .guide_btn{   
@@ -350,11 +350,17 @@ ul li .function_btn:hover{
 }
 
 .home_content .ads_container{
-    height: 120px;
-    width: 500px;
+    height: 130px;
+    width: 850px;
     margin-left: 70px;
     margin-top: 10px;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.advImg{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 800px;
 }
 
 
@@ -409,10 +415,10 @@ ul li .function_btn:hover{
 } */
 
 .output_container .output_content{
-        box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
-        padding: 10px;   
-        margin-top: 20px; 
-        height: 70px;
+    box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
+    padding: 10px;   
+    margin-top: 20px; 
+    height: 70px;
 }
 
 .output_content input{
@@ -421,6 +427,10 @@ ul li .function_btn:hover{
     padding-left: 5px;
     border: none;
     outline: none;
+}
+.output_content input::placeholder{
+    color: rgb(200, 200, 200);
+    font-weight: 100;
 }
 
 /* .output_content textarea{

@@ -161,7 +161,7 @@ details .complete_item:hover{
 }
 
 .guide .modules_container{
-    margin-top: 50px;
+    margin-top: 40px;
     height:52%;
 }
 
@@ -225,7 +225,8 @@ details .complete_item:hover{
 .guide ul li{
     position: relative;
     list-style: none;
-    line-height: 30px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   

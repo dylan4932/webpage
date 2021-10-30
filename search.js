@@ -198,3 +198,16 @@ function save_btn() {
 function save_item(){
     
 }
+
+
+function search_guide() {
+    const content = document.getElementById('search_content')
+    if (!content.innerText.includes('疾病')){
+        const input1 = document.getElementById('key_input1')
+        input1.style.border = '2px solid red'
+        alert('请您添加疾病搜索项！')
+        return;
+    } 
+
+    alert('正在后台搜索有关 “ '+content.innerText+'” 的相关指南')
+}

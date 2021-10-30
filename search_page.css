@@ -241,6 +241,7 @@ body{
     position: relative;
     list-style: none;
     line-height: 20px;
+    cursor: pointer;
 }
 
 ul li .guide_btn{   
@@ -276,9 +277,9 @@ ul li .guide_btn:hover{
     cursor: default;
 }
 
-.page_des div{
+/* .page_des div{
     height: 24px;
-}
+} */
 
 ul li .function_btn{
     width: 98%;
@@ -432,14 +433,20 @@ ul li .function_btn:hover{
     display: none;
 }
 
+
 .home_content .ads_container{
-    height: 120px;
-    width: 500px;
+    height: 130px;
+    width: 850px;
     margin-left: 70px;
     margin-top: 10px;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
 }
 
+.advImg{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 800px;
+}
 
 
 .filter_btn_content .filter_option{
@@ -679,9 +686,12 @@ ul li .function_btn:hover{
 }
 
 .result .more_content{
+    height: auto;
+    min-height: 60px;
     margin: 5px 5px;
     font-size: 12px;
     position: relative;
+    cursor: default;
 }
 
 .result .result_title{
