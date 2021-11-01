@@ -521,6 +521,7 @@ ul li .function_btn:hover{
 .information{
     margin-left: 20px;
     width: 400px;
+    margin-bottom: 200px;
 }
 .infoCon{
     padding:10px;
@@ -630,9 +631,9 @@ p{
     display: inline-block;
 }
 
-.single_choice{
+/* .single_choice{
     
-}
+} */
 
 .check_container {
     display: block;
