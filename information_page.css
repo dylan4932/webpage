@@ -784,9 +784,11 @@ p{
     font-size: 14px;
     cursor: default;
     width: 88%;
+    height: 60px;
 }
 
 .note_container .note_content{
     box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1);
     padding: 10px;
+    height: 80%;
 }
