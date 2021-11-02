@@ -47,19 +47,20 @@ function guide(){
         phase3.className="phase_container"
 
         const phase3_link = document.createElement('a')
-        if(evt.target.id.slice(0,7) === 'module2'){
-            phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3_2.html"
-        } else{
+        if(evt.target.id.slice(0,7) === 'module1'){
             phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3.html"
+            const phase3_txt = document.createTextNode('└─ Phase3')
+            phase3.append(phase3_txt)
+            const tip3 = document.createElement('span')
+            tip3.className="phasetip"
+            const tip3_txt = document.createTextNode('---这是关于phase3的提示---')
+            tip3.append(tip3_txt)
+            phase3.appendChild(tip3)
+            phase3_link.appendChild(phase3)
+        } else{
+            
         }
-        const phase3_txt = document.createTextNode('└─ Phase3')
-        phase3.append(phase3_txt)
-        const tip3 = document.createElement('span')
-        tip3.className="phasetip"
-        const tip3_txt = document.createTextNode('---这是关于phase3的提示---')
-        tip3.append(tip3_txt)
-        phase3.appendChild(tip3)
-        phase3_link.appendChild(phase3)
+        
 
         const phase4 = document.createElement('div')
         
