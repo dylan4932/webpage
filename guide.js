@@ -48,7 +48,7 @@ function guide(){
 
         const phase3_link = document.createElement('a')
         if(evt.target.id.slice(0,7) === 'module2'){
-            phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3_1.html"
+            phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3_2.html"
         } else{
             phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3.html"
         }

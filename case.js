@@ -40,14 +40,18 @@ function remind(){
     
     const n = parseInt(evt.target.id.slice(4,5)) - 1
 
-    
+    console.log(info_rect.bottom)
     remind_container.style.top = (info_rect.top+36-60*n-control_react.top) + 'px'
+    console.log(remind_container.style.top)
 
     if(info_rect.bottom > 300) {
         sheet.scrollTo(0, info_rect.bottom-200)
     } 
     if (info_rect.top < 0){
         sheet.scrollTo(0, 0)
+    } if(info_rect.bottom > 900) {
+        sheet.scrollTo(0, 400)
+        remind_container.style.top = (info_rect.top+36-60*n-control_react.top-180) + 'px'
     }
 
     if(remind.childElementCount === 1){
