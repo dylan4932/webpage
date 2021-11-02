@@ -44,15 +44,17 @@ function remind(){
     remind_container.style.top = (info_rect.top+36-60*n-control_react.top) + 'px'
     console.log(sheet.scrollTop)
 
-    if(info_rect.bottom > 300) {
-        sheet.scrollTo(0, info_rect.bottom-200)
+    if(info_rect.bottom+sheet.scrollTop > 900) {
+        
+        remind_container.style.top = (info_rect.top+36-60*n-control_react.top-180) + 'px'
+        sheet.scrollTo(0, 200)
     } 
     if (info_rect.top < 0){
         sheet.scrollTo(0, 0)
-    } if(info_rect.bottom+sheet.scrollTop > 900) {
-        sheet.scrollTo(0, 400)
-        remind_container.style.top = (info_rect.top+36-60*n-control_react.top-180) + 'px'
-    }
+    } 
+    // if(info_rect.bottom+sheet.scrollTop > 900) {
+ 
+    // }
 
     if(remind.childElementCount === 1){
 
