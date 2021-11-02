@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./literature_page.css">
     <title>检索文献</title>
 </head>
@@ -20,145 +23,76 @@
         <div class="history_result">
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>文献标题</span>
-                    </a>
+                    <div class="popup" onclick="popup()" id="popup1">文献标题
+                        <span class="popup_text" id="popup1_window">利用工具：noteexpress，医学文献王、<a href="https://service.pubmedplus.com/pubmedplus-extension">pubmedplus插件</a>。帮助制定投稿策略：期刊选择、审稿专家选择</span>
+                    </div>
                 </div>
                 
                 <!-- <div class="myProgress" style="background: #f9dae3;">
                     <div class="myBar" style="background: rgb(234, 69, 47); width: 80%;"></div>
                 </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>利用工具：noteexpress，医学文献王、<a href="https://service.pubmedplus.com/pubmedplus-extension">pubmedplus插件</a>。帮助制定投稿策略：期刊选择、审稿专家选择</p>
-                    </div>
-                </details>
             </div>
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>发表期刊</span>
-                    </a>
+                    <div class="popup" onclick="popup()" id="popup2">发表期刊
+                        <span class="popup_text" id="popup2_window">利用工具：noteexpress，医学文献王、<a href="https://service.pubmedplus.com/pubmedplus-extension">pubmedplus插件</a>。帮助制定投稿策略：期刊选择、审稿专家选择</span>
+                    </div>
                 </div>
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>利用工具：noteexpress，医学文献王、<a href="https://service.pubmedplus.com/pubmedplus-extension">pubmedplus插件</a>。帮助制定投稿策略：期刊选择、审稿专家选择</p>
-                    </div>
-                </details>
+                
             </div>
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>影响因子</span>
-                    </a>
+                    <div class="popup" onclick="popup()" id="popup3">影响因子
+                        <span class="popup_text" id="popup3_window">利用工具：noteexpress，医学文献王、<a href="https://service.pubmedplus.com/pubmedplus-extension">pubmedplus插件</a>。帮助制定投稿策略：期刊选择、审稿专家选择</span>
+                    </div>
                 </div>
-                <!-- <div class="myProgress" style="background: #dbebfe">
-                    <div class="myBar" style="background: rgb(79, 114, 225); width: 30%;"></div>
-                </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>利用工具：noteexpress，医学文献王、<a href="https://service.pubmedplus.com/pubmedplus-extension">pubmedplus插件</a>。帮助制定投稿策略：期刊选择、审稿专家选择</p>
-                    </div>
-                </details>
             </div>
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>研究人群</span>
-                    </a>
+                    <div class="popup" onclick="popup()" id="popup4">研究人群
+                        <span class="popup_text" id="popup4_window">研究人群可在题目，摘要方法学部分，或正文的方法学也可找到。用于判定研究创新</span>
+                    </div>
                 </div>
-                <!-- <div class="myProgress" style="background: #ebfbf7;">
-                    <div class="myBar" style="background: rgb(87, 191, 145); width: 90%;"></div>
-                </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>研究人群可在题目，摘要方法学部分，或正文的方法学也可找到。用于判定研究创新</p>
-                    </div>
-                </details>
             </div>
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>研究类型</span>
-                    </a>
+                    <div class="popup" onclick="popup()" id="popup5">研究类型
+                        <span class="popup_text" id="popup5_window">不同研究类型存在证据级别差距（ 参考证据级别金字塔）。明确现有研究的证据级别，帮助判断课题的研究类型。</span>
+                    </div>
                 </div>
-                <!-- <div class="myProgress" style="background: #f2e0ff;">
-                    <div class="myBar" style="background: rgb(140, 72, 189); width: 10%;"></div>
-                </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>不同研究类型存在证据级别差距（ 参考证据级别金字塔）。明确现有研究的证据级别，帮助判断课题的研究类型。</p>
-                    </div>
-                </details>
             </div>
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>样本量</span>
-                    </a>
+                    <div class="popup" onclick="popup()" id="popup6">样本量
+                        <span class="popup_text" id="popup6_window">1、观察性研究，样本量越大可信度越高；2、RCT研究，基于预算需要进行精确样本量计算。</span>
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <div class="popup" onclick="popup()" id="popup7">协变量
+                        <span class="popup_text" id="popup7_window">既是Z干扰因素，观察既往研究选择哪些变量。帮助研究设计选择变量。</span>
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="history_content">
+                    <div class="popup" onclick="popup()" id="popup8">统计学方法处理
+                        <span class="popup_text" id="popup8_window">帮助判断后续研究需要选择的统计学方法。</span>
+                    </div>
                 </div>
                 <!-- <div class="myProgress" style="background: rgb(253, 248, 216);">
                     <div class="myBar" style="background: rgb(253, 224, 129); width: 50%;"></div>
                 </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>1、观察性研究，样本量越大可信度越高；2、RCT研究，基于预算需要进行精确样本量计算。</p>
-                    </div>
-                </details>
+        
             </div>
             <div class="history">
                 <div class="history_content">
-                    <a href="#">
-                        <span>协变量</span>
-                    </a>
-                </div>
-                <!-- <div class="myProgress" style="background: rgb(253, 248, 216);">
-                    <div class="myBar" style="background: rgb(253, 224, 129); width: 50%;"></div>
-                </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>既是Z干扰因素，观察既往研究选择哪些变量。帮助研究设计选择变量。</p>
+                    <div class="popup" onclick="popup()" id="popup9">结论
+                        <span class="popup_text" id="popup9_window">XY正相关？负相关？无关？判断与自己的观点是否一致。</span>
                     </div>
-                </details>
-            </div>
-            <div class="history">
-                <div class="history_content">
-                    <a href="#">
-                        <span>统计学处理方法</span>
-                    </a>
                 </div>
-                <!-- <div class="myProgress" style="background: rgb(253, 248, 216);">
-                    <div class="myBar" style="background: rgb(253, 224, 129); width: 50%;"></div>
-                </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>帮助判断后续研究需要选择的统计学方法。</p>
-                    </div>
-                </details>
-            </div>
-            <div class="history">
-                <div class="history_content">
-                    <a href="#">
-                        <span>结论</span>
-                    </a>
-                </div>
-                <!-- <div class="myProgress" style="background: rgb(253, 248, 216);">
-                    <div class="myBar" style="background: rgb(253, 224, 129); width: 50%;"></div>
-                </div> -->
-                <details>
-                    <summary></summary>
-                    <div class="explain_container">
-                        <p>XY正相关？负相关？无关？判断与自己的观点是否一致。</p>
-                    </div>
-                </details>
+                
             </div>
         </div>
     </div>
@@ -187,7 +121,7 @@
                     <div class="title">
                         <a href="./case_phase_management.html">
                             <i class='bx bx-folder-open' ></i>
-                            <span class="title_name">首选治疗方案分析</span>
+                            <span class="title_name">Case#0001</span>
                         </a>            
                     </div>
                 </li>
@@ -460,11 +394,34 @@
                 <div class="column_content" style='min-width: 120px;' id="col10">
                     <div class="border border-r"></div>
                     <div class="re_content">
-                        <p>其他设计&方法</p>
+                        <p>其他分析&方法</p>
+                    </div>
+                    <div class="re_content">
+                        <!-- <select id="design" name="type" style="border: none;" multiple size="6">
+                            <option>其他分析&方法</option>
+                            <option value="亚组分析">亚组分析</option>
+                            <option value="分层分析">分层分析</option>
+                            <option value="缺失值填补方法">缺失值填补方法</option>
+                            <option value="敏感性分析">敏感性分析</option>
+                            <option value="倾向性评分">倾向性评分</option>
+                            <option value="分层分析">分层分析</option>
+                            <option value="工具变量">工具变量</option>
+                            <option value="多因素模型分析">多因素模型分析</option>
+                        </select> -->
+                        <select data-placeholder="请输入" multiple class="chosen-select" name="test">
+                            <option>亚组分析</option>
+                            <option>分层分析</option>
+                            <option>缺失值填补方法</option>
+                            <option>敏感性分析</option>
+                            <option>倾向性评分</option>
+                            <option>分层分析</option>
+                            <option>工具变量</option>
+                            <option>多因素模型分析</option>
+                          </select>
                     </div>
                     <div class="re_content">
                         <select id="design" name="type" style="border: none;">
-                            <option>其他设计&方法</option>
+                            <option>其他分析&方法</option>
                             <option value="亚组分析">亚组分析</option>
                             <option value="分层分析">分层分析</option>
                             <option value="缺失值填补方法">缺失值填补方法</option>
@@ -477,20 +434,7 @@
                     </div>
                     <div class="re_content">
                         <select id="design" name="type" style="border: none;">
-                            <option>其他设计&方法</option>
-                            <option value="亚组分析">亚组分析</option>
-                            <option value="分层分析">分层分析</option>
-                            <option value="缺失值填补方法">缺失值填补方法</option>
-                            <option value="敏感性分析">敏感性分析</option>
-                            <option value="倾向性评分">倾向性评分</option>
-                            <option value="分层分析">分层分析</option>
-                            <option value="工具变量">工具变量</option>
-                            <option value="多因素模型分析">多因素模型分析</option>
-                        </select>
-                    </div>
-                    <div class="re_content">
-                        <select id="design" name="type" style="border: none;">
-                            <option>其他设计&方法</option>
+                            <option>其他分析&方法</option>
                             <option value="亚组分析">亚组分析</option>
                             <option value="分层分析">分层分析</option>
                             <option value="缺失值填补方法">缺失值填补方法</option>

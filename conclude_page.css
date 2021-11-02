@@ -162,28 +162,7 @@ details .complete_item:hover{
 
 .guide .modules_container{
     margin-top: 40px;
-    height:52%;
-}
-
-.guide{
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 15%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 99;
-}
-
-.guide .title_content {
-    margin-top: 20px;
-    height: 10%;
-}
-
-.guide .modules_container{
-    margin-top: 50px;
-    height:52%;
+    height: 410px;
 }
 
 .title{
@@ -253,12 +232,11 @@ ul li .guide_btn:hover{
 }
 
 .guide .page_des{
-    position: absolute;
-    border-top: 1px dashed rgb(190, 190, 190);
+    
+    border-top: 1px dashed grey;
     width: 95%;
-    height: calc(42%-100px);
-    font-size: 12px;
     bottom: 20px;
+    font-size: 12px;
     padding-left: 10px;
     cursor: default;
 }

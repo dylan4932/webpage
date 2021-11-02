@@ -255,7 +255,7 @@ function addRow() {
     Dselect.name = 'type'
     Dselect.style = 'border: none'
     const Dopt1 = document.createElement('option')
-    const Doptxt1 = document.createTextNode('其他设计&方法')
+    const Doptxt1 = document.createTextNode('其他分析&方法')
     Dopt1.append(Doptxt1)
     const Dopt2 = document.createElement('option')
     Dopt2.value = '亚组分析'
@@ -360,3 +360,14 @@ function deleteRow(){
     }
     
 }
+
+
+function popup() {
+    var evt = window.event || evt;
+    var popup = document.getElementById(evt.target.id+'_window');
+    popup.classList.toggle("show");
+}
+
+$(".chosen-select").chosen({
+    no_results_text: "Oops, nothing found!"
+  })

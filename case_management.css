@@ -164,7 +164,7 @@ body{
     height: 100%;
     width: 100%;
     left: 300px;
-    padding: 20px;
+    /* padding: 20px; */
     background: rgb(246, 246, 246);
     overflow: scroll;
 }
@@ -178,6 +178,84 @@ body{
     margin-right: 30px;
     margin-top: 30px;
     box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.slides_left1{
+    /* opacity: 0; */
+    width: 100px;
+    margin: 20px 20px;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 0s;
+}
+.slides_left2{
+
+    width: 80px;
+    margin-top: 20px 20px;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 1s;
+}
+.slides_left3{
+    width: 100px;
+    margin-top: 20px 20px;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 2s;
+}
+.slides_left4{
+    /* opacity: 0; */
+    width: 80px;
+    margin: 20px 20px;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+    /* animation-iteration-count:infinite; */
+    animation-delay: 3s;
+}
+.slides_left5{
+
+    width: 80px;
+    margin-top: 20px 20px;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 4s;
+}
+/* .slides_left6{
+    width: 100px;
+    margin-top: 20px 20px;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+} */
+
+.ads_title{
+    /* margin: 20px 20px; */
+    margin-top: 20px;
+    width: 700px;
+}
+
+.ads_subtitle{
+    width: 400px;
+}
+@keyframes left{
+    from{
+        opacity: 0;
+        left: 480px
+    }to{
+        opacity: 1;
+        left: 0;
+    }
 }
 
 .advImg{

@@ -19,6 +19,7 @@ body{
     width: 13%;
     background-color: white;
     /* box-shadow: 0 20px 40px 0 rgba(233, 233, 233, 0.3), 0 20px 40px 0 rgba(233, 233, 233, 0.4); */
+    z-index: 50;
 }
 
 .tool_bar::-webkit-scrollbar {
@@ -33,15 +34,17 @@ body{
 }
 
 .tool_bar .history_result{
+    padding-top: 10px;
     margin-left: 20px;
     margin-right: 10px;
     position: absolute;
     width: 80%;
-    height: 70%;
+    height: 50%;
     /* padding: 10px; */
     border-top: 2px solid rgb(97, 116, 139);
     border-bottom:  2px solid rgb(97, 116, 139);
     overflow: scroll;
+    z-index: 70;
 }
 .tool_bar .history_result::-webkit-scrollbar {
     display: none;
@@ -49,22 +52,17 @@ body{
 
 .history_result .history{
     position: relative;
-    /* margin-top: px; */
     width: 90%;
     /* height: 30px; */
     padding: 10px;
     font-size: 14px;
     border-radius: 10px;
     /* box-shadow: -4px -4px 15px rgba(185, 185, 185, 0.1), 4px 4px 15px rgba(185, 185, 185, 0.1); */
-   
+    z-index: 80;
 }
 
-/* .history details{
-    background-color: grey;
-   
-} */
 
-.history details > summary {
+/* .history details > summary {
     list-style-type: none;
     cursor: pointer;
     color: rgb(170, 170, 170);
@@ -81,22 +79,74 @@ body{
 
 .history details[open] > summary::before {
     content: '︽';
-}
-
-
-/* .history_result .history:hover{
-    background: rgb(240, 242, 252);
 } */
+
+
+.history_result .history:hover{
+    background: rgb(240, 242, 252);
+}
 
 .history .history_content{
     width: 100%;
     text-align: center;
     font-weight: bold;
+    z-index: 90;
 }
 
-.history .history_content a{
-    text-decoration: none;
-    color: black;
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 0;
+}
+
+.popup .popup_text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 5px;
+    position: fixed;
+    z-index: 99;
+    /* bottom: 125%; */
+    right: 200px;
+    margin-left: -100px;
+    margin-top: -10px;
+}
+
+.popup .popup_text::after {
+    position: absolute;
+    top: 8px;
+    left: 205px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #555;
+    border-top: 12px solid transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 
 
