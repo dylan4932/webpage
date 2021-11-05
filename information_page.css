@@ -522,7 +522,7 @@ ul li .function_btn:hover{
 .information{
     margin-left: 20px;
     width: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .infoCon{
     padding:10px;
@@ -548,6 +548,8 @@ ul li .function_btn:hover{
 }
 .remind .pointer_title{
     cursor: pointer;
+    color: #8C1A35;
+    font-weight: 400;
 }
 
 .remind p{

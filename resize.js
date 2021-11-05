@@ -251,9 +251,12 @@ function addRow() {
     const container10 = document.createElement('div')
     container10.className = 're_content'
     const Dselect = document.createElement('select')
-    Dselect.id = 'result'
-    Dselect.name = 'type'
-    Dselect.style = 'border: none'
+    Dselect.setAttribute('multiple', "")
+    // Dselect.id = 'result'
+    Dselect.name = 'test'
+    // Dselect.style = 'display: none'
+    Dselect.setAttribute('data-placeholder', '请输入')
+    Dselect.className = "chosen-select"
     const Dopt1 = document.createElement('option')
     const Doptxt1 = document.createTextNode('其他分析&方法')
     Dopt1.append(Doptxt1)
@@ -369,5 +372,5 @@ function popup() {
 }
 
 $(".chosen-select").chosen({
-    no_results_text: "Oops, nothing found!"
-  })
+    no_results_text: "未找到词条"
+})

@@ -274,13 +274,20 @@
             </div>
             
         </div>
-        
+        <!-- <div class="ads_content">
+            <div class="ads">
+                <div class="ads_img">
+                    <img src="./pic/adv.png" class='advImg'>
+                </div>     
+            </div>
+        </div> -->
         <div class='home_content'>
+            
             <div class="sheet" id="sheet">
                 <div class='grid_child information' id='information'>
                     <strong> 首选治疗案例分析</strong>
                     <div id='info1_container' class='infoCon'>
-                        <p id='info1_title'> Module2_phase1_information1_question1：
+                        <p id='info1_title'> Question A - 研究目的
                             <i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         <!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
@@ -290,7 +297,7 @@
                         <button class="save_btn">保存</button>
                     </div>
                     <div id='info2_container' class='infoCon'> 
-                        <p id='info2_title'> Module2_phase1_information1_question2：
+                        <p id='info2_title'> Question B - 研究类型
                             <i id="info2" class='bx bx-help-circle' onclick="remind()"></i>
                         </p>
                         <!-- <div class="test_opt">
@@ -300,6 +307,14 @@
                             <button class="opt" onclick="clicked()">option4</button>
                             <button class="opt" onclick="clicked()">option5</button>
                         </div> -->
+                        <textarea class="user_input" id='info2_input' onclick="remind()"></textarea>
+                        <button class="save_btn">保存</button>
+                    </div>
+                    <div id='info3_container' class='infoCon'>
+                        <p id="info3_title">Module2_phase1_information1_question3: 
+                            <i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
+                        </p>
+                        
                         <div class="single_choice">
                             <label class="check_container">option1
                                 <input type="radio" checked="checked" name="radio">
@@ -322,14 +337,6 @@
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                    </div>
-                    <div id='info3_container' class='infoCon'>
-                        <p id="info3_title">Module2_phase1_information1_question3: 
-                            <i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
-                        </p>
-                        
-                        <textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
-                        <button class="save_btn">保存</button>
                     </div>
                     <div id='info4_container' class='infoCon'>
                         <p id="info4_title"> Module2_phase1_information1_question4: 
@@ -369,11 +376,16 @@
                 </div>
                 <div class="grid_child remind_container" id='remind_container'>
                     <div id='info1_remind1' class='remind' onclick="remind()">
-                        <p id='info1_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示1——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p id='info1_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  什么目的？（有效性检验、等效性检验、非劣效检验、差异性检验、影响因素评价、预测、对均数/率的参数估计）
+                        </p>
                     </div>
     
                     <div id='info2_remind1' class='remind' onclick="remind()"> 
-                        <p id='info2_txt1' class="pointer_title"><span class="dot" style="background: red;"></span>  提示2——xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p id='info2_txt1' class="pointer_title">
+                            <span class="dot" style="background: red;"></span>  
+                            采用什么研究类型？（RCT、诊断实验、队列研究、横断面研究、病例对照研究）；
+                            什么研究时间类型？（前瞻、回顾、双向）
+                        </p>
                     </div>
     
                     <div id='info3_remind1' class='remind' onclick="remind()">

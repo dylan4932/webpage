@@ -412,15 +412,17 @@ ul li .function_btn:hover{
 
 .home_content .edit_container{
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
 
 }
 
 .edit_container .edit_content{  
-    padding-left: 15%;
-    margin-top: 30px;
-    width: 80%;
+    margin-left: 8%;
+    margin-top: 10px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .edit_content .edit_title{
@@ -430,6 +432,8 @@ ul li .function_btn:hover{
     padding-bottom: 10px;
     cursor: default;
 }
+
+
 
 .edit_content .output_container{
     font-size: 14px;
@@ -442,13 +446,16 @@ ul li .function_btn:hover{
 }
 
 .output_container .output_title{
+    font-weight: 400;
     padding: 10px;
     cursor: default;
 }
 
 .output_container .output_content{
-        box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
-        padding: 10px;    
+    box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
+    padding: 10px;
+    height: 125px; 
+    color: #a6a6a6;   
 }
 
 .output_content textarea{
@@ -481,25 +488,31 @@ ul li .function_btn:hover{
 
 .standard_content .default_note{
     cursor: default;
+    font-weight: 400;
 }
 
+.standard_content .default_note p{
+    font-size: 12px;
+}
+
+
 .more_content details{
-    padding: 2px;
+    /* padding: 2px; */
     height: auto;
     overflow: hidden;
     transition: max-height ease-in-out;
     transition-duration: var(--duration, 0.1s);
-    
+    cursor: default;
 }
 
-details summary {
-    margin-top: 10px;
+.more_content details summary {
+    /* margin-top: 5px; */
     font-size: 12px;
     cursor: pointer;
 }
 
-details summary p{
-    font-size: 14px;
+.more_content details p{
+    font-size: 12px;
     padding: 2px;
 }
 
