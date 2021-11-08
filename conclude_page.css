@@ -478,13 +478,13 @@ ul li .function_btn:hover{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    z-index: 80;
+    z-index: 60;
 }
 
 .exp .note_container{
     visibility: hidden;
     position: absolute;
-    width: 500px;
+    width: 350px;
     min-height: 100px;
     padding: 10px 5px;
     top: 0px;
@@ -493,11 +493,39 @@ ul li .function_btn:hover{
     background-color: #fff;
     box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     z-index: 99;
+}
+
+.note_container .close_btn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border-radius: 50%;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    background-color: #747A7C;
+    color: white;
     
+}
+
+.note_container .close_btn:hover{
+    color: #6A110A;
+    background-color: #EC6C5F;
+}
+
+.note_container .video_container{
+    margin-left: 5px;
 }
 
 .exp .show{
     visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    
+}
+
+.exp .close{
+    visibility: hidden;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
