@@ -416,7 +416,7 @@ ul li .function_btn:hover{
 
 .home_content .conclude{
     margin-left: 70px;
-    z-index: 30;
+    z-index: 40;
 }
 
 .conclude_title_content{
@@ -427,7 +427,7 @@ ul li .function_btn:hover{
     /* padding-left: 15%; */
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
-    z-index: 40;
+    z-index: 50;
 }
 
 .conclude .conclude_title{
@@ -441,7 +441,7 @@ ul li .function_btn:hover{
 .conclude_content .output_container{
     font-size: 14px;
     width: 68%;
-    z-index: 50;
+    z-index: 60;
 }
 .output_container .output_title{
     padding: 10px;
@@ -456,7 +456,7 @@ ul li .function_btn:hover{
     font-size: 12px;
     cursor: default;
     min-height: 100px;
-    z-index: 60;
+    z-index: 70;
 }
 
 .output_content p{
@@ -466,19 +466,25 @@ ul li .function_btn:hover{
 }
 
 .output_content .exp{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: black;
     margin-top: 5px;
     margin-left: 10px;
     line-height: 16px;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    z-index: 60;
+    z-index: 80;
+}
+
+.exp .exp_txt{
+    text-decoration: underline;
+    line-height: 20px;
+    z-index: 80;
 }
 
 .exp .note_container{
@@ -488,24 +494,26 @@ ul li .function_btn:hover{
     min-height: 100px;
     padding: 10px 5px;
     top: 0px;
-    left: 200px;
+    left: 180px;
     /* margin-left: 20px; */
     background-color: #fff;
     box-shadow: -4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
+    cursor: default;
     z-index: 99;
 }
+
 
 .note_container .close_btn{
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 15px;
     border-radius: 50%;
     width: 15px;
     text-align: center;
     line-height: 15px;
     background-color: #747A7C;
     color: white;
-    
+    cursor: pointer;
 }
 
 .note_container .close_btn:hover{
@@ -521,7 +529,7 @@ ul li .function_btn:hover{
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
-    
+    z-index: 99;
 }
 
 .exp .close{
