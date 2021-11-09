@@ -152,8 +152,14 @@ function save_btn() {
     const search = document.getElementById('search_content').innerText
     const container = document.getElementById('history_container')
 
-    for (i in container.childElementCount){
-        
+    // console.log(container.childElementCount)
+    for (i=0; i<container.childElementCount; i++){
+        const curr = container.children[i].children[0].innerText
+        if (search.includes(curr)){
+            alert('已经保存相关搜索策略')
+            return
+        }
+
     }
 
     const history = document.createElement('div')
@@ -181,7 +187,8 @@ function save_btn() {
 
     const progress_bar = document.createElement('div')
     progress_bar.className = 'myBar'
-    progress_bar.style.width = '60%'    //设置搜索热度， 搜索得到的总报告数据
+    const random = Math.random()*100
+    progress_bar.style.width = random+'%'    //设置搜索热度， 搜索得到的总报告数据
     
     const n = Math.floor(Math.random() * (4));
     progress_bar.style.background = color[n]
