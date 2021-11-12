@@ -24,10 +24,10 @@ function remind(){
     var evt = window.event || evt;
 
     const remind = document.getElementById(evt.target.id.slice(0,5)+'_remind1')
-	  remind.className = "remind clicked"
+	remind.className = "remind clicked"
     
     const info = document.getElementById(evt.target.id.slice(0,5)+'_container')
-    info.style.borderBottom = '2px solid red'
+    info.style.borderBottom = '2px solid #E6CEB1'
     
     const sheet = document.getElementById("sheet")
 
@@ -57,10 +57,10 @@ function remind(){
     // }
 
     if(remind.childElementCount === 1){
-
-
+        const title = document.getElementById(evt.target.id.slice(0,5)+'_txt1').innerText
+        console.log(title)
         const detail_container = document.createElement('p')
-        const detail_txt = document.createTextNode('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+        const detail_txt = document.createTextNode(title)
         detail_container.append(detail_txt)
 
         const more_container = document.createElement('details')

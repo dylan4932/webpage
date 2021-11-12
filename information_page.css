@@ -160,14 +160,20 @@ details .complete_item:hover{
     cursor: pointer;
 }
 
-.infoCon .save_btn{
+.save_btn{
     margin-top: 15px;
+    margin-right: 10px;
     float: right;
     border: none;
-    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
     cursor: pointer;
-    background: rgb(176, 198, 199);
-    color: white;
+}
+
+.infoCon .save_btn img{
+    width: 12px;
 }
 
 .infoCon .save_btn:hover{
@@ -194,12 +200,15 @@ details .complete_item:hover{
     height: 50px;
     border: hidden;
     border-radius: 3px;
-    box-shadow:-4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
     vertical-align: top;
-
     overflow: hidden;
     min-height: 40px;
     line-height: 20px
+}
+
+.input_container{
+    height: 110px;
+    box-shadow:-4px -4px 15px rgba(100, 100, 100, 0.1), 4px 4px 15px rgba(100, 100, 100, 0.1);
 }
 
 
@@ -481,12 +490,12 @@ ul li .function_btn:hover{
 
 
 .home_content{
-    top: 20px;
+    top: 18%;
     left: 17%;
     position: absolute;
     background-color: white;
     overflow: scroll;
-    height: 85%;
+    height: 67%;
     border-radius: 2px;
     box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
     padding-top: 30px;
@@ -494,6 +503,21 @@ ul li .function_btn:hover{
     column-gap: 10px;
     width: 68%;
     z-index: 1;
+}
+
+ .ads_content{
+    position: absolute;
+    top: 20px;
+    left: 17%;
+    width: 68%;
+    height: 130px;
+    box-shadow:  -4px -4px 15px rgba(185, 185, 185, 0.3), 4px 4px 15px rgba(185, 185, 185, 0.19);
+}
+
+.advImg{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 800px;
 }
 
 .home_content strong{
@@ -548,7 +572,6 @@ ul li .function_btn:hover{
 }
 .remind .pointer_title{
     cursor: pointer;
-    color: #8C1A35;
     font-weight: 400;
 }
 
@@ -635,16 +658,17 @@ p{
 }
 
 /* .single_choice{
-    
+    font-size: 12px;
 } */
 
 .check_container {
+    
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 12px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -725,7 +749,7 @@ p{
 
 .report_btn{
     width: 100%;
-    border-bottom: 2px solid #ea452f;
+    border-bottom: 2px solid #E6CEB1;
     text-align: center;
     font-size: 14px;
 }
@@ -744,7 +768,7 @@ p{
 
 .store_btn{
     width: 100%;
-    border-bottom: 2px solid rgb(79, 114, 225);
+    border-bottom: 2px solid #B4C5C7;
     text-align: center;
     font-size: 14px;
 }

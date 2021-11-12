@@ -105,7 +105,11 @@
             
         </div>
 	</div>
-
+	<div class="ads_content">
+		<div class="ads_img">
+			<img src="./pic/adv.png" class='advImg'>
+		</div>     
+	</div>
 	<div class="guide">
 		<div class="title_content">
 			<ul>
@@ -130,7 +134,7 @@
                     <div class="title">
                         <a href="./case_phase_management.html">
                             <i class='bx bx-folder-open' ></i>
-                            <span class="title_name">首选治疗方案分析</span>
+                            <span class="title_name">Case#0001</span>
                         </a>            
                     </div>
                 </li>
@@ -145,7 +149,7 @@
 						<span class="module_name" id="module1_name">Module 1</span>
 					</a>
 				</div>
-				<span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
+				<!-- <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span> -->
 			</li>
 			<li id="module2">
 				<div class="guide_btn" id="module2_guide" onclick="guide()"> 
@@ -155,23 +159,23 @@
 					</a>
 					 
 				</div>
-				<span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
+				<!-- <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span>  -->
 			</li>
 			<div class="phases" id="curr">
                 <a href="module2_phase1.html">
                     <div class="phase_container">
                         ├─ Phase1
-                        <span class="phasetip">
+                        <!-- <span class="phasetip">
                             ---这是关于phase1的提示---
-                        </span>
+                        </span> -->
                     </div>
                 </a>
-                <a href="module2_phase2_1.html">
+                <a href="module2_phase2_2.html">
                     <div class="phase_container picked">
                         └─ Phase2
-                        <span class="phasetip picked">
+                        <!-- <span class="phasetip picked">
                             ---这是关于phase2的提示---
-                        </span>
+                        </span> -->
                     </div>
                 </a>
                 <!-- <a href="module2_phase3_2.html">
@@ -185,9 +189,9 @@
                 <a href="module2_phase4.html">
                     <div class="phase_container">
                         └─ Research Framework
-                        <span class="phasetip">
+                        <!-- <span class="phasetip">
                             ---这是关于Research Framework的提示---
-                        </span>
+                        </span> -->
                     </div>
                 </a>
             </div>
@@ -198,7 +202,7 @@
 						<span class="module_name" id="module3_name">Module 3</span>
 					</a>
 				</div>
-				<span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
+				<!-- <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span> -->
 			</li>
 			<li id="module4">
 				<div class="guide_btn" id="module4_guide"> 
@@ -207,7 +211,7 @@
 						<span class="module_name" id="module4_name">Module 4</span>
 					</a>
 				</div>
-				<span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
+				<!-- <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span> -->
 			</li>
 			<li id="module5">
 				<div class="guide_btn" id="module5_guide"> 
@@ -216,7 +220,7 @@
 						<span class="module_name" id="module5_name">Module 5</span>
 					</a> 
 				</div>
-				<span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
+				<!-- <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span> -->
 			</li>
 			
 		</ul>
@@ -239,7 +243,7 @@
 	<div class='home_content'>
 		<div class="sheet" id="sheet">
 			<div class='grid_child information' id='information'>
-				<strong> 首选治疗案例分析</strong>
+				<strong>Case#0001</strong>
 				<div id='info1_container' class='infoCon'>
 					<p id='info1_title'> Module2_phase2_information1_question1：
 						<i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
@@ -247,8 +251,13 @@
 					<!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
 					<input id='info1_fail' type="checkbox" onclick="addFail()">失败
 					<div id="case_des"></div> -->
-					<textarea class="user_input" id='info1_input' onclick="remind()"></textarea>
-					<button class="save_btn">保存</button>
+					<div class="input_container">
+						<textarea class="user_input" id='info1_input' onclick="remind()"></textarea>
+						<button class="save_btn">
+							<img src="./icon/save_btn.png" alt="">
+						</button>
+					</div>
+					
 				</div>
 				<div id='info2_container' class='infoCon'> 
 					<p id='info2_title'> Module2_phase2_information1_question2：
@@ -288,9 +297,13 @@
 					<p id="info3_title" >Module2_phase2_information1_question3: 
 						<i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
 					</p>
+					<div class="input_container">
+						<textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
+						<button class="save_btn">
+							<img src="./icon/save_btn.png" alt="">
+						</button>
+					</div>
 					
-					<textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
-					<button class="save_btn">保存</button>
 				</div>
 				<div id='info4_container' class='infoCon'>
 					<p id="info4_title"> Module2_phase2_information1_question4: 
@@ -323,9 +336,13 @@
 					<p id="info5_title">Module2_phase2_information1_question5: 
 						<i id="info5" class='bx bx-help-circle' onclick="remind()"></i>
 					</p>
-					 
-					<textarea class="user_input" id='info5_input' onclick="remind()"></textarea>
-					<button class="save_btn">保存</button>
+					 <div class="input_container">
+						<textarea class="user_input" id='info5_input' onclick="remind()"></textarea>
+						<button class="save_btn">
+							<img src="./icon/save_btn.png" alt="">
+						</button>
+					 </div>
+					
 				</div>
 			</div>
 			<div class="grid_child remind_container" id='remind_container'>
@@ -351,7 +368,7 @@
             <div></div>
             <div class="store_btn_container" style="margin-left: 75%; margin-top: 50px;">
                 <div class="store_btn">
-                    <a href="module2_phase3_2.html">
+                    <a href="module2_phase4.html">
                         <span>下一步</span>
                     </a>
                 </div>   

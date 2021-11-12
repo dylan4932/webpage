@@ -5,9 +5,9 @@ function guide(){
 
     const module = document.getElementById(evt.target.id.slice(0,7))
 
-    const tip = document.getElementById(evt.target.id.slice(0,7)+"_tip")
-    tip.style.opacity = "0"
-    if(module.childElementCount === 2){
+    // const tip = document.getElementById(evt.target.id.slice(0,7)+"_tip")
+    // tip.style.opacity = "0"
+    if(module.childElementCount === 1){
         const phase_container = document.createElement("div")
         phase_container.className = "phases"
 
@@ -18,11 +18,11 @@ function guide(){
 
         const phase1_txt = document.createTextNode('├─ Phase1')
         phase1.append(phase1_txt)
-        const tip1 = document.createElement('span')
-        tip1.className="phasetip"
-        const tip1_txt = document.createTextNode('---这是关于phase1的提示---')
-        tip1.append(tip1_txt)
-        phase1.appendChild(tip1)
+        // const tip1 = document.createElement('span')
+        // tip1.className="phasetip"
+        // const tip1_txt = document.createTextNode('---这是关于phase1的提示---')
+        // tip1.append(tip1_txt)
+        // phase1.appendChild(tip1)
         phase1_link.appendChild(phase1)
 
         const phase2 = document.createElement('div')
@@ -30,17 +30,17 @@ function guide(){
 
         const phase2_link = document.createElement('a')
         if(evt.target.id.slice(0,7) === 'module2'){
-            phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2_1.html"
+            phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2_2.html"
         } else{
             phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2.html"
         }
         const phase2_txt = document.createTextNode('└─ Phase2')
         phase2.append(phase2_txt)
-        const tip2 = document.createElement('span')
-        tip2.className="phasetip"
-        const tip2_txt = document.createTextNode('---这是关于phase2的提示---')
-        tip2.append(tip2_txt)
-        phase2.appendChild(tip2)
+        // const tip2 = document.createElement('span')
+        // tip2.className="phasetip"
+        // const tip2_txt = document.createTextNode('---这是关于phase2的提示---')
+        // tip2.append(tip2_txt)
+        // phase2.appendChild(tip2)
         phase2_link.appendChild(phase2)
 
         const phase3 = document.createElement('div')
@@ -51,17 +51,14 @@ function guide(){
             phase3_link.href = "./"+evt.target.id.slice(0,7)+"_phase3.html"
             const phase3_txt = document.createTextNode('└─ Phase3')
             phase3.append(phase3_txt)
-            const tip3 = document.createElement('span')
-            tip3.className="phasetip"
-            const tip3_txt = document.createTextNode('---这是关于phase3的提示---')
-            tip3.append(tip3_txt)
-            phase3.appendChild(tip3)
+            // const tip3 = document.createElement('span')
+            // tip3.className="phasetip"
+            // const tip3_txt = document.createTextNode('---这是关于phase3的提示---')
+            // tip3.append(tip3_txt)
+            // phase3.appendChild(tip3)
             phase3_link.appendChild(phase3)
-        } else{
-            
-        }
+        } 
         
-
         const phase4 = document.createElement('div')
         
         const phase4_link = document.createElement('a')
@@ -71,12 +68,12 @@ function guide(){
             phase4_link.href = "./"+evt.target.id.slice(0,7)+"_phase4.html"
             const phase4_txt = document.createTextNode('└─ Research Framework')
             phase4.append(phase4_txt)
-            const tip4 = document.createElement('span')
-            tip4.className="phasetip"
-            const tip4_txt = document.createTextNode('---这是关 Research Framework的提示---')
+            // const tip4 = document.createElement('span')
+            // tip4.className="phasetip"
+            // const tip4_txt = document.createTextNode('---这是关 Research Framework的提示---')
             
-            tip4.append(tip4_txt)
-            phase4.appendChild(tip4)
+            // tip4.append(tip4_txt)
+            // phase4.appendChild(tip4)
         }
         // }else{
             
@@ -99,7 +96,7 @@ function guide(){
         phase_container.appendChild(phase4_link)
         module.appendChild(phase_container)
     }
-    else if(module.childElementCount === 3){
+    else if(module.childElementCount === 2){
         module.removeChild(module.lastElementChild)
         tip.style.opacity = ""
     }
@@ -112,7 +109,7 @@ function guide(){
    
     for(var i = 0; i<modules_container.childElementCount;i++){
         const element = modules_container.children[i] 
-        if(element.childElementCount !== 2 && element != module){
+        if(element.childElementCount !== 1 && element != module){
                 element.removeChild(element.lastElementChild)	
             }
     }

@@ -100,7 +100,7 @@ function add(){
         input1.style.border = '2px solid red'
         return;
     }
-    const output = key1 + "(" + value1+")";
+    const output = key1 + " [" + value1+"]";
     const search_centent = document.getElementById('search_content')
     var search_txt = document.createTextNode(output + "; ")
     if (search_centent.innerText.includes(output)){
@@ -217,4 +217,31 @@ function search_guide() {
     } 
 
     alert('正在后台搜索有关 “ '+content.innerText+'” 的相关指南')
+}
+
+function save_item(){
+    var evt = window.event || evt;
+
+    console.log(evt.target.id.slice(0,5))
+    const title_container = document.getElementById(evt.target.id.slice(0,5))
+    const title_txt = title_container.innerText.slice(0,8)+'...'
+
+    const container = document.getElementById('save_container')
+
+    const save_item = document.createElement('div')
+    save_item.className = 'save_history'
+
+    const item_content = document.createElement('div')
+    item_content.className = 'save_content'
+
+    const item_txt_container = document.createElement('a')
+    item_txt_container.href='#'
+
+    const item_txt = document.createTextNode(title_txt)
+
+    item_txt_container.append(item_txt)
+    item_content.appendChild(item_txt_container)
+    save_item.appendChild(item_content)
+
+    container.appendChild(save_item)
 }

@@ -13,7 +13,7 @@ body{
 
 .tool_bar{
     right:0;
-    top: 0;
+    top: 150px;
     position:fixed;
     height: 100%;
     width: 13%;
@@ -27,9 +27,9 @@ body{
 }
 
 .tool_bar .toolbar_title{
-    margin: 20px 16px;
+    margin-bottom: 20px;
     font-size: 14px;
-    text-align: start;
+    text-align: center;
     cursor: default;
 }
 
@@ -41,8 +41,8 @@ body{
     width: 80%;
     height: 50%;
     /* padding: 10px; */
-    border-top: 2px solid rgb(97, 116, 139);
-    border-bottom:  2px solid rgb(97, 116, 139);
+    border-top: 2px solid #B4C5C7;
+    border-bottom:  2px solid #B4C5C7;
     overflow: scroll;
     z-index: 70;
 }
@@ -103,12 +103,32 @@ body{
     user-select: none;
     z-index: 0;
 }
+.popup .close_btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border-radius: 50%;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    background-color: #747A7C;
+    color: white;
+    cursor: pointer;
+}
+
+.popup .close_btn:hover{
+    color: #6A110A;
+    background-color: #EC6C5F;
+}
 
 .popup .popup_text {
+    margin-top: 20px;
     visibility: hidden;
-    width: 200px;
-    background-color: #555;
-    color: #fff;
+    width: 400px;
+    /* background-color: #555; */
+    box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1);
+    background-color: white;
+    color: black;
     text-align: center;
     border-radius: 6px;
     padding: 10px 5px;
@@ -117,19 +137,28 @@ body{
     /* bottom: 125%; */
     right: 200px;
     margin-left: -100px;
-    margin-top: -10px;
+    margin-top: -30px;
 }
+
+.popup .popup_text p{
+    margin-right: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 20px;
+}
+
 
 .popup .popup_text::after {
     position: absolute;
     top: 8px;
-    left: 205px;
+    left: 405px;
     content: '';
     width: 0;
     height: 0;
     border-right: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-left: 12px solid #555;
+    border-left: 20px solid white;
+    /* box-shadow: -4px -4px 15px rgba(50, 50, 50, 0.1), 4px 4px 15px rgba(50, 50, 50, 0.1); */
     border-top: 12px solid transparent;
 }
 
@@ -595,7 +624,7 @@ ul li .function_btn:hover{
 
 .save_btn{
     width: 100%;
-    border-bottom: 2px solid rgb(253, 224, 129);
+    border-bottom: 2px solid #B4C5C7;
     text-align: center;
     font-size: 14px;
 }
@@ -693,3 +722,25 @@ ul li .function_btn:hover{
     display: inline-block;
 }
 
+.store_btn_container{
+    margin-left: 40%;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.store_btn{
+    width: 100%;
+    border-bottom: 2px solid rgb(79, 114, 225);
+    text-align: center;
+    font-size: 14px;
+}
+
+.store_btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+.store_btn_container:hover{
+    background: rgb(240, 242, 252);
+} 

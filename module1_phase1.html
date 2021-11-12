@@ -106,7 +106,7 @@
                         <span class="module_name" id="module1_name">Module 1</span>
                     </a>
                 </div>
-                <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span>
+                <!-- <span id="module1_tip" class="tooltip">---这是关于module1的提示---</span> -->
             </li>
             <div class="phases" id="curr">
                 <a href="module1_phase1.html">
@@ -142,7 +142,7 @@
                     </a>
                      
                 </div>
-                <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span> 
+                <!-- <span id="module2_tip" class="tooltip">---这是关于module2的提示---</span>  -->
             </li>
             <li id="module3">
                 <div class="guide_btn" id="module3_guide"> 
@@ -151,7 +151,7 @@
                         <span class="module_name" id="module3_name">Module 3</span>
                     </a>
                 </div>
-                <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span>
+                <!-- <span id="module3_tip" class="tooltip">---这是关于module3的提示---</span> -->
             </li>
             <li id="module4">
                 <div class="guide_btn" id="module4_guide"> 
@@ -160,7 +160,7 @@
                         <span class="module_name" id="module4_name">Module 4</span>
                     </a>
                 </div>
-                <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span>
+                <!-- <span id="module4_tip" class="tooltip">---这是关于module4的提示---</span> -->
             </li>
             <li id="module5">
                 <div class="guide_btn" id="module5_guide"> 
@@ -169,7 +169,7 @@
                         <span class="module_name" id="module5_name">Module 5</span>
                     </a> 
                 </div>
-                <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span>
+                <!-- <span id="module5_tip" class="tooltip">---这是关于module5的提示---</span> -->
             </li>   
         </ul>
         <div class="page_des">
@@ -199,9 +199,9 @@
             <div class="filter_container" id="filter_container">
                 <div class="dimension">
                     <div class="filter_content">
-                        <div class="filter_title" style="cursor: default;">选择搜索维度</div>
+                        <div class="filter_title" style="cursor: default;">选择搜索维度</div>
                         <select id="demension1">
-                            <option value="疾病">疾病</option>
+                            <option value="疾病">疾病*</option>
                             <option value="人群">人群</option>
                             <option value="X （暴露/干预措施）">X （暴露/干预措施) </option>
                             <option value="Y （结局）">Y （结局）</option>
@@ -241,15 +241,15 @@
         <!-- <hr style="background: rgb(190, 190, 190);"> -->
         <div class="result_container">
             <div class="result_info">
-                共搜索到 5条指南
+                共搜索到 6条指南
             </div>
-            <div class="result_content">
+            <div class="result_content" id="itm01">
                 <div class="result">
                     <!-- <div class="result_title">
                         
                         已经确诊为重型β地贫患儿，推荐：(1）Hb < 90 g/L时启动输血计划。（2）每2～5周输血1次，每次输红细胞0.5~1.0单位/10 kg（国内将200 ml全血中...
                     </div> -->
-                    <div class="more_content" >
+                    <div class="more_content" id="item01_txt">
                         <span class="dot" style="background: red;"></span>
                         已经确诊为重型β地贫患儿，推荐：(1）Hb < 90 g/L时启动输血计划。（2）每2～5周输血1次，每次输红细胞0.5~1.0单位/10 kg（国内将200 ml全血中提取的红细胞定义为1单位）。输血时间因输血的反应和心功能状态有所不同，宜4 h内输完，但可依据实际情况适当延长。
                         <details>
@@ -281,19 +281,21 @@
                                         <span class="dot" style="background: rgb(176, 198, 199);"></span>
                                         推荐级别（V/D）：这里预留推荐同一推荐级别的建议。
                                 </div>
-                                <div class="save_section">
-                                    <div class="save_item">
-                                        保存
+                                <!-- <div class="save_section">
+                                    <div class="save_item" id="itm01_save" onclick="save_item()">
+                                        <i class="bx bax-save"></i>
                                     </div>
-                                </div>
+                                </div> -->
                                 
                             </div>
-                            
+                            <div class="save_item">
+                                <img id="itm01_save"  onclick="save_item()" src="./icon/save_btn.png">
+                            </div>
                         </details>
                     </div>
                 </div>
             </div>
-            <div class="result_content">
+            <div class="result_content" id="itm02">
                 <div class="result">
                     <!-- <div class="result_title">
                         
@@ -330,21 +332,24 @@
                                         <span class="dot" style="background: rgb(176, 198, 199);"></span>
                                         推荐级别（V/D）：这里预留推荐同一推荐级别的建议。
                                 </div>
-                                <div class="save_section">
-                                    <div class="save_item">
-                                        保存
+                                <!-- <div class="save_section">
+                                    <div class="save_item" id="itm02_save" onclick="save_item()">
+                                        <i class='bx bx-save' ></i>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="reference_content">
                                 <div class="reference_title">参考文献：</div>
                                 <div class="reference">[13] Angelucci E, Brittenham GM, McLaren CE, et al. Hepatic iron concentration and total body iron stores in thalassemia major [J]. N Engl J Med, 2000, 343(5): 327-331. DOI: 10.1056 /NEJM200008033430503</div>
                             </div>
+                            <div class="save_item">
+                                <img id="itm02_save"  onclick="save_item()" src="./icon/save_btn.png">
+                            </div>
                         </details>
                     </div>
                 </div>     
             </div>
-            <div class="result_content">
+            <div class="result_content" id="itm03">
                 <div class="result">
                     <div class="result_title">
                         
@@ -382,16 +387,17 @@
                                         推荐级别（V/D）：这里预留推荐同一推荐级别的建议。
                                 </div>
                                 <div class="save_section">
-                                    <div class="save_item">
-                                        保存
-                                    </div>
+                                    
                                 </div>
+                            </div>
+                            <div class="save_item">
+                                <img id="itm03_save"  onclick="save_item()" src="./icon/save_btn.png">
                             </div>
                         </details>
                     </div>
                 </div>     
             </div>
-            <div class="result_content">
+            <div class="result_content" id="itm04">
                 <div class="result">
                     <div class="result_title">
                         
@@ -429,22 +435,20 @@
                                         <span class="dot" style="background: rgb(176, 198, 199);"></span>
                                         推荐级别（Ⅱ/B）：这里预留推荐同一推荐级别的建议。
                                 </div>
-                                <div class="save_section">
-                                    <div class="save_item">
-                                        保存
-                                    </div>
-                                </div>
                             </div>
                             <div class="reference_content">
                                 <div class="reference_title">参考文献：</div>
                                 <div class="reference">[11] Goss C, Giardina P, Degtyaryova D, et al. Red blood cell transfusions for thalassemia: results of a survey assessing current practice and proposal of evidence-based guidelines[J].Transfusion,2014,54(7):1773-1781. DOI: 10.1111/trf.12571.</div>
+                            </div>
+                            <div class="save_item">
+                                <img id="itm04_save"  onclick="save_item()" src="./icon/save_btn.png">
                             </div>
                         </details>
                     </div>
                 </div>
             </div>
             
-            <div class="result_content">
+            <div class="result_content" id="itm05">
                 <div class="result">
                     <div class="result_title">
                         
@@ -481,21 +485,20 @@
                                         <span class="dot" style="background: rgb(176, 198, 199);"></span>
                                         推荐级别（Ⅱ/B）：这里预留推荐同一推荐级别的建议。
                                 </div>
-                                <div class="save_section">
-                                    <div class="save_item">
-                                        保存
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="reference_content">
                                 <div class="reference_title">参考文献：</div>
                                 <div class="reference">[15] Vichinsky E, Levine L, Bhatia S, et al. Standards of care guidelines for thalassemia [M]. Oakland：Children's Hospital and Research Center Oakland, 2009.</div>
                             </div>
+                            <div class="save_item">
+                                <img id="itm05_save"  onclick="save_item()" src="./icon/save_btn.png">
+                            </div>
                         </details>
                     </div>
                 </div>  
             </div>
-            <div class="result_content">
+            <div class="result_content" id="itm06">
                 <div class="result">
                     <div class="more_content">
                         <span class="dot" style="background: red;"></span>
@@ -528,15 +531,15 @@
                                         <span class="dot" style="background: rgb(176, 198, 199);"></span>
                                         推荐级别（I/A）：这里预留推荐同一推荐级别的建议。
                                 </div>
-                                <div class="save_section">
-                                    <div class="save_item">
-                                        保存
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="reference_content">
                                 <div class="reference_title">参考文献：</div>
                                 <div class="reference">[16] Angelucci E, Barosi G, Camaschella C, et al. Italian Society of Hematology practice guidelines for the management of iron overload in thalassemia major and related disorders[J]. Haematologica, 2008,93(5):741-752. DOI: 10.3324/haematol.12413.</div>
+                            </div>
+                            
+                            <div class="save_item">
+                                <img id="itm06_save"  onclick="save_item()" src="./icon/save_btn.png">
                             </div>
                         </details>
                     </div>
@@ -544,6 +547,13 @@
                 
             </div>
         </div>
+        <div class="store_btn_container">
+            <div class="store_btn">
+                <a href="module1_phase2.html">
+                    <span>下一步:去往Phase2</span>
+                </a>
+            </div>   
+        </div> 
     </div>
     <script src="guide.js"></script>
     <script src="search.js"></script>

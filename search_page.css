@@ -656,25 +656,28 @@ ul li .function_btn:hover{
 }
 
 
-.save_section .save_item{
+.save_item{
     text-align: center;
-    float: right;
-    margin-right: 50px;
-    margin-top: 8px;
-    padding: 3px ;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+    margin-right: 5px;
+    padding: 5px ;
     color: white;
-    background: rgb(176, 198, 199);
-    width: 50px;
-    height: 20px;
-    border: none;
-    border-radius: 5px;
+    float: right;
+    width: 20px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.save_section .save_item:hover{
-    
-    background: rgb(230, 206, 177);
+.save_item:hover{
+    background-color: blanchedalmond;
 }
+
+.save_item img{
+    width: 12px;
+}
+
+
 
 .result_content .result{
     align-items: center;
@@ -810,3 +813,26 @@ details p{
     border-radius: 50%;
     display: inline-block;
 }
+
+.store_btn_container{
+    margin-left: 40%;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.store_btn{
+    width: 100%;
+    border-bottom: 2px solid rgb(79, 114, 225);
+    text-align: center;
+    font-size: 14px;
+}
+
+.store_btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+.store_btn_container:hover{
+    background: rgb(240, 242, 252);
+} 

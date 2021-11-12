@@ -368,9 +368,16 @@ function deleteRow(){
 function popup() {
     var evt = window.event || evt;
     var popup = document.getElementById(evt.target.id+'_window');
-    popup.classList.toggle("show");
+    popup.classList.add("show");
 }
 
 $(".chosen-select").chosen({
     no_results_text: "未找到词条"
 })
+
+function close_popup(){
+    var evt = window.event || evt;
+    console.log('close'+evt.target.id.slice(0,7))
+    var popup = document.getElementById(evt.target.id.slice(0,7)+'_window');
+    popup.classList.remove("show");
+}
