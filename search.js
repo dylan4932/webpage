@@ -176,10 +176,11 @@ function save_btn() {
     dot_span.className = 'dot'
     dot_span.style = 'background: rgb(79, 114, 225)'
     const history_span = document.createElement('span')
+    history_span.style = 'margin-left: 5px'
     if(search.length < 36) {
         history_span.append(search)
     } else {
-        history_span.append(' '+search.slice(0, 30)+'...')
+        history_span.append(search.slice(0, 30)+'...')
     }
     
     history_a.appendChild(dot_span)
