@@ -120,5 +120,5 @@ function report(){
 
     report.style.opacity = '1'
     note.style.opacity = '1'
-    sheet.scrollTo(0,700)
+    sheet.scrollTo(0,1300)
 }
