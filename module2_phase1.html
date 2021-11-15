@@ -293,60 +293,59 @@
             
             <div class="sheet" id="sheet">
                 <div class='grid_child information' id='information'>
-                    <strong> 首选治疗案例分析</strong>
+                    <strong> Case#0001</strong>
                     <div id='info1_container' class='infoCon'>
                         <p id='info1_title'> <p style="font-size: 10px;">input a :</p> 
-                            <p style="margin-top: -10px;">本次研究您的研究目的是怎样的？（单选）<i id="info1" class='bx bx-help-circle' onclick="remind()"></i></p>   
-                        </p>
-                        <div class="single_choice">
-                            <label class="check_container">有效性检验
-                                <input type="radio" checked="checked" name="radio">
+                        <p style="margin-top: -10px;">本次研究您的研究目的是怎样的？（单选）<i id="info1" class='bx bx-help-circle' onclick="remind()"></i></p>   
+                        <!-- <div class="single_choice">
+                            <label class="check_container">优效性检验
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="check_container">等效性检验
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="check_container">非劣效性检验
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="check_container">差异性检验
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="check_container">影响因素评价
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="check_container">预测
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="check_container">对均数、率的参数估计
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="input00">
                                 <span class="checkmark"></span>
                             </label>
-                        </div>
-                        <!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
-                        <input id='info1_fail' type="checkbox" onclick="addFail()">失败
-                        <div id="case_des"></div> -->
-                        <!-- <div class="input_container">
-                            <textarea class="user_input" id='info1_input' onclick="remind()">
-                        
-                            </textarea>
-                            <button class="save_btn">
-                                <img src="./icon/save_btn.png" alt="">
-                            </button>
                         </div> -->
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-a" value='1'> 优效性检验
+                            <br>
+                            <input type="radio" name="input-a" value='2'> 等效性检验
+                            <br>
+                            <input type="radio" name="input-a" value='3'> 差异性检验
+                            <br>
+                            <input type="radio" name="input-a" value='4'> 影响因素评价
+                            <br>
+                            <input type="radio" name="input-a" value='4'> 预测
+                            <br>
+                            <input type="radio" name="input-a" value='4'> 对均数、率的参数估计
+                        </form>
                         
                     </div>
                     <div id='info2_container' class='infoCon'> 
                         <p id='info2_title'> <p style="font-size: 12px">input b - </p> 
                         <p style="margin-top: -10px;">受试者可以进行受试化分组，随即进入“研究组”或“对照组”？（单选）<i id="info2" class='bx bx-help-circle' onclick="remind()"></i></p>
-                            
-                        </p>
-                        <div class="single_choice">
+                        <!-- <div class="single_choice">
                             <label class="check_container">是
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
@@ -355,7 +354,13 @@
                                 <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                        </div>
+                        </div> -->
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-b" value='1'> 是
+                            <br>
+                            <input type="radio" name="input-b" value='2'> 否
+                            
+                        </form>
                         <!-- <div class="input_container">
                             <textarea class="user_input" id='info2_input' onclick="remind()"></textarea>
                             <button class="save_btn">
@@ -373,16 +378,12 @@
                             
                         </p>
                         
-                        <div class="single_choice">
-                            <label class="check_container">是
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="check_container">否
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-c" value='1'> 是
+                            <br>
+                            <input type="radio" name="input-c" value='2'> 否
+                            
+                        </form>
                     </div>
                     <div id='info4_container' class='infoCon'>
                         <p id="info4_title"> 
@@ -390,17 +391,12 @@
                             <p style="margin-top: -10px;">本次研究的结局发生率是否≥1‰? <i id="info4" class='bx bx-help-circle' onclick="remind()"></i> </p>
                             
                         </p>
-                        <div class="single_choice">
-                            <label class="check_container">是
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="check_container">否
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                
-                        </div>
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-d" value='1'> 是
+                            <br>
+                            <input type="radio" name="input-d" value='2'> 否
+                            
+                        </form>
                     </div>
                     <div id='info5_container' class='infoCon'>
                         <p id="info5_title">
@@ -408,17 +404,12 @@
                             <p style="margin-top: -10px;">本次研究属于下面哪种情况？<i id="info5" class='bx bx-help-circle' onclick="remind()"></i></p>
                             
                         </p>
-                        <div class="single_choice">
-                            <label class="check_container">a. 针对一个X（暴露因素，危险因素）可能导致的多个Y(结局)进行观察、研究
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="check_container">b. 针对一个Y (结局) 探索多个X (危险因素)对 Y (结局)的关联，从而进行观察、研究
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                
-                        </div>
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-e" value='a'> a. 针对一个X（暴露因素，危险因素）可能导致的多个Y(结局)进行观察、研究
+                            <br>
+                            <input type="radio" name="input-e" value='b'> b. 针对一个Y (结局) 探索多个X (危险因素)对 Y (结局)的关联，从而进行观察、研究
+                            
+                        </form>
                          <!-- <div class="input_container">
                             <textarea class="user_input" id='info5_input' onclick="remind()"></textarea>
                             <button class="save_btn">
@@ -435,17 +426,12 @@
                             </p>
                             
                         </p>
-                        <div class="single_choice">
-                            <label class="check_container">是
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="check_container">否
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                
-                        </div>  
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-f" value='1'> 是
+                            <br>
+                            <input type="radio" name="input-f" value='2'> 否
+                            
+                        </form>
                     </div>
                     <div id='info7_container' class='infoCon'>
                         <p id="info7_title">
@@ -455,17 +441,12 @@
                             </p>
                             
                         </p>
-                        <div class="single_choice">
-                            <label class="check_container">是
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="check_container">否
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                
-                        </div>  
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-g" value='1'> 是
+                            <br>
+                            <input type="radio" name="input-g" value='2'> 否
+                            
+                        </form> 
                     </div>
                     <div id='info8_container' class='infoCon'>
                         <p id="info8_title">
@@ -475,17 +456,12 @@
                             </p>
                             
                         </p>
-                        <div class="single_choice">
-                            <label class="check_container">是
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="check_container">否
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                
-                        </div>  
+                        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                            <input type="radio" name="input-h" value='1'> 是
+                            <br>
+                            <input type="radio" name="input-h" value='2'> 否
+                            
+                        </form> 
                     </div>
                 </div>
                 <div class="grid_child remind_container" id='remind_container'>

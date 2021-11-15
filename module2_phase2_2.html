@@ -245,24 +245,28 @@
 			<div class='grid_child information' id='information'>
 				<strong>Case#0001</strong>
 				<div id='info1_container' class='infoCon'>
-					<p id='info1_title'> Module2_phase2_information1_question1：
-						<i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
-					</p>
-					<!-- <input id='info1_success' type='checkbox' onclick="addSuccess()">成功
-					<input id='info1_fail' type="checkbox" onclick="addFail()">失败
-					<div id="case_des"></div> -->
-					<div class="input_container">
-						<textarea class="user_input" id='info1_input' onclick="remind()"></textarea>
-						<button class="save_btn">
-							<img src="./icon/save_btn.png" alt="">
-						</button>
-					</div>
+					<p id='info1_title'> <p style="font-size: 10px;">input 00 - 研究目的的确定</p> 
+                        <p style="margin-top: -10px;">本次研究您的研究目的是怎样的？（单选）<i id="info1" class='bx bx-help-circle' onclick="remind()"></i></p>  
+					<form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+						<input type="radio" name="input00" value='1'> 优效性检验
+						<br>
+						<input type="radio" name="input00" value='2'> 等效性检验
+						<br>
+						<input type="radio" name="input00" value='3'> 非劣效性检验
+						<br>
+						<input type="radio" name="input00" value='4'> 差异性检验
+						<br>
+						<input type="radio" name="input00" value='5'> 影响因素评价
+						<br>
+						<input type="radio" name="input00" value='6'> 预测
+						<br>
+						<input type="radio" name="input00" value='7'> 对均数、率的参数估计
+					</form>
 					
 				</div>
 				<div id='info2_container' class='infoCon'> 
-					<p id='info2_title'> Module2_phase2_information1_question2：
-						<i id="info2" class='bx bx-help-circle' onclick="remind()"></i>
-					</p>
+					<p id='info2_title'> <p style="font-size: 12px">input 01 - 研究类型确定 </p> 
+                        <p style="margin-top: -10px;">确定您你定的研究类型（单选）<i id="info2" class='bx bx-help-circle' onclick="remind()"></i></p>
 					<!-- <div class="test_opt">
 						<button class="opt" onclick="clicked()">option1</button>
 						<button class="opt" onclick="clicked()">option2</button>
@@ -270,28 +274,16 @@
 						<button class="opt" onclick="clicked()">option4</button>
 						<button class="opt" onclick="clicked()">option5</button>
 					</div> -->
-					<div class="single_choice">
-						<label class="check_container">option1
-							<input type="radio" checked="checked" name="radio">
-							<span class="checkmark"></span>
-						</label>
-						<label class="check_container">option2
-							<input type="radio" checked="checked" name="radio">
-							<span class="checkmark"></span>
-						</label>
-						<label class="check_container">option3
-							<input type="radio" checked="checked" name="radio">
-							<span class="checkmark"></span>
-						</label>
-						<label class="check_container">option4
-							<input type="radio" checked="checked" name="radio">
-							<span class="checkmark"></span>
-						</label>
-						<label class="check_container">option5
-							<input type="radio" checked="checked" name="radio">
-							<span class="checkmark"></span>
-						</label>
-					</div>
+					<form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+						<input type="radio" name="input00" value='1'> 干预性研究
+						<br>
+						<input type="radio" name="input00" value='2'> 病例对照研究
+						<br>
+						<input type="radio" name="input00" value='3'> 队列研究
+						<br>
+						<input type="radio" name="input00" value='4'> 横断面研究
+						<br>
+					</form>
 				</div>
 				<div id='info3_container' class='infoCon'>
 					<p id="info3_title" >Module2_phase2_information1_question3: 
