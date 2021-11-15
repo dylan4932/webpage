@@ -168,17 +168,21 @@ function save_btn() {
     const history_content = document.createElement('div')
     history_content.className = 'history_content'
 
+
     const history_a = document.createElement('a')
     history_a.href = '#'
 
+    const dot_span = document.createElement('span')
+    dot_span.className = 'dot'
+    dot_span.style = 'background: rgb(79, 114, 225)'
     const history_span = document.createElement('span')
     if(search.length < 36) {
         history_span.append(search)
     } else {
-        history_span.append(search.slice(0, 30)+'...')
+        history_span.append(' '+search.slice(0, 30)+'...')
     }
     
-
+    history_a.appendChild(dot_span)
     history_a.appendChild(history_span)
     history_content.appendChild(history_a)
 
@@ -197,7 +201,7 @@ function save_btn() {
     progress.appendChild(progress_bar)
 
     history.appendChild(history_content)
-    history.appendChild(progress)
+    // history.appendChild(progress)
 
     container.appendChild(history)
 }
@@ -222,9 +226,10 @@ function search_guide() {
 function save_item(){
     var evt = window.event || evt;
 
-    console.log(evt.target.id.slice(0,5))
+    const text_span = document.createElement('span')
     const title_container = document.getElementById(evt.target.id.slice(0,5))
     const title_txt = title_container.innerText.slice(0,8)+'...'
+    
 
     const container = document.getElementById('save_container')
 
@@ -234,12 +239,17 @@ function save_item(){
     const item_content = document.createElement('div')
     item_content.className = 'save_content'
 
+    const dot_span = document.createElement('span')
+    dot_span.className = 'dot'
+    dot_span.style = 'background: red'
     const item_txt_container = document.createElement('a')
     item_txt_container.href='#'
 
     const item_txt = document.createTextNode(title_txt)
+    text_span.append(item_txt)
 
-    item_txt_container.append(item_txt)
+    item_txt_container.appendChild(dot_span)
+    item_txt_container.appendChild(text_span)
     item_content.appendChild(item_txt_container)
     save_item.appendChild(item_content)
 
