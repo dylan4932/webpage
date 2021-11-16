@@ -130,42 +130,53 @@ function form(){
     const type2 = document.getElementById('type2')
     const type3 = document.getElementById('type3')
     const type4 = document.getElementById('type4')
-    type1.removeAttribute('checked')
-    type2.removeAttribute('checked')
-    type3.removeAttribute('checked')
-    type4.removeAttribute('checked')
+    type1.checked = false
+    type2.checked = false
+    type3.checked = false
+    type4.checked = false
     if(evt.target.id === 'researchp'){
         return
     }
     
     if(evt.target.id == 'form1' || evt.target.id == 'form2' || evt.target.id == 'form3'){
         type1.removeAttribute('disabled')
-        type2.removeAttribute('disabled')
-        type3.removeAttribute('disabled')
-        type4.removeAttribute('disabled')
         type2.setAttribute('disabled', '')
         type3.setAttribute('disabled', '')
         type4.setAttribute('disabled', '')
+        type1.style = 'cursor: pointer'
+        type2.style = 'cursor: default'
+        type3.style = 'cursor: default'
+        type4.style = 'cursor: default'
     }
     if(evt.target.id == 'form4'){
         type1.removeAttribute('disabled')
         type2.removeAttribute('disabled')
         type3.removeAttribute('disabled')
         type4.removeAttribute('disabled')
+        type1.style = 'cursor: pointer'
+        type2.style = 'cursor: pointer'
+        type3.style = 'cursor: pointer'
+        type4.style = 'cursor: pointer'
     }
     if(evt.target.id == 'form5'){
-        type1.removeAttribute('disabled')
+        type1.setAttribute('disabled', '')
         type2.removeAttribute('disabled')
         type3.removeAttribute('disabled')
         type4.removeAttribute('disabled')
-        type1.setAttribute('disabled', '')
+        type1.style = 'cursor: default'
+        type2.style = 'cursor: pointer'
+        type3.style = 'cursor: pointer'
+        type4.style = 'cursor: pointer'
+        
     }
     if(evt.target.id == 'form6' || evt.target.id == 'form7'){
-        type1.removeAttribute('disabled')
-        type2.removeAttribute('disabled')
         type3.removeAttribute('disabled')
         type4.removeAttribute('disabled')
         type1.setAttribute('disabled', '')
         type2.setAttribute('disabled', '')
+        type1.style = 'cursor: default'
+        type2.style = 'cursor: default'
+        type3.style = 'cursor: pointer'
+        type4.style = 'cursor: pointer'
     }
 }
