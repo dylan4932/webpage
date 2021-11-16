@@ -247,41 +247,45 @@
 				<div id='info1_container' class='infoCon'>
 					<p id='info1_title'> <p style="font-size: 10px;">input 00 - 研究目的的确定</p> 
                         <p style="margin-top: -10px;">本次研究您的研究目的是怎样的？（单选）<i id="info1" class='bx bx-help-circle' onclick="remind()"></i></p>  
-					<form action="http://jkorpela.fi/cgi-bin/echo.cgi">
-						<input type="radio" name="input00" value='1'> 优效性检验
+					<form action="http://jkorpela.fi/cgi-bin/echo.cgi" onclick="form()" style="cursor: default">
+						<input class='researchp' type="radio" name="input00" 
+							style="cursor: pointer;" value='1' id="form1"> 优效性检验
 						<br>
-						<input type="radio" name="input00" value='2'> 等效性检验
+						<input class='researchp'type="radio" name="input00" 
+							style="cursor: pointer;" value='2' id="form2"> 等效性检验
 						<br>
-						<input type="radio" name="input00" value='3'> 非劣效性检验
+						<input class='researchp' type="radio" name="input00"
+							style="cursor: pointer;" value='3' id="form3"> 非劣效性检验
 						<br>
-						<input type="radio" name="input00" value='4'> 差异性检验
+						<input class='researchp' type="radio" name="input00"
+							style="cursor: pointer;" value='4' id="form4"> 差异性检验
 						<br>
-						<input type="radio" name="input00" value='5'> 影响因素评价
+						<input class='researchp' type="radio" name="input00"
+							style="cursor: pointer;" value='5' id="form5"> 影响因素评价
 						<br>
-						<input type="radio" name="input00" value='6'> 预测
+						<input class='researchp' type="radio" name="input00"
+							style="cursor: pointer;" value='6' id="form6"> 预测
 						<br>
-						<input type="radio" name="input00" value='7'> 对均数、率的参数估计
+						<input class='researchp' type="radio" name="input00"
+							style="cursor: pointer;" value='7' id="form7"> 对均数、率的参数估计
 					</form>
 					
 				</div>
 				<div id='info2_container' class='infoCon'> 
 					<p id='info2_title'> <p style="font-size: 12px">input 01 - 研究类型确定 </p> 
                         <p style="margin-top: -10px;">确定您你定的研究类型（单选）<i id="info2" class='bx bx-help-circle' onclick="remind()"></i></p>
-					<!-- <div class="test_opt">
-						<button class="opt" onclick="clicked()">option1</button>
-						<button class="opt" onclick="clicked()">option2</button>
-						<button class="opt" onclick="clicked()">option3</button>
-						<button class="opt" onclick="clicked()">option4</button>
-						<button class="opt" onclick="clicked()">option5</button>
-					</div> -->
 					<form action="http://jkorpela.fi/cgi-bin/echo.cgi">
-						<input type="radio" name="input00" value='1'> 干预性研究
+						<input type="radio" name="input00" value='1' checked
+							style="cursor: pointer;" id='type1'> 干预性研究
 						<br>
-						<input type="radio" name="input00" value='2'> 病例对照研究
+						<input type="radio" name="input00" value='2' checked
+							style="cursor: pointer;" id="type2"> 病例对照研究
 						<br>
-						<input type="radio" name="input00" value='3'> 队列研究
+						<input type="radio" name="input00" value='3' checked
+							style="cursor: pointer;" id="type3"> 队列研究
 						<br>
-						<input type="radio" name="input00" value='4'> 横断面研究
+						<input type="radio" name="input00" value='4' checked
+							style="cursor: pointer;" id='type4'> 横断面研究
 						<br>
 					</form>
 				</div>

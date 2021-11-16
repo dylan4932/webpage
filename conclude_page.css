@@ -588,3 +588,7 @@ summary {
     border-radius: 50%;
     display: inline-block;
 }
+
+.infoCon form input{ 
+    cursor: pointer;
+}
