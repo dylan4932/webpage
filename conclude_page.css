@@ -592,3 +592,7 @@ summary {
 .infoCon form input{ 
     cursor: pointer;
 }
+
+.infoCon{
+    cursor: default;
+}
