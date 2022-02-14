@@ -83,21 +83,21 @@
                 </div>
 				<div class="incomplete_content">
                     <div class="incomplete_item">
-                        <a href="module2_phase2_2.html">
+                        <a href="module2_phase2_1.html">
                             <p id='info1_txt1'><span class="dot" style="background: #ea452f;"></span> input 00</p>
                         </a>
                     </div>
                 </div>
 				<div class="incomplete_content">
                     <div class="incomplete_item">
-                        <a href="module2_phase2_2.html">
+                        <a href="module2_phase2_1.html">
                             <p id='info1_txt1'><span class="dot" style="background: #ea452f;"></span> input 01</p>
                         </a>
                     </div>
                 </div>
                 <div class="incomplete_content">
                     <div class="incomplete_item">
-                        <a href="module2_phase2_2.html">
+                        <a href="module2_phase2_1.html">
                             <p id='info1_txt1'><span class="dot" style="background: #ea452f;"></span> input 05</p>
                         </a>
                     </div>
@@ -105,17 +105,17 @@
                 <details>
                     <summary></summary>
                     <div class="complete_item">
-                        <a href="module2_phase2_2.html">
+                        <a href="module2_phase2_1.html">
                             <p id='info1_txt1'><span class="dot" style="background: #57bf91;"></span> input 02</p>
                         </a>
                     </div>
                     <div class="complete_item">
-                        <a href="module2_phase2_2.html">
+                        <a href="module2_phase2_1.html">
                             <p id='info1_txt1'><span class="dot" style="background: #57bf91;"></span> input 03</p>
                         </a>
                     </div>
                     <div class="complete_item">
-                        <a href="module2_phase2_2.html">
+                        <a href="module2_phase2_1.html">
                             <p id='info1_txt1'><span class="dot" style="background: #57bf91;"></span> input 04</p>
                         </a>
                     </div>
@@ -189,7 +189,7 @@
                         </span> -->
                     </div>
                 </a>
-                <a href="module2_phase2_2.html">
+                <a href="module2_phase2_1.html">
                     <div class="phase_container picked">
                         └─ Phase2
                         <!-- <span class="phasetip picked">
@@ -205,7 +205,7 @@
                         </span>
                     </div>
                 </a> -->
-                <a href="module2_phase4.html">
+                <a href="module2_phase4.html" onclick="{alert('需要完成module2 所有问题，才能到Framework')}">
                     <div class="phase_container">
                         └─ Research Framework
                         <!-- <span class="phasetip">
@@ -261,94 +261,83 @@
 	</div>
 	<div class='home_content'>
 		<div class="sheet" id="sheet">
+            
 			<div class='grid_child information' id='information'>
-				<strong>Case#0001</strong>
-				<div id='info1_container' class='infoCon'>
-					<p id='info1_title'> <p style="font-size: 10px;">input 00 - 研究目的的确定</p> 
-                        <p style="margin-top: -10px;">本次研究您的研究目的是怎样的？（单选）<i id="info1" class='bx bx-help-circle' onclick="remind()"></i></p>  
-					<form action="http://jkorpela.fi/cgi-bin/echo.cgi" onclick="form()" style="cursor: default">
-						<input class='researchp' type="radio" name="input00" 
-							style="cursor: pointer;" value='1' id="form1"> 优效性检验
-						<br>
-						<input class='researchp'type="radio" name="input00" 
-							style="cursor: pointer;" value='2' id="form2"> 等效性检验
-						<br>
-						<input class='researchp' type="radio" name="input00"
-							style="cursor: pointer;" value='3' id="form3"> 非劣效性检验
-						<br>
-						<input class='researchp' type="radio" name="input00"
-							style="cursor: pointer;" value='4' id="form4"> 差异性检验
-						<br>
-						<input class='researchp' type="radio" name="input00"
-							style="cursor: pointer;" value='5' id="form5"> 影响因素评价
-						<br>
-						<input class='researchp' type="radio" name="input00"
-							style="cursor: pointer;" value='6' id="form6"> 预测
-						<br>
-						<input class='researchp' type="radio" name="input00"
-							style="cursor: pointer;" value='7' id="form7"> 对均数、率的参数估计
-					</form>
+				<strong>Case#0001  - （这里显示在Module 2 - phase 2_1 中选择的两个选项）的研究</strong>
+                <div id='info1_container' class='infoCon'>
+                    <p id='info1_title'> <p style="font-size: 10px;">input 02 - 研究人群的确定</p> 
+					<p id="info1_title" style="margin-top: -10px;">请您描述拟定研究的研究人群？ 
+						<i id="info1" class='bx bx-help-circle' onclick="remind()"></i>
+					</p>
+					 <div class="input_container">
+						<textarea class="user_input" id='info1_input' onclick="remind()"></textarea>
+						<button class="save_btn">
+							<img src="./icon/save_btn.png" alt="">
+						</button>
+					 </div>
 					
 				</div>
-				<div id='info2_container' class='infoCon'> 
-					<p id='info2_title'> <p style="font-size: 12px">input 01 - 研究类型确定 </p> 
-                        <p style="margin-top: -10px;">确定您你定的研究类型（单选）<i id="info2" class='bx bx-help-circle' onclick="remind()"></i></p>
-					<form action="http://jkorpela.fi/cgi-bin/echo.cgi" style="cursor: default;">
-						<input type="radio" name="input00" value='1'
-							style="cursor: pointer;" id='type1'> 干预性研究
-						<br>
-						<input type="radio" name="input00" value='2'
-							style="cursor: pointer;" id="type2"> 病例对照研究
-						<br>
-						<input type="radio" name="input00" value='3'
-							style="cursor: pointer;" id="type3"> 队列研究
-						<br>
-						<input type="radio" name="input00" value='4'
-							style="cursor: pointer;" id='type4'> 横断面研究
-						<br>
-					</form>
+                <div id='info2_container' class='infoCon'>
+                    <p id='info2_title'> <p style="font-size: 10px;">input 03 - X （危险因素）的确定</p> 
+					<p id="info2_title" style="margin-top: -10px;">请您描述拟定研究的“X”（危险因素）？ 
+						<i id="info2" class='bx bx-help-circle' onclick="remind()"></i>
+					</p>
+					 <div class="input_container">
+						<textarea class="user_input" id='info2_input' onclick="remind()"></textarea>
+						<button class="save_btn">
+							<img src="./icon/save_btn.png" alt="">
+						</button>
+					 </div>
+					
 				</div>
-				<div id='info3_container' class='infoCon'>
-					<p id="info3_title" >Module2_phase2_information1_question3: 
+                <div id='info3_container' class='infoCon'>
+                    <p id='info3_title'> <p style="font-size: 10px;">input 04 - Y （结局）的确定</p> 
+					<p id="info3_title" style="margin-top: -10px;">请您描述拟定研究的“Y”（结局）？ 
 						<i id="info3" class='bx bx-help-circle' onclick="remind()"></i>
 					</p>
-					<div class="input_container">
+					 <div class="input_container">
 						<textarea class="user_input" id='info3_input' onclick="remind()"></textarea>
 						<button class="save_btn">
 							<img src="./icon/save_btn.png" alt="">
 						</button>
-					</div>
+					 </div>
 					
 				</div>
-				<div id='info4_container' class='infoCon'>
-					<p id="info4_title"> Module2_phase2_information1_question4: 
+                <div id='info4_container' class='infoCon'>
+                    <p id='info4_title'> <p style="font-size: 10px;">input 05 - 研究设计确定</p> 
+					<p id="info4_title"> 请您选择拟定研究的“研究设计”？ 
 						<i id="info4" class='bx bx-help-circle' onclick="remind()"></i> 
 					</p>
 					<div class="single_choice">
-						<label class="check_container">option1
+						<label class="check_container">单组设计
 							<input type="radio" checked="checked" name="radio">
 							<span class="checkmark"></span>
 						</label>
-						<label class="check_container">option2
+						<label class="check_container">成组设计
 							<input type="radio" checked="checked" name="radio">
 							<span class="checkmark"></span>
 						</label>
-						<label class="check_container">option3
+						<label class="check_container">单因素多水平设计
 							<input type="radio" checked="checked" name="radio">
 							<span class="checkmark"></span>
 						</label>
-						<label class="check_container">option4
+						<label class="check_container">配对设计
 							<input type="radio" checked="checked" name="radio">
 							<span class="checkmark"></span>
 						</label>
-						<label class="check_container">option5
+						<label class="check_container">析因设计
+							<input type="radio" checked="checked" name="radio">
+							<span class="checkmark"></span>
+						</label>
+                        <label class="check_container">交叉设计
 							<input type="radio" checked="checked" name="radio">
 							<span class="checkmark"></span>
 						</label>
 					</div>
 				</div>
-				<div id='info5_container' class='infoCon'>
-					<p id="info5_title">Module2_phase2_information1_question5: 
+                <div id='info5_container' class='infoCon'>
+                    <p id='info5_title'> <p style="font-size: 10px;">input 06 - 研究数据来源确定</p> 
+					<p id="info5_title" style="margin-top: -10px;">请您描述拟定研究的“数据来源”？ 
 						<i id="info5" class='bx bx-help-circle' onclick="remind()"></i>
 					</p>
 					 <div class="input_container">
@@ -381,9 +370,16 @@
 				</div>
 			</div>
             <div></div>
-            <div class="store_btn_container" style="margin-left: 75%; margin-top: 50px;">
+            <div class="store_btn_container" style="margin-left: 55%; margin-top: 50px;">
                 <div class="store_btn">
-                    <a href="module2_phase4.html">
+                    <a href="module2_phase2_1.html">
+                        <span>上一步</span>
+                    </a>
+                </div>   
+            </div> 
+            <div class="store_btn_container" style="margin-left: 5%; margin-top: 50px;">
+                <div class="store_btn">
+                    <a href="module2_phase4.html" onclick="{alert('需要完成module2 所有问题，才能到Framework')}">
                         <span>下一步</span>
                     </a>
                 </div>   

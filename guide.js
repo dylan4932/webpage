@@ -30,7 +30,7 @@ function guide(){
 
         const phase2_link = document.createElement('a')
         if(evt.target.id.slice(0,7) === 'module2'){
-            phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2_2.html"
+            phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2_1.html"
         } else{
             phase2_link.href = "./"+evt.target.id.slice(0,7)+"_phase2.html"
         }
@@ -66,6 +66,7 @@ function guide(){
         if(evt.target.id.slice(0,7) === 'module2'){
             phase4.className="phase_container"
             phase4_link.href = "./"+evt.target.id.slice(0,7)+"_phase4.html"
+            phase4_link.setAttribute('onclick', '{alert("需要完成module2 所有问题，才能进入Framework")}')
             const phase4_txt = document.createTextNode('└─ Research Framework')
             phase4.append(phase4_txt)
             // const tip4 = document.createElement('span')
