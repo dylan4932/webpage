@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'FZZhongDengXian-Z07S';
+    font-size: 12px;  */
+    /* font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; */
+    font: 14px/1.5 "FZZhongDengXian-Z06S",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 200;
+    /* font-weight: bold; */
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background: #38414F;
+}
+
+.sidebar ul {
+    margin-top: 50px;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+    color: #EBF6F4;
+    border-bottom: 0.01px solid #EBF6F4;
+    font-weight: 100;
+    cursor: pointer;
+    align-items: center;
+    line-height: 50px;
+    padding: 10px 20px
+} 
+
+.sidebar ul li:hover{
+    background-color: #2E3541;
+} 
+
+.sidebar ul li .clicked{
+    background-color: red;
+
+} 
+
+.sidebar ul li .list_content{
+    width: 100%;
+    font-size: 16px;
+}
+
+.list_content .more_btn{
+    float: right;
+    font-size: 24px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 300px;
+    padding: 10px 20px;
+}
+
+.homepage{
+    position: fixed;
+    left: 300px;
+    top: 40px;
+    background-color: #F1F3F9;
+    width: 100%;
+    height: 100%;
+}
+
+
