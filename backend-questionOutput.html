@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./backenend-output.css">
+    <title>(演示)Backend - output 设置</title>
+</head>
+<body>
+	<div class="sidebar">
+        <ul class="nav_list" id="nav_list">
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-home' ></i>
+                    home
+                </div>
+                
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    用户管理
+                </div>    
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    指南库 管理
+                    <i class='bx bx-chevron-left more_btn' ></i>
+                </div>  
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    文献检索 积累 管理
+                </div>  
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    启发 管理
+                </div>  
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    假说框 管理
+                </div>  
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    PICOST 管理
+                </div>  
+            </li>
+            <li>
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    Remind 管理
+                </div>  
+            </li>
+            <li id="input_btn" onclick="input()">
+                <div class="list_content" id>
+                    <i class='bx bx-folder'></i>
+                    Input 管理
+
+                    <i class='bx bx-chevron-left more_btn'></i>
+                </div>  
+            </li>
+            <li style="background-color: #4FA493;" onclick="output()">
+                <div class="list_content">
+                    <i class='bx bx-folder'></i>
+                    Output 管理
+
+                    <i class='bx bx-chevron-left more_btn'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="header_content">
+            <i class='bx bxs-home' ></i>
+            <a href="#">Home</a>
+            >
+            <a href="#">Output 管理</a>
+        </div>
+    </div>
+    <div class="homepage">
+        <div class="title">
+            <h1><strong>Output 管理</strong></h1>
+            <h3> Question-Output 管理</h3> 
+        </div>
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="toolbar">
+            <h4>Path 编号：</h4>
+            <select id="path_id">
+                <option value="0">请您选择Path 编号</option>
+                <option value="1">Path 1</option>
+                <option value="2">Path 2</option>
+                <option value="3">Path 3</option>
+                <option value="4">Path 4</option>
+                <option value="5">Path 5</option>
+                <option value="6">Path 6</option>
+                <option value="7">Path 7</option>
+                <option value="8">Path 8</option>
+                <option value="9">Path 9</option>
+                <option value="10">Path 10</option>
+                <option value="11">Path 11</option>
+                <option value="12">Path 12</option>
+                <option value="13">Path 13</option>
+                <option value="14">Path 14</option>
+              </select>
+            <div class="btn_container">
+                <div class="func_btn" 
+                    style="background-color: #5589C5;">搜索
+                </div>
+                <div class="func_btn" 
+                    style="background-color: white; color: black;" 
+                    onclick="clear_path()">重置
+                </div>
+                <div class="func_btn"
+                    style='background-color: #46B7AF'
+                    onclick="openForm()">新增
+                </div>
+            </div>
+            
+        </div>
+        <table>
+            <tr>
+              <td><strong>Path 序号</strong></td>
+              <td><strong>Question 序号</strong></td>
+              <td><strong>Qustion 名称</strong></td>
+              <td><strong>Question 内容</strong></td>
+              
+              <td><strong>操作</strong></th>
+            </tr>
+            <tr>
+              <td>Path 7</td>
+              <td>Question 1</td>
+              <td>研究题目</td>
+              <td>【病例对照研究】：在【研究人群】中【X（危险因素）】和【Y（结局）】</td>
+              <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+              <td>Path 7</td>
+              <td>Question 3</td>
+              <td>研究目标 </td>
+              <td>针对【研究人群】的【研究问题】，本研究的研究假设为：原假设H0【原假设H0】，备择假设H1【备择假设H1】</td>
+
+              <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-popup" id="myForm1">
+        <form action="/action_page.php" class="form-container">
+          <strong>新增</strong>
+          <hr style="margin: 10px 5px;">
+          <label><b>Question 序号: </b></label>
+          <select id="path_id">
+            <option value="0">选择Path 编号</option>
+            <option value="1">Path 1</option>
+            <option value="2">Path 2</option>
+            <option value="3">Path 3</option>
+            <option value="4">Path 4</option>
+            <option value="5">Path 5</option>
+            <option value="6">Path 6</option>
+            <option value="7">Path 7</option>
+            <option value="8">Path 8</option>
+            <option value="9">Path 9</option>
+            <option value="10">Path 10</option>
+            <option value="11">Path 11</option>
+            <option value="12">Path 12</option>
+            <option value="13">Path 13</option>
+            <option value="14">Path 14</option>
+          </select>
+          <select id="question_id">
+            <option value="0">选择Question 编号</option>
+            <option value="1">question 1</option>
+            <option value="2">question 2</option>
+            <option value="3">question 3</option>
+            <option value="4">question 4</option>
+            <option value="5">question 5</option>
+            <option value="6">question 6</option>
+            <option value="7">question 7</option>
+            <option value="8">question 8</option>
+            <option value="9">question 9</option>
+            <option value="10">question 10</option>
+            <option value="11">question 11</option>
+            <option value="12">question 12</option>
+            <option value="13">question 13</option>
+            <option value="14">question 14</option>
+            <option value="15">question 15</option>
+            <option value="16">question 16</option>
+            <option value="17">question 17</option>
+            <option value="18">question 18</option>
+            <option value="19">question 19</option>
+            <option value="20">question 20</option>
+            <option value="21">question 21</option>
+            <option value="22">question 22</option>
+            <option value="23">question 23</option>
+            <option value="24">question 24</option>
+            <option value="25">question 25</option>
+            <option value="26">question 26</option>
+            <option value="27">question 27</option>
+            <option value="28">question 28</option>
+            <option value="29">question 29</option>
+          </select>
+          <hr style="margin:10px 5px;">
+          <label for="psw"><b>Question 内容</b></label>
+          <input type="text" placeholder="以 { 位置编号 } 的形式表示位置" name="psw" required>
+          <hr style="margin: 10px 5px;">
+          <label>位置编号 1: </label>
+          <select id="path_id">
+            <option value="0">选择Output名称</option>
+            <option value="1">研究目的</option>
+            <option value="2">研究类型</option>
+            <option value="3">研究人群</option>
+            <option value="4">X （危险因素）</option>
+            <option value="5">Y （结局）</option>
+          </select>
+          <hr style="margin: 10px 5px;">
+          <label>位置编号 2: </label>
+          <select id="path_id">
+            <option value="0">选择Output名称</option>
+            <option value="1">研究目的</option>
+            <option value="2">研究类型</option>
+            <option value="3">研究人群</option>
+            <option value="4">X （危险因素）</option>
+            <option value="5">Y （结局）</option>
+          </select>
+          <hr style="margin: 10px 5px;">
+          <label>位置编号 3: </label>
+          <select id="path_id">
+            <option value="0">选择Output名称</option>
+            <option value="1">研究目的</option>
+            <option value="2">研究类型</option>
+            <option value="3">研究人群</option>
+            <option value="4">X （危险因素）</option>
+            <option value="5">Y （结局）</option>
+          </select>
+          <hr style="margin:10px 5px;">
+          <label>位置编号 4: </label>
+          <select id="path_id">
+            <option value="0">选择Output名称</option>
+            <option value="1">研究目的</option>
+            <option value="2">研究类型</option>
+            <option value="3">研究人群</option>
+            <option value="4">X （危险因素）</option>
+            <option value="5">Y （结局）</option>
+          </select>
+          <hr style="margin:10px 5px;">
+          <button type="submit" class="btn">保存 </button>
+          <button type="button" class="btn cancel" onclick="closeForm()">取消</button>
+        </form>
+      </div>
+    <script src="backend.js"></script>
+</body>
+</html>

@@ -89,7 +89,155 @@
         </div>
     </div>
     <div class="homepage">
-        
+        <div class="title">
+            <h1><strong>Output 管理</strong></h1>
+            <h3>Base Output</h3> 
+        </div>
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="toolbar">
+            <h4>Output 编号：</h4>
+            <input id="output_id" placeholder="Output 序号： Input#-OutPut">
+            <div class="btn_container">
+                <div class="func_btn" 
+                    style="background-color: #5589C5;">搜索
+                </div>
+                <div class="func_btn" 
+                    style="background-color: white; color: black;" 
+                    onclick="clear_output()">重置
+                </div>
+                <div class="func_btn"
+                    style='background-color: #46B7AF'
+                    onclick="openForm()">新增
+                </div>
+            </div>
+            
+        </div>
+        <table>
+            <tr>
+              <td><strong>Output 序号</strong></td>
+              <td><strong>Output 名称</strong></td>
+              <td><strong>Decison rule</strong></td>
+              <td><strong>Output 内容</strong></td>
+              <td><strong>Input 序号</strong></td>
+              <td>Input 内容</td>
+              
+              <td><strong>操作</strong></th>
+            </tr>
+            <tr>
+                <td>Input03-Output</td>
+                <td>X（危险因素）</td>
+                <td>a</td>
+                <td>【（user-input）】</td>
+                <td>Input03</td>
+                <td> (字符串)</td>
+                
+                <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>Input04-Output</td>
+                <td>Y （结局）</td>
+                <td>a</td>
+                <td>【（user-input）】</td>
+                <td>Input04</td>
+                <td> (字符串) </td>
+                
+                <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+              <td>Input01-Output</td>
+              <td>研究目的</td>
+              <td> b </td>
+              <td>【 差异性检验 】</td>
+              <td>Input01</td>
+              <td>差异性检验</td>
+              
+              <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+              <td>Input02-Output</td>
+              <td>研究设计</td>
+              <td> b</td>
+              <td>【 病例对照研究 】</td>
+              <td>Input02</td>
+              <td>病例对照研究</td>
+              
+              <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            
+            <tr>
+                <td>Input05-Output</td>
+                <td>统计学方法选择</td>
+                <td>c</td>
+                <td>【多元线性回归模型】</td>
+                <td>Input01;Input02;Input05;Input29</td>
+                <td>差异性检验;病例对照研究;成组设计;定量变量</td>
+                
+                <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+          </table>
+          <div class="form-popup" id="myForm1" style="top: 20%;">
+            <form action="/action_page.php" class="form-container">
+                <strong>新增</strong>
+                <hr style="margin: 10px 5px;">
+                <label for="email"><b>Output 序号</b></label>
+                <input type="text" placeholder="（字母+数字的自定义）" name="email" required>
+                <hr style="margin: 10px 5px;">
+                <label><b>Output 名称</b></label>
+                <input type="text" required placeholder="（字符串自定义））">
+                <hr style="margin: 10px 5px;">
+                <label><b>Decision rule: </b></label>
+                <select name="decision" style="width: 50px;">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+                <hr style="margin: 10px 5px;">
+                <label><b>Output 内容</b></label>
+                <input type="text" required>
+                <hr style="margin: 10px 5px;">
+                <label><b>Input 序号</b></label>
+                <input type="text" required placeholder="多个以分号隔开">
+                <hr style="margin: 10px 5px;">
+                <label><b>Input 内容</b></label>
+                <input type="text" required placeholder="多个以分号隔开">
+                <hr style="margin: 10px 5px;">
+                
+                <button class="btn" onclick="nextForm()">保存</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">取消</button>
+                
+            </form>
+          </div>
+          <div class="form-popup" id="myForm2" style="top: 20%; left:1000px">
+            <form action="/action_page.php" class="form-container">
+                <strong>新增</strong>
+                <hr style="margin: 10px 5px;">
+                <label for="email"><b>Output 序号</b></label>
+                <input type="text" placeholder="（字母+数字的自定义）" name="email" required>
+                <hr style="margin: 10px 5px;">
+                <label><b>Output 名称</b></label>
+                <input type="text" required placeholder="（字符串自定义））">
+                <hr style="margin: 10px 5px;">
+                <label><b>Output 内容</b></label>
+                <input type="text" required>
+                <hr style="margin: 10px 5px;">
+                <label><b>Input 序号</b></label>
+                <input type="text" required placeholder="多个以分号隔开">
+                <hr style="margin: 10px 5px;">
+                <label><b>Input 内容</b></label>
+                <input type="text" required placeholder="多个以分号隔开">
+                <hr style="margin: 10px 5px;">
+                <label><b>Decision rule: </b></label>
+                <select name="decision" style="width: 50px;">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+                <hr style="margin: 10px 5px;">
+                <button type="submit" class="btn next">下一个</button>
+                <button type="button" class="btn cancel" onclick="cancelForm()">取消</button>
+                <button type="submit" class="btn" onclick="saveForm()">保存</button>
+            </form>
+          </div>
     </div>
     <script src="backend.js"></script>
 </body>
