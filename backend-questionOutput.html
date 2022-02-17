@@ -156,7 +156,7 @@
         <form action="/action_page.php" class="form-container">
           <strong>新增</strong>
           <hr style="margin: 10px 5px;">
-          <label><b>Question 序号: </b></label>
+          <label><b>Path 编号: </b></label>
           <select id="path_id">
             <option value="0">选择Path 编号</option>
             <option value="1">Path 1</option>
@@ -174,8 +174,17 @@
             <option value="13">Path 13</option>
             <option value="14">Path 14</option>
           </select>
-          <input placeholder="输入Question 编号 + 名称" style="width: 250px;">
+          
           <hr style="margin:10px 5px;">
+          <!-- <label for="question"><b>Question 编号 + 名称</b></label> -->
+          <label><b>Question 序号 · 名称: </b></label>
+          <select id="path_id">
+            <option value="0">选择Question 序号 · 名称</option>
+            <option value="1">Question 1 · 研究题目</option>
+            <option value="2">Question 3 · 研究目标</option>
+            
+          </select>
+          <hr style="margin: 10px 5px;" > 
           <label for="psw"><b>Question 内容</b></label>
           <input type="text" placeholder="以 { 位置编号 } 的形式表示位置" name="psw" required>
           <hr style="margin: 10px 5px;">
