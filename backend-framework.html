@@ -131,7 +131,7 @@
         <table>
             <tr>
               <td><strong>Path 序号</strong></td>
-              <td><strong>Question 序号</strong></td>
+              <td><strong>Question 序号 · 名称</strong></td>
               <td><strong>Output 序号</strong></td>
               <td><strong>Output 名称</strong></td>
               <td><strong>Output 内容</strong></td>
@@ -139,7 +139,7 @@
             </tr>
             <tr>
               <td>Path 7</td>
-              <td> Question 1 </td>
+              <td> Question 1 · 研究题目</td>
               <td>Input01-Output</td>
               <td>研究目的</td>
               <td>【 差异性检验 】</td>
@@ -147,11 +147,27 @@
             </tr>
             <tr>
               <td>Path 7</td>
-              <td> Question 1 </td>
+              <td> Question 1 · 研究题目</td>
               <td>Input02-Output</td>
               <td>研究设计</td>
               <td>【 病例对照研究 】</td>
               <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>Path 7</td>
+                <td> Question 3 · 研究目的</td>
+                <td>Input03-Output</td>
+                <td> X （危险因素）</td>
+                <td>【 （user input） 】</td>
+                <td><p>删除</p> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>Path 7</td>
+                <td> Question 3 · 研究目的 </td>
+                <td> Input04-Output </td>
+                <td> Y （结局）</td>
+                <td>【 （user input） 】</td>
+                <td><p>删除</p> <a href="#">编辑</a></td>
             </tr>
           </table>
           <div class="form-popup" id="myForm1">
@@ -176,55 +192,26 @@
                     <option value="13">Path 13</option>
                     <option value="14">Path 14</option>
                 </select>
-                <select id="question_id">
-                    <option value="0">选择Question 编号</option>
-                    <option value="1">question 1</option>
-                    <option value="2">question 2</option>
-                    <option value="3">question 3</option>
-                    <option value="4">question 4</option>
-                    <option value="5">question 5</option>
-                    <option value="6">question 6</option>
-                    <option value="7">question 7</option>
-                    <option value="8">question 8</option>
-                    <option value="9">question 9</option>
-                    <option value="10">question 10</option>
-                    <option value="11">question 11</option>
-                    <option value="12">question 12</option>
-                    <option value="13">question 13</option>
-                    <option value="14">question 14</option>
-                    <option value="15">question 15</option>
-                    <option value="16">question 16</option>
-                    <option value="17">question 17</option>
-                    <option value="18">question 18</option>
-                    <option value="19">question 19</option>
-                    <option value="20">question 20</option>
-                    <option value="21">question 21</option>
-                    <option value="22">question 22</option>
-                    <option value="23">question 23</option>
-                    <option value="24">question 24</option>
-                    <option value="25">question 25</option>
-                    <option value="26">question 26</option>
-                    <option value="27">question 27</option>
-                    <option value="28">question 28</option>
-                    <option value="29">question 29</option>
-                </select>
-                <hr style="margin: 10px 5px;"> 
-              <label for="email"><b>Output 名称</b></label>
-              <select id="name_id">
+                <!-- <label for="question"><b>Question 编号 + 名称</b></label> -->
+                <input placeholder="输入Question 编号 + 名称" style="width: 250px;">
+                <hr style="margin: 10px 5px;" > 
+                <label for="email"><b>Output 名称</b></label>
+                <select id="name_id">
                 <option value="0">选择Output 名称</option>
                 <option value="1">研究人群</option>
                 <option value="2">X（危险因素）</option>
                 <option value="3">Y（结局）</option>
-                <option value="4">研究问题</option>
-                <option value="5">原假设（H0）</option>
-                <option value="6">备择假设（H1）</option>
-                <option value="7">多中心情况</option>
-                <option value="8">病例组数据来源</option>
-                <option value="9">病例组患者招募时间</option>
-                <option value="10">对照组数据来源</option>
-                <option value="11">对照组患者招募时间</option>
-                <option value="12">巢氏设计</option>
-                <option value="13">发病密度设计</option>
+                <option value="4">研究目的</option>
+                <option value="5">研究设计</option>
+                <option value="6">原假设（H0）</option>
+                <option value="7">备择假设（H1）</option>
+                <option value="8">多中心情况</option>
+                <option value="9">病例组数据来源</option>
+                <option value="10">病例组患者招募时间</option>
+                <option value="11">对照组数据来源</option>
+                <option value="12">对照组患者招募时间</option>
+                <option value="13">巢氏设计</option>
+                <option value="14">发病密度设计</option>
             </select>
             <hr style="margin: 10px 5px;"> 
               <button type="submit" class="btn">保存</button>
