@@ -90,6 +90,7 @@ a{
     content: '︽';
 }
 
+
 /* .history_result .history:hover{
     background: rgb(240, 242, 252);
 } */
@@ -583,6 +584,11 @@ ul li .function_btn:hover{
 
 .remind details{
     cursor: pointer;
+}
+
+.remind details .learnContainer{
+    height: 200px;
+    overflow: scroll;
 }
 
 .remind .mini_btn_container{

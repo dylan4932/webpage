@@ -119,6 +119,7 @@ function remind(){
         const btn_text = document.createTextNode('learn more')
 
         const txt_container = document.createElement('div')
+        txt_container.className = 'learnContainer'
         Learnmore[json][1].forEach(element => {
             const txts = document.createElement('p')
             const more_txt = document.createTextNode(element)
@@ -149,6 +150,7 @@ function remind(){
         // more_container.style='--duration: 1s'
         remind.appendChild(more_container)
         remind.appendChild(video_container)
+        
     }
     for(var i = 0; i<remind_container.childElementCount;i++){
         const remind_child = remind_container.children[i] 
